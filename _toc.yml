@@ -1,8 +1,16 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
+# Table of contents 
 
 format: jb-book
-root: intro
-chapters:
-- file: seed_pot_RQ_count
-
+root: index
+parts:
+  - caption: Propagation
+    chapters:
+    - file: docs/seed-sowing
+  - caption: Growing
+    chapters:
+    - file: docs/transplanting
+  - caption: Inventory
+    chapters:
+    - file: docs/data_entry
+    sections:
+      - file: notebooks/seed_pot_RQ_count

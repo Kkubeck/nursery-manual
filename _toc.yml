@@ -12,5 +12,5 @@ parts:
   - caption: Inventory
     chapters:
     - file: docs/data_entry
-    sections:
+      sections:
       - file: notebooks/seed_pot_RQ_count

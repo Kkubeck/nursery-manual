@@ -6,6 +6,7 @@ parts:
   - caption: Propagation
     chapters:
     - file: docs/seed-sowing
+    - file: notebooks/project_cold_with_graphics
   - caption: Growing
     chapters:
     - file: docs/transplanting

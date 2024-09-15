@@ -5,6 +5,10 @@ title: Nursery Handbook
 author: Kevin Kubeck
 logo: images/logo.png
 
+html:
+  baseurl: /nursery-manual
+
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:

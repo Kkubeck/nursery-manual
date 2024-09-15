@@ -1,4 +1,11 @@
-jupyter-book
-matplotlib
-numpy
-pandas
+
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - ipywidgets
+  - pandas
+  - matplotlib
+  - numpy
+  - ipython
+  - ipykernel

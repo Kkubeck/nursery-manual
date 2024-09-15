@@ -25,8 +25,9 @@ launch_buttons:
   binderhub_url: "https://mybinder.org"
 
 thebe_config:
-  repository_url: "https://github.com/your-username/your-repo"
+  repository_url: "https://github.com/Kkubeck/nursery-manual"
   repository_branch: "main"
+
 
 # Ensure interactive outputs are enabled
 interactive:

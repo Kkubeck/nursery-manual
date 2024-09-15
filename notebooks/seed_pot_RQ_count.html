@@ -1,0 +1,1516 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Nursery Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/seed_pot_RQ_count';</script>
+    <link rel="canonical" href="/nursery-manual/notebooks/seed_pot_RQ_count.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Nursery Data Entry Workflow" href="../docs/data_entry.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Nursery Handbook - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Nursery Handbook - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Nursery Manual
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Propagation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/seed-sowing.html">Seed Sowing Standard Operating Procedure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Growing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/transplanting.html">Transplanting Standard Operating Procedure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Inventory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../docs/data_entry.html">Nursery Data Entry Workflow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebooks/seed_pot_RQ_count.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/seed_pot_RQ_count.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the CSV file</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/culturing_2024.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define a regex pattern to match &#39;*number* RQ&#39; and common misspellings like &#39;12 RQ,&#39;</span>
+<span class="n">rq_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\d+)\s*RQ\W*&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
+
+<span class="c1"># Apply the pattern to the &#39;ItemComment&#39; column to find all matches</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ItemComment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">rq_pattern</span><span class="p">)</span>
+
+<span class="c1"># Ensure that NaN values in &#39;RQ_Matches&#39; are treated as empty lists</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="k">else</span> <span class="p">[])</span>
+
+<span class="c1"># Remove the rows without &#39;RQ&#39; pattern from the dataframe</span>
+<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span>
+
+<span class="c1"># When creating df_cleaned from another DataFrame (df in this case), use .copy()</span>
+<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+
+<span class="c1"># Extract the numbers from the &#39;RQ&#39; pattern, cast to integers, and sum</span>
+<span class="n">total_rq</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">explode</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">total_rq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># load the CSV file</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/culturing_2024.csv&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Define a regex pattern to match &#39;*number* RQ&#39; and common misspellings like &#39;12 RQ,&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">rq_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\d+)\s*RQ\W*&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data/culturing_2024.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count the number of missing &#39;RQ&#39; entries</span>
+<span class="n">missing_rq_count</span> <span class="o">=</span> <span class="n">missing_rq</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Get the total number of rows for reference</span>
+<span class="n">total_rows</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Filter the dataframe for rows where &#39;RQ&#39; pattern is missing</span>
+<span class="n">rows_without_rq</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">missing_rq</span><span class="p">]</span>
+
+<span class="c1"># Extract the &#39;ItemAccNoFull&#39; for those rows</span>
+<span class="n">item_acc_no_full_without_rq</span> <span class="o">=</span> <span class="n">rows_without_rq</span><span class="p">[</span><span class="s1">&#39;ItemAccNoFull&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item_acc_no_full_without_rq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;2022-0007.87&#39;,
+ &#39;2022-0163.87&#39;,
+ &#39;2022-0332.88&#39;,
+ &#39;2021-0820.87&#39;,
+ &#39;2023-0286.88&#39;,
+ &#39;2023-0306.88&#39;,
+ &#39;2023-0389.88&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># To group the number of plants requested by &#39;LifeForm&#39;, we&#39;ll first need to aggregate the RQ numbers per &#39;LifeForm&#39;</span>
+
+<span class="c1"># Extract the first match of RQ numbers (assuming there&#39;s only one RQ per comment)</span>
+<span class="c1"># and convert it to integer</span>
+<span class="n">df_cleaned</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">if</span> <span class="n">x</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Now, group by &#39;LifeForm&#39; and sum the &#39;RQ_Number&#39; for each group</span>
+<span class="n">rq_per_lifeform</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;LifeForm&#39;</span><span class="p">)[</span><span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">rq_per_lifeform</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>LifeForm</th>
+      <th>RQ_Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Annual</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bulb, Corm, or Tuber</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Climber, Liana, or Vine</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Herbaceous Perennial</td>
+      <td>1656</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Shrub</td>
+      <td>383</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Shrub or Tree</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Tree</td>
+      <td>376</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group the number of plants requested by &#39;Family&#39;, summing up the &#39;RQ_Number&#39; for each family</span>
+<span class="n">rq_per_family</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Family&#39;</span><span class="p">)[</span><span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">rq_per_family</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Family</th>
+      <th>RQ_Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Amaryllidaceae</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Anacardiaceae</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Apiaceae</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Apocynaceae</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Aquifoliaceae</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Theaceae</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Tofieldiaceae</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Ulmaceae</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>Verbenaceae</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Viburnaceae</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table>
+<p>79 rows × 2 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group the number of plants requested by &#39;Purpose&#39;, taking into account possible empty values</span>
+<span class="c1"># First, fill empty values in the &#39;Purpose&#39; column with a placeholder like &quot;Unknown&quot;</span>
+<span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Purpose&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unknown&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Now, group by &#39;Purpose&#39; and sum the &#39;RQ_Number&#39; for each purpose</span>
+<span class="n">rq_per_purpose</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Purpose&#39;</span><span class="p">)[</span><span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">rq_per_purpose</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Purpose</th>
+      <th>RQ_Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1B</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1C</td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1F</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1J</td>
+      <td>663</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1J, LNA</td>
+      <td>188</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1P</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1P/3A</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2A</td>
+      <td>541</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>3A</td>
+      <td>784</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>4C</td>
+      <td>237</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>4C, Index Seminum</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>F</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Index Seminum</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>L</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>LAA</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>LAF</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>LAM</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>LAS</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LEU</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>LEU, LTC</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>LEU, LTC2</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>LEU,1P</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>LEU1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>LNA</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>LNA, LTC</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>LSA</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>LTC</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>LTC, LEU</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>LTC, LNA</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>NAM</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Unknown</td>
+      <td>249</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter the DataFrame for entries with &#39;Unknown&#39; purpose</span>
+<span class="n">unknown_purpose_entries</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Purpose&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">]</span>
+
+<span class="c1"># Extract the &#39;ItemAccNoFull&#39; for these entries</span>
+<span class="n">item_acc_no_full_unknown_purpose</span> <span class="o">=</span> <span class="n">unknown_purpose_entries</span><span class="p">[</span><span class="s1">&#39;ItemAccNoFull&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="n">item_acc_no_full_unknown_purpose</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;2022-0493.88&#39;,
+ &#39;2022-0520.88&#39;,
+ &#39;2021-0643.88&#39;,
+ &#39;2021-0644.88&#39;,
+ &#39;2022-0483.88&#39;,
+ &#39;2022-0491.88&#39;,
+ &#39;2022-0496.88&#39;,
+ &#39;2022-0500.88&#39;,
+ &#39;2022-0513.88&#39;,
+ &#39;2022-0517.88&#39;,
+ &#39;2022-0524.88&#39;,
+ &#39;2022-0537.88&#39;,
+ &#39;2022-0542.85&#39;,
+ &#39;2022-0484.87&#39;,
+ &#39;2022-0479.88&#39;,
+ &#39;2022-0534.88&#39;,
+ &#39;2022-0486.88&#39;,
+ &#39;2022-0542.88&#39;,
+ &#39;2022-0509.87&#39;,
+ &#39;2022-0509.88&#39;,
+ &#39;2022-0532.88&#39;,
+ &#39;2023-0271.88&#39;,
+ &#39;2022-0534.86&#39;,
+ &#39;2022-0486.87&#39;,
+ &#39;2022-0484.86&#39;,
+ &#39;2022-0542.86&#39;,
+ &#39;2022-0507.87&#39;,
+ &#39;2023-0386.88&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Provenance</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group the number of plants requested by &#39;ProvenanceCode&#39;, taking into account possible empty values</span>
+<span class="c1"># First, fill empty values in the &#39;ProvenanceCode&#39; column with a placeholder like &quot;Unknown&quot;</span>
+<span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;ProvenanceCode&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unknown&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Now, group by &#39;ProvenanceCode&#39; and sum the &#39;RQ_Number&#39; for each provenance code</span>
+<span class="n">rq_per_provenance</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ProvenanceCode&#39;</span><span class="p">)[</span><span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">rq_per_provenance</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ProvenanceCode</th>
+      <th>RQ_Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>G</td>
+      <td>1659</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>U</td>
+      <td>301</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>W</td>
+      <td>1785</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Z</td>
+      <td>121</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Purpose</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Correcting the entry for &quot;1P/3A&quot; before proceeding with the groupings</span>
+<span class="n">df_cleaned</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Purpose&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1P/3A&#39;</span><span class="p">,</span> <span class="s1">&#39;Purpose&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;1P, 3A&#39;</span>
+
+<span class="c1"># Extracting the &#39;ItemAccNoFull&#39; for the corrected entry</span>
+<span class="n">item_acc_no_full_corrected</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Purpose&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1P, 3A&#39;</span><span class="p">][</span><span class="s1">&#39;ItemAccNoFull&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># Mapping purposes to umbrella groups</span>
+<span class="n">purpose_to_group</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;L&#39;</span><span class="p">:</span> <span class="s1">&#39;Alpine Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1J&#39;</span><span class="p">:</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1B&#39;</span><span class="p">:</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1G&#39;</span><span class="p">:</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NAM&#39;</span><span class="p">:</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;4C&#39;</span><span class="p">:</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;3A&#39;</span><span class="p">:</span> <span class="s1">&#39;Asian Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1F&#39;</span><span class="p">:</span> <span class="s1">&#39;Physic Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="s1">&#39;Physic Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1P&#39;</span><span class="p">:</span> <span class="s1">&#39;Winter Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;1C&#39;</span><span class="p">:</span> <span class="s1">&#39;Contemporary Garden&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;2A&#39;</span><span class="p">:</span> <span class="s1">&#39;Front Entrance&#39;</span>
+<span class="p">}</span>
+
+<span class="c1"># Function to assign umbrella group to each purpose, considering multiple entries</span>
+<span class="k">def</span> <span class="nf">assign_umbrella_group</span><span class="p">(</span><span class="n">purpose_str</span><span class="p">):</span>
+    <span class="n">purposes</span> <span class="o">=</span> <span class="n">purpose_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+    <span class="n">groups</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">purpose</span> <span class="ow">in</span> <span class="n">purposes</span><span class="p">:</span>
+        <span class="c1"># Check for direct match or startswith for entries like &quot;LEU&quot; (which should match &quot;L&quot;)</span>
+        <span class="n">group</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">group_name</span> <span class="k">for</span> <span class="n">code</span><span class="p">,</span> <span class="n">group_name</span> <span class="ow">in</span> <span class="n">purpose_to_group</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">purpose</span> <span class="o">==</span> <span class="n">code</span> <span class="ow">or</span> <span class="n">purpose</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">code</span><span class="p">)),</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">group</span><span class="p">:</span>
+            <span class="n">groups</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">groups</span><span class="p">)</span>
+
+<span class="c1"># Apply the function to assign umbrella groups</span>
+<span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;UmbrellaGroup&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Purpose&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">assign_umbrella_group</span><span class="p">)</span>
+
+<span class="c1"># For each row, distribute the RQ_Number evenly among its umbrella groups</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="n">group_totals</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">num_groups</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;UmbrellaGroup&#39;</span><span class="p">])</span>
+    <span class="n">split_rq</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;RQ_Number&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">num_groups</span><span class="p">)</span> <span class="k">if</span> <span class="n">num_groups</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;UmbrellaGroup&#39;</span><span class="p">]:</span>
+        <span class="n">group_totals</span><span class="p">[</span><span class="n">group</span><span class="p">]</span> <span class="o">+=</span> <span class="n">split_rq</span>
+
+<span class="n">group_totals</span><span class="p">,</span> <span class="n">item_acc_no_full_corrected</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(defaultdict(int,
+             {&#39;North America&#39;: 1021,
+              &#39;Asian Garden&#39;: 785,
+              &#39;Alpine Garden&#39;: 510,
+              &#39;Winter Garden&#39;: 55,
+              &#39;Physic Garden&#39;: 259,
+              &#39;Contemporary Garden&#39;: 440,
+              &#39;Front Entrance&#39;: 541}),
+ [&#39;2022-0331.88&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert the dictionary to a DataFrame</span>
+<span class="n">group_totals_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">group_totals</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Garden Area&#39;</span><span class="p">,</span> <span class="s1">&#39;Total Requests&#39;</span><span class="p">])</span>
+
+<span class="n">group_totals_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Garden Area</th>
+      <th>Total Requests</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>North America</td>
+      <td>1021</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Asian Garden</td>
+      <td>785</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Alpine Garden</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Winter Garden</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Physic Garden</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Contemporary Garden</td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Front Entrance</td>
+      <td>541</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Unique Values</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count the number of unique values in the &quot;PropTreatment&quot; column</span>
+<span class="n">unique_prop_treatment</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropTreatment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+
+<span class="n">unique_prop_treatment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>35
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># List the unique values in the &quot;PropTreatment&quot; column alphabetically</span>
+<span class="n">unique_prop_treatment_values</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropTreatment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+
+<span class="n">unique_prop_treatment_values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Cold stratification&#39;,
+ &#39;Cold stratification (x day)&#39;,
+ &#39;Cold stratification (x day), cool to germinate&#39;,
+ &#39;Cold stratification (x day).&#39;,
+ &#39;Cool germinator. 5C night/ 10C day&#39;,
+ &#39;Double dormancy. 2-year cycle. sow asap.&#39;,
+ &#39;Fire, 24hr water soak.&#39;,
+ &#39;Surface sown on milled sphagnum. Cold stratification. Cool to germinate.&#39;,
+ &#39;Surface sown on sphagnum with glass plate on top of pot. Cold Stratification.&#39;,
+ &#39;Surface sown on sphagnum with glass plate on top of pot. mist lightly once a week until prothalli appear then increase mist duration.&#39;,
+ &#39;Warm stratification (x days), cold stratification (x days)&#39;,
+ &#39;Warm stratification (x days), cold stratification (x days), 2 year germination (double dormancy)&#39;,
+ &#39;light cover, 10C&#39;,
+ &#39;light cover, 20C day / 10C night&#39;,
+ &#39;light cover, 20C.&#39;,
+ &#39;light cover, 20C. if no germination in 30 days then 30 day CS&#39;,
+ &#39;light cover, cold stratification (x) days&#39;,
+ &#39;light cover, cool to germinate.&#39;,
+ &#39;mix w/t moist perlite, store in refrigerator, check weekly. transplant when radicles emerge.&#39;,
+ &#39;mix w/t moist seed sowing media, (x) day cold stratification, spread mixture on the surface of cell pack&#39;,
+ &#39;mix with moist milled sphagnum, remove pericarp (3-4 week)&#39;,
+ &#39;mixed with moist, milled sphagnum moss. Cold Stratification. check weekly for germination.&#39;,
+ &#39;mixed with moist, milled sphagnum moss. check weekly for germination.&#39;,
+ &#39;multi year germination&#39;,
+ &#39;sow&#39;,
+ &#39;sow @ 20C&#39;,
+ &#39;sow @ &lt;10C&#39;,
+ &#39;sow @ &lt;5C&#39;,
+ &#39;sow @ &gt; 25C&#39;,
+ &#39;sow at 20C, if no germination in 30 days then cold stratification for 30 days&#39;,
+ &#39;sow in cell pack (10 - 20 seed/cell). 10C / 20C until germination.&#39;,
+ &#39;surface sown on milled sphagnum&#39;,
+ &#39;surface sown on milled sphagnum with bottom heat&#39;,
+ &#39;surface sown on milled sphagnum.  If no germination in 30 days then cold stratification for 30 day&#39;,
+ &#39;surface sown on milled sphagnum. Cold stratification.&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a function that takes a &quot;PropTreatment&quot; string and returns all &#39;AccNoFull&#39; that contain it</span>
+<span class="k">def</span> <span class="nf">get_acc_no_full_by_treatment</span><span class="p">(</span><span class="n">treatment</span><span class="p">):</span>
+    <span class="c1"># Filter the DataFrame for entries that contain the specified treatment in &quot;PropTreatment&quot;</span>
+    <span class="n">matching_entries</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropTreatment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">treatment</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
+    
+    <span class="c1"># Extract the &#39;AccNoFull&#39; for these entries</span>
+    <span class="n">acc_no_full</span> <span class="o">=</span> <span class="n">matching_entries</span><span class="p">[</span><span class="s1">&#39;AccNoFull&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">acc_no_full</span>
+
+<span class="c1"># Example usage of the function</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">get_acc_no_full_by_treatment</span><span class="p">(</span><span class="s1">&#39;light cover, 20C. if no germination in 30 days then 30 day CS&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># Note: The example usage is commented out to avoid running it directly here. You can use this function by</span>
+<span class="c1"># uncommenting the example usage and replacing the &quot;Cold stratification&quot; with any treatment string you&#39;re interested in.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;2022-0572&#39;, &#39;2024-0021&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">unique_prop_treatment_values</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropComment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+
+<span class="n">unique_prop_treatment_values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;?PD&#39;,
+ &#39;?PD or ND&#39;,
+ &#39;MPD&#39;,
+ &#39;MPD, cool to G&#39;,
+ &#39;MPD, dark+&#39;,
+ &#39;MPD, heat&#39;,
+ &#39;MPD?&#39;,
+ &#39;ND&#39;,
+ &#39;ND or MPD, 2-yr&#39;,
+ &#39;ND or PD&#39;,
+ &#39;ND or light PD&#39;,
+ &#39;ND, G. &lt;10C&#39;,
+ &#39;ND, G.&lt;10C&#39;,
+ &#39;ND, G&lt;5C, +2 yr&#39;,
+ &#39;ND, Light+&#39;,
+ &#39;ND, cool&#39;,
+ &#39;ND, cool to G.&#39;,
+ &#39;ND, cool to G., erratic&#39;,
+ &#39;ND, light&#39;,
+ &#39;ND, light+&#39;,
+ &#39;ND, light, cool to G.&#39;,
+ &#39;ND, smoke&#39;,
+ &#39;ND, warm&#39;,
+ &#39;ND. light&#39;,
+ &#39;PD&#39;,
+ &#39;PD or ND&#39;,
+ &#39;PD or ND, seed coat&#39;,
+ &#39;PD, aquatic&#39;,
+ &#39;PD, cool&#39;,
+ &#39;PD, cool to G.&#39;,
+ &#39;PD, dark+&#39;,
+ &#39;PD, do not dewing&#39;,
+ &#39;PD, light&#39;,
+ &#39;PD, light+&#39;,
+ &#39;PD, light, cool to G.&#39;,
+ &#39;PD, recalcitrant&#39;,
+ &#39;PD, smoke&#39;,
+ &#39;PD?&#39;,
+ &#39;PY&#39;,
+ &#39;PY + PD&#39;,
+ &#39;PY, MPD&#39;,
+ &#39;PY, MPD, smoke&#39;,
+ &#39;PY, ND or light PD?&#39;,
+ &#39;PY, PD&#39;,
+ &#39;PY, PD, winter&#39;,
+ &#39;PY, fire&#39;,
+ &#39;Py, PD&#39;,
+ &#39;no info, typica G.l &gt; 25C&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a function that takes a &quot;PropTreatment&quot; string and returns all &#39;AccNoFull&#39; that contain it</span>
+<span class="k">def</span> <span class="nf">get_acc_no_full_by_treatment</span><span class="p">(</span><span class="n">treatment</span><span class="p">):</span>
+    <span class="c1"># Filter the DataFrame for entries that contain the specified treatment in &quot;PropTreatment&quot;</span>
+    <span class="n">matching_entries</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropComment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">treatment</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
+    
+    <span class="c1"># Extract the &#39;AccNoFull&#39; for these entries</span>
+    <span class="n">acc_no_full</span> <span class="o">=</span> <span class="n">matching_entries</span><span class="p">[</span><span class="s1">&#39;AccNoFull&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">acc_no_full</span>
+
+<span class="c1"># Example usage of the function</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">get_acc_no_full_by_treatment</span><span class="p">(</span><span class="s1">&#39;no info, typica G.l &gt; 25C&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># Note: The example usage is commented out to avoid running it directly here. You can use this function by</span>
+<span class="c1"># uncommenting the example usage and replacing the &quot;Cold stratification&quot; with any treatment string you&#39;re interested in.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;2022-0046&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
+
+<span class="c1"># Split the &#39;PropComment&#39; entries by comma and strip extra spaces</span>
+<span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;SplitPropComment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;PropComment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="k">else</span> <span class="p">[])</span>
+
+<span class="c1"># Initialize MultiLabelBinarizer to handle the creation of dummy variables</span>
+<span class="n">mlb</span> <span class="o">=</span> <span class="n">MultiLabelBinarizer</span><span class="p">()</span>
+
+<span class="c1"># Apply MultiLabelBinarizer to the list of lists (each list representing the conditions mentioned in &#39;PropComment&#39; for a row)</span>
+<span class="n">mlb_result</span> <span class="o">=</span> <span class="n">mlb</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;SplitPropComment&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a DataFrame from the result</span>
+<span class="n">prop_comment_encoded_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mlb_result</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span><span class="p">)</span>
+
+<span class="c1"># Concatenate the original DataFrame with the new one-hot encoded DataFrame</span>
+<span class="n">df_cleaned_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">prop_comment_encoded_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the new columns added to the DataFrame as a result of one-hot encoding</span>
+<span class="n">encoded_columns</span> <span class="o">=</span> <span class="n">prop_comment_encoded_df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">encoded_columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;+2 yr&#39;,
+ &#39;2-yr&#39;,
+ &#39;?PD&#39;,
+ &#39;?PD or ND&#39;,
+ &#39;G. &lt;10C&#39;,
+ &#39;G.&lt;10C&#39;,
+ &#39;G&lt;5C&#39;,
+ &#39;Light+&#39;,
+ &#39;MPD&#39;,
+ &#39;MPD?&#39;,
+ &#39;ND&#39;,
+ &#39;ND or MPD&#39;,
+ &#39;ND or PD&#39;,
+ &#39;ND or light PD&#39;,
+ &#39;ND or light PD?&#39;,
+ &#39;ND. light&#39;,
+ &#39;PD&#39;,
+ &#39;PD or ND&#39;,
+ &#39;PD?&#39;,
+ &#39;PY&#39;,
+ &#39;PY + PD&#39;,
+ &#39;Py&#39;,
+ &#39;aquatic&#39;,
+ &#39;cool&#39;,
+ &#39;cool to G&#39;,
+ &#39;cool to G.&#39;,
+ &#39;dark+&#39;,
+ &#39;do not dewing&#39;,
+ &#39;erratic&#39;,
+ &#39;fire&#39;,
+ &#39;heat&#39;,
+ &#39;light&#39;,
+ &#39;light+&#39;,
+ &#39;no info&#39;,
+ &#39;recalcitrant&#39;,
+ &#39;seed coat&#39;,
+ &#39;smoke&#39;,
+ &#39;typica G.l &gt; 25C&#39;,
+ &#39;warm&#39;,
+ &#39;winter&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../docs/data_entry.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Nursery Data Entry Workflow</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Kubeck
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

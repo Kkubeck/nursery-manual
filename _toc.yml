@@ -1,17 +1,24 @@
 # Table of contents 
 
+# Table of contents 
+
 format: jb-book
 root: index
 parts:
   - caption: Propagation
     chapters:
     - file: docs/seed-sowing
+      title: Seed Sowing
     - file: notebooks/project_cold_with_graphics
+      title: Project Cold with Graphics
   - caption: Growing
     chapters:
     - file: docs/transplanting
+      title: Transplanting
   - caption: Inventory
     chapters:
     - file: docs/data_entry
+      title: Data Entry
       sections:
       - file: notebooks/seed_pot_RQ_count
+        title: Seed Pot RQ Count

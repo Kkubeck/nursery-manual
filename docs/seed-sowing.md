@@ -1,7 +1,3 @@
-Here's your Seed Sowing Standard Operating Procedure converted into Markdown:
-
----
-
 # Seed Sowing Standard Operating Procedure
 
 ## Seed Sowing Medium

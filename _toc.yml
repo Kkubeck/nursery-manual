@@ -9,16 +9,19 @@ parts:
     chapters:
     - file: docs/seed-sowing
       title: Seed Sowing
-    - file: notebooks/project_cold_with_graphics
-      title: Project Cold with Graphics
   - caption: Growing
     chapters:
+    - file: docs/potting_media_recipes
+      title: Planting Media
     - file: docs/transplanting
       title: Transplanting
   - caption: Inventory
     chapters:
     - file: docs/data_entry
       title: Data Entry
-      sections:
+  - caption: Apps
+    chapters:
+      - file: notebooks/project_cold_with_graphics
+        title: Project Cold with Graphics
       - file: notebooks/seed_pot_RQ_count
         title: Seed Pot RQ Count

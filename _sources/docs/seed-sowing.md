@@ -1,7 +1,3 @@
-Here's your Seed Sowing Standard Operating Procedure converted into Markdown:
-
----
-
 # Seed Sowing Standard Operating Procedure
 
 ## Seed Sowing Medium
@@ -93,5 +89,3 @@ Here's your Seed Sowing Standard Operating Procedure converted into Markdown:
    - Water in short periods; do not allow the surface to pool with water and dislodge the sown seed.
    - If pooling occurs, water with a lighter volume and more frequently.
    - Do not use fertilizer during watering.
-
----

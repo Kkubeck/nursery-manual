@@ -9,6 +9,8 @@ parts:
     chapters:
     - file: docs/seed-sowing
       title: Seed Sowing
+    - file: docs/seed_dormancy_and_treatments
+      title: Seed Dormancy and Treatment
   - caption: Growing
     chapters:
     - file: docs/potting_media_recipes

@@ -31,3 +31,7 @@ parts:
     chapters:
       - file: docs/historical_nursery
         title: Historical Overview of the Nursery
+  - caption: Test section  
+    chapters:
+      - file: docs/test_image
+        title: Testing part of the website

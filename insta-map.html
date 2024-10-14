@@ -1,0 +1,1586 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Nursery Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'insta-map';</script>
+    <link rel="canonical" href="/nursery-manual/insta-map.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Nursery Handbook - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Nursery Handbook - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Nursery Manual - WORKING_document
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Propagation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/seed-sowing.html">Seed Sowing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/seed_dormancy_and_treatments.html">Seed Dormancy Types</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Growing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/potting_media_recipes.html">Planting Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/transplanting.html">Transplanting</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Inventory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/data_entry.html">Data Entry</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Apps</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/project_cold_with_graphics.html">Project Cold with Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/seed_pot_RQ_count.html">Seed Pot RQ Count</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">History</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/historical_nursery.html">Historical Overview of the Nursery</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Test section</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/test_image.html">Testing part of the website</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/insta-map.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/insta-map.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#complete project map with hidden files and git commits</span>
+<span class="k">def</span> <span class="nf">generate_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">))</span>
+    <span class="n">pointers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;├── &#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;└── &#39;</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">pointer</span><span class="p">,</span> <span class="n">path</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">pointers</span><span class="p">,</span> <span class="n">contents</span><span class="p">):</span>
+        <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">prefix</span> <span class="o">+</span> <span class="n">pointer</span> <span class="o">+</span> <span class="n">path</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+            <span class="n">new_prefix</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;│   &#39;</span> <span class="k">if</span> <span class="n">pointer</span> <span class="o">==</span> <span class="s1">&#39;├── &#39;</span> <span class="k">else</span> <span class="s1">&#39;    &#39;</span><span class="p">)</span>
+            <span class="n">generate_tree</span><span class="p">(</span><span class="n">full_path</span><span class="p">,</span> <span class="n">new_prefix</span><span class="p">)</span>
+
+<span class="c1"># Set the directory path to your project folder</span>
+<span class="n">dir_path</span> <span class="o">=</span> <span class="s1">&#39;./&#39;</span>
+
+<span class="c1"># Run the function</span>
+<span class="n">generate_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   ├── gh-pages
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── gh-pages
+│   │               └── main
+│   ├── objects
+│   │   ├── 01
+│   │   │   └── 05006559b75454c1f1e1de780f7270ad7aaab3
+│   │   ├── 02
+│   │   │   ├── 5da6a8f2be0dfec426671f9c50bc44a2c330ae
+│   │   │   └── 9ae18afb5360a8c238a052e8d3971761759d3d
+│   │   ├── 04
+│   │   │   └── 2d87cc13d38cbc101f1af045774292d6cae6b6
+│   │   ├── 05
+│   │   │   ├── 3c1ae3ae0fdffc22eb1a4bb7facf7fdb95c6fc
+│   │   │   └── 6bd2f9aa7cfa94fb5b1a489e199e448cf0a435
+│   │   ├── 06
+│   │   │   ├── c7ec938b4975c721caff60b956e343eef11570
+│   │   │   └── d56f40c838b64eb048a63e036125964a069a3a
+│   │   ├── 07
+│   │   │   └── ac95f88a5510e225bd3a202f8b6d25d270663d
+│   │   ├── 09
+│   │   │   ├── 96f165e953b528cd1db6e9d920374c7ce253e5
+│   │   │   └── a79323a447205a397bca7cfd5a7fb145026084
+│   │   ├── 0a
+│   │   │   ├── 5f4b46adfda1551ae6791c3c3782525b61be04
+│   │   │   ├── adc1a9ed235297fe61df2212a5cf47cee5e173
+│   │   │   └── f917608a38f6ccd7716c13757789c0f08c0fd1
+│   │   ├── 0b
+│   │   │   ├── 6f467023624458826ac09610d77bf93c513155
+│   │   │   └── f3e80d50a32583b79efb5de692266e109bbb9e
+│   │   ├── 0c
+│   │   │   └── 36f4d75089466b322b4d8c6e727e205a59bcad
+│   │   ├── 0d
+│   │   │   ├── 2d191426879e7da3630cecef7ba5285833cbe8
+│   │   │   ├── 35a218c5ca371f7cf6fe47a1ee3ea76dfab84d
+│   │   │   └── 610ca4795c262e6e9df02ddba6fc599021aa9f
+│   │   ├── 0e
+│   │   │   ├── 0f2b1748ac755f05cc4040b3ac939c8cc13165
+│   │   │   ├── 3235d090c2a05c0e278d38520f0437847dc79f
+│   │   │   ├── 6a9804d476ca8ef3182505ff4698b321e1475c
+│   │   │   └── d4adcbab4c785f805826c00f53c1c820c7b617
+│   │   ├── 0f
+│   │   │   ├── 0fce5868481801f76b39f0e1bccef36d6ebd0c
+│   │   │   └── ccdb2144e74429c3260b9916722e0bbedacbd4
+│   │   ├── 10
+│   │   │   ├── b5f3cc38ca35ed0fce8610d0cf45b65445d025
+│   │   │   └── dcdb4c9746831cf213ba9692eb00a2481028a6
+│   │   ├── 11
+│   │   │   ├── 8e898c99f66ebd8ecfc85509eeccc7ce03e390
+│   │   │   └── a0d8a61cac8fee19fefdbebd5509a964f86b1a
+│   │   ├── 12
+│   │   │   └── 097c6e792c397e33fcf6c7a8dfe317f8634130
+│   │   ├── 13
+│   │   │   └── 2fe713ac0280829b19bd09602b17dfef17c170
+│   │   ├── 15
+│   │   │   ├── 123c922294ac13ef3a6d1091b0b4d70b6159e2
+│   │   │   ├── 15e6960ba524d89fbd68a9ed01a2d987904775
+│   │   │   └── 541a6a375f93efed3f410c2f892174ba91aaa0
+│   │   ├── 16
+│   │   │   ├── 08c9053568edf211b3da171ae1bc33f1ef99bb
+│   │   │   ├── 6283f33256041b5a44a9079c90d6f2803a4b62
+│   │   │   └── ab78909cfbaba7fa199f47fdfc2934426ac699
+│   │   ├── 17
+│   │   │   └── 83ad2c4f532926c474105635db4ef68d37d33b
+│   │   ├── 18
+│   │   │   ├── 39a241dbc152ff0087cf4bd0b4e886a3b6cfb2
+│   │   │   ├── 400d7fad27fc52cfbabbda495b871bd912d045
+│   │   │   └── e3434438f83da677703494a5374c0d063b21ef
+│   │   ├── 1b
+│   │   │   ├── 27314d693add8bafd09def5e3645c734071db1
+│   │   │   └── 7233f4ff4fea40352938d545b76bf0fc97dfed
+│   │   ├── 1c
+│   │   │   ├── 2670436779ff435e70727ba03fad26d6a5d454
+│   │   │   ├── 92c90f04359972e649e68d04d5a1dfde0752d2
+│   │   │   └── efd29ce3cc08792667a82dc7ff47e9843107be
+│   │   ├── 1d
+│   │   │   ├── 9fd1ea1c04007ccbe73a5779201fb402d67d8b
+│   │   │   ├── a27930c257319b15b754b41576d7b8b0afbe67
+│   │   │   ├── a7acd7a20c481db12015aed8cec77158c3ddeb
+│   │   │   └── bb807f7d557e707911a499054406119a2c2535
+│   │   ├── 1e
+│   │   │   └── 5523c1773c236277224611425d013b2e7088cd
+│   │   ├── 1f
+│   │   │   ├── bb1f7c32d46f5dcb89a50e10d00878ed43f1a1
+│   │   │   └── eb98ecc27f2b940d0845a44b2135ff839d1918
+│   │   ├── 20
+│   │   │   ├── 0089941a709ffdac6401e80e0e2daeacaffe43
+│   │   │   ├── 12fc6c1eb509f058c01a976441274f723db1e9
+│   │   │   ├── 5d2c44792d7f1b45528dcac799a165ab16e044
+│   │   │   └── e0d07ce587e528161c01e40a15f3f82e70f09d
+│   │   ├── 21
+│   │   │   └── 5a7eef409ad965273bb61e34a30913d05e8049
+│   │   ├── 22
+│   │   │   └── e7e859edd06157b63f63f4e8db8d8f99994a9b
+│   │   ├── 24
+│   │   │   └── 2e45d4f39f6e57d3946047dc490f679f006a62
+│   │   ├── 25
+│   │   │   ├── 8f9ac63a6a2852bef6fd84910819bb4b07c792
+│   │   │   ├── ef968baee43f76219c7094fc992963d5235940
+│   │   │   └── f2ab1131800ae90921ac4b73f4f70dad52b174
+│   │   ├── 26
+│   │   │   ├── 15f0d8745e925469fcef2d2f7aba70f4e1a718
+│   │   │   ├── 293ed5ecc2dc7d9c42e6348802c83a4727df33
+│   │   │   ├── 29e45012b2c05b01acdab82a3a0e7a4cf7752e
+│   │   │   ├── 30de44bb912b33f82862a8284812d4d6bc446e
+│   │   │   ├── a14c35911723b64fe5944ba53438793b5d87a5
+│   │   │   └── bb1e8d4dcc0309e07acabcde278f81d10b70f5
+│   │   ├── 27
+│   │   │   └── 36e8fcf6f9e923c2403307f0b366086d37b335
+│   │   ├── 28
+│   │   │   ├── 04aad65e2241c4021a29828b11bb9d120e2b72
+│   │   │   ├── 1e47fcb1d3309dce3273f7e9b5a4e8494de132
+│   │   │   ├── 755c2c5bb51a068eb89231909e5df345fed382
+│   │   │   └── b17f367cd9e51c53fff8801c3fa01c7bbcb29f
+│   │   ├── 29
+│   │   │   ├── f1dc25524e890d6ad3cf0eff0138741117a1f6
+│   │   │   └── f52e1f6f1ec96aceb0f883d8ccc82c23eb35c2
+│   │   ├── 2a
+│   │   │   ├── 4f3488568fdc957d16870ec02caf4ad3eef8c6
+│   │   │   ├── 652d1895429357c9008067f369cdf9905e5d2f
+│   │   │   ├── e54a83e19de1dd414c74c65e0659535e0df3d1
+│   │   │   └── f6139e6b93dc11de971c73bab994e83686af21
+│   │   ├── 2b
+│   │   │   ├── 2ff381eb9d11cf6d23fa03ef6d39a0839ecf39
+│   │   │   ├── 4433c4eb25cf873ed7ae70900c6a5979ae77cc
+│   │   │   └── b32555c3ea0dab08ed37b71cb863fbe75698c6
+│   │   ├── 2c
+│   │   │   ├── 532b2078a96a5caaf808cbd40e6a78881eea56
+│   │   │   └── c145ab887a2f0520c1ed557c11420927ca6df7
+│   │   ├── 2d
+│   │   │   └── b370d65a2156d13e7b79e0a02ab8765bfb04ef
+│   │   ├── 2e
+│   │   │   ├── 519ef455b5eef0ed80ece0adbb24efd8a29014
+│   │   │   ├── 63eed427759448dc5687496ad8ea3793f92296
+│   │   │   ├── a7ff3e217ba6a8710731c335e515535bd76415
+│   │   │   └── bd7b34fcb945e379d8ed1f71781cd484f60a04
+│   │   ├── 2f
+│   │   │   ├── 774267f8d3ef649746bc899eefa3bd6b7e68b1
+│   │   │   └── 93966d74a6218fb463606b357a864dcefb5625
+│   │   ├── 30
+│   │   │   ├── 17cc5e9861560b8e3d7489da1b28003b795835
+│   │   │   ├── 3089d9f0357a3f109d334dd20ce780cf30f91e
+│   │   │   └── 6a38e52d2a5813df1ef9f761c92a23ff7e4e3f
+│   │   ├── 31
+│   │   │   └── 93be9585175d39cc95cd346144003689ad70a5
+│   │   ├── 32
+│   │   │   ├── 3ef68fd8f4c45d3eec5a3ea4a09b6efe7c1b5c
+│   │   │   └── 5c7399c6346588924961bf5c8fa486137bdd97
+│   │   ├── 33
+│   │   │   ├── 159f3efc0ecacab1de93b26780976914470b21
+│   │   │   ├── 5663106046366aa379fd05f4d8446ca097ce9b
+│   │   │   ├── dd2f0ce5cfcd486463a637a0ab426147292f6e
+│   │   │   └── e85e63674c8d930da336752ee634a259e02eec
+│   │   ├── 34
+│   │   │   ├── 4d44b7b9d0c317d44f8c797e176a904d82423a
+│   │   │   ├── 9d137c44b95bb2137d8f007110e24211be5093
+│   │   │   ├── d404c6d07914c8181ddca52ce5265472facc46
+│   │   │   ├── dac21839f76ba08d3932c2ba0c7298da4c8f81
+│   │   │   └── dcb163d9437c5214ff5a27d22a15ef88e31c44
+│   │   ├── 35
+│   │   │   ├── 4cf90959f5e4e5f19d796fa1dff3be62811741
+│   │   │   ├── c88db23d53f81549d196abe345f6af1925c0b8
+│   │   │   └── eabd955fc6d26bf6902fc4e8372b1c76179b8d
+│   │   ├── 36
+│   │   │   ├── 7b8ed81b4e411bee6f81208dba76fbe37e0e15
+│   │   │   ├── b38cf0d911247b119633267121aee3e6c8c8e9
+│   │   │   └── fca59f88155db79ba20786a694f12529c9d585
+│   │   ├── 37
+│   │   │   └── eb72e0ea1ed90d5e92cc03a2fcbe8841b6c0d2
+│   │   ├── 38
+│   │   │   ├── 6c305dc41b2f7f116282e316b9b6955233adba
+│   │   │   └── e3fe89346dc6e927bc7754bf18940cb6876e34
+│   │   ├── 39
+│   │   │   └── df82849e3dce87b709c7d156de10bd037889d0
+│   │   ├── 3a
+│   │   │   ├── 08c1998752bdb41d0b0038ec1372d942834c04
+│   │   │   ├── 6012bfb37d44e0f5aa60b3926d886a561a9647
+│   │   │   └── e8abce8f00e023586fc30960ac67498de0ce00
+│   │   ├── 3b
+│   │   │   ├── 09c12a9acdaca024a99fb7efc390457a02c6ef
+│   │   │   └── 277310f5d80c88ea33e0a0d651c04774e7ec8b
+│   │   ├── 3c
+│   │   │   ├── 1e812c98faeb70b9ebf50a79b1c9be96ce81b8
+│   │   │   ├── 36ab1df7c589ad82614599b8c91f072a25d4a6
+│   │   │   ├── 4bca7db3b9c99f595e588793d896456b2b16be
+│   │   │   ├── 7e3a86652f00e5d93e02af0d30c9abde7392cc
+│   │   │   └── da9b0e5f2f50eb8dfc3c497d07228e35ddea34
+│   │   ├── 3e
+│   │   │   ├── 01acbd9a30caf92b6996afbe2397dd0003fcb5
+│   │   │   ├── 129f267bb1f951c49bc3ee3639923e7cc635ed
+│   │   │   ├── 202115714554884877c10fafb96dab1777eed2
+│   │   │   └── 7ae81189698fe7a03eff58fae177b1b8b425f3
+│   │   ├── 3f
+│   │   │   ├── 626c633a56ecb50bec3295aa057162409f0420
+│   │   │   └── aae98a87978a1c28b7d36f43f86f7e873d341c
+│   │   ├── 40
+│   │   │   ├── 7ab07958af971dd5996563af0a0596e27ca8b2
+│   │   │   └── da5ce6f5f352da33af14de8f75a68e21596ca1
+│   │   ├── 41
+│   │   │   └── dc762af89dde39b6f5da64f8aa6ca97e767de2
+│   │   ├── 42
+│   │   │   ├── c4233d07fba197e0956f30d51b33d9696d075d
+│   │   │   └── ccad2fef57ecfd775410bbf25785899bb012e6
+│   │   ├── 43
+│   │   │   ├── 9f7999eb6dea708f17912f54c7b4a979129ea6
+│   │   │   └── eb2d6b6c5e868d0481ab3e8171f8a47513bcf1
+│   │   ├── 44
+│   │   │   ├── 35111bf650faf67d017d46dcbcb9d4c4f04a58
+│   │   │   └── 68ba04bc134a84fea5e3c973461cf02c9c2da3
+│   │   ├── 45
+│   │   │   ├── 19dd912022cddad2547bdcc92aea2e546882b5
+│   │   │   └── fecf75114bea0e1f22ce6f412d6729d894f893
+│   │   ├── 46
+│   │   │   ├── 8090df2d0182f3299a41b5f5a5de3358827802
+│   │   │   └── ed4a0dd30e696720d595cc5722361e5164ce94
+│   │   ├── 47
+│   │   │   └── 1fcb2391ad47c01e4c4b7cdebcb207bada45d6
+│   │   ├── 48
+│   │   │   └── 1ba0c19b8e0339e8d21e6db6e801279e872c1e
+│   │   ├── 49
+│   │   │   ├── 0755f000514158df4d5eb0795bfc5ab503e390
+│   │   │   └── 25360d43791d10d84d81953a6118763f25ac41
+│   │   ├── 4b
+│   │   │   ├── 6ae3f82e03a1655f4d8cd2a84832879152d3df
+│   │   │   └── e9b8b693ea5197762d0aac144d2d9fbdafddbb
+│   │   ├── 4c
+│   │   │   └── 70bb9764e528a503dcc664900841f6af8d6408
+│   │   ├── 4d
+│   │   │   ├── 1ec5f92f368084e4531cba30ed91560f105af2
+│   │   │   └── 67807d17d27b16d4ac115dc383523157635f93
+│   │   ├── 4e
+│   │   │   ├── 1039677c7938ba86a71ae6f5ecb5df8d8a1950
+│   │   │   └── 59f7bcb233f0c503022bc378824dc6f6fd70ad
+│   │   ├── 4f
+│   │   │   └── 76e4413cd2dad057a460e5acca2fd8ef7c4c7c
+│   │   ├── 50
+│   │   │   ├── 41b50581684941eca6e0bcb2a6b4721dc1b454
+│   │   │   ├── 6dfa9632cb858aa7db27bbda121796bfdd96e4
+│   │   │   ├── dfe604200467d397910d57c10017a50d8ee6b4
+│   │   │   ├── e45bba394d310182c6a709d09cec9ef2e73bbd
+│   │   │   └── e7fefe05c464aaa9fcea6fda11750b913fe61e
+│   │   ├── 51
+│   │   │   ├── 97540c96d4b68d3e4d0ed1a2a760b1f922df60
+│   │   │   └── dac455cbadb107fc70af050f9a83124ef769e1
+│   │   ├── 52
+│   │   │   └── 241adff1614b256719db6fb965a86f2aae18ea
+│   │   ├── 53
+│   │   │   └── ba476edd2df2a802917e9df402257ceca1a130
+│   │   ├── 54
+│   │   │   ├── 7311557f05aa37e13350deeafb6913b201072e
+│   │   │   ├── 9d68dc023ff6e31b8774d784c2cfcc231e7976
+│   │   │   ├── a678790ff839ef4dddb297a953f357d137aa6b
+│   │   │   └── b3c4638111e1d6433fa1a88b87180667db9cf0
+│   │   ├── 56
+│   │   │   └── 47663f68d8d6533e88024d97cd6de9fe1919bc
+│   │   ├── 57
+│   │   │   ├── 303fec7e7280b9cf6bb4e2f2767f62b98ba9a5
+│   │   │   └── b19fc21fc5e29e0bea7a23f57efd3d88d6e28e
+│   │   ├── 59
+│   │   │   ├── 0e729c2d3854c3c5ab51dc5380392f62243b91
+│   │   │   ├── 1fc4afffb06543b9eac50e8df8fe8c1a001f72
+│   │   │   ├── 26e61a6d6f795962bea3adf8c50b03b2e03e9c
+│   │   │   ├── 30ae436f651dff5279b54ae6ce1ba8c0fc936f
+│   │   │   └── bd0ddfa341477cf5ccfdc88f4c3e6127046f7a
+│   │   ├── 5a
+│   │   │   ├── 8872a922d0252ce679ff43f993e3ef070d2c94
+│   │   │   └── c709fc903ad8f5c48ae93716ff92265b7bc5d0
+│   │   ├── 5b
+│   │   │   ├── 8205f1536fdb19a6c9206b8da27e9e6fcfadad
+│   │   │   └── b3d0b9b595962bc737b27761da3aaad300ae58
+│   │   ├── 5c
+│   │   │   ├── 7004defe89738841951313568b73988472313a
+│   │   │   └── ddcffd70b618b54c20bb0ae34c8674a9e789cf
+│   │   ├── 5d
+│   │   │   ├── 28021697ff1f32507b1bcbcbf9e6a41d0ac99f
+│   │   │   ├── 36438ebd307baadb0a2ff100c07216b50ef617
+│   │   │   └── 9e26c0a969c152e9ac3ef73b18dd9c9c1d02f1
+│   │   ├── 5e
+│   │   │   └── 0029e5f7f29c75af1f23716be36d4ec85274bc
+│   │   ├── 5f
+│   │   │   ├── 534f8051f6a94d40e57e58242ef0113fae4fd1
+│   │   │   └── 9788a0583f22c53ca889925c4a43098856023d
+│   │   ├── 60
+│   │   │   ├── 9f277c1b942d10aeb2f9c9b406186cd53e5bc6
+│   │   │   └── cfe9f222e5617f1a4bc0de005685f7d8ce35af
+│   │   ├── 61
+│   │   │   ├── 464b1ffc8a47be4239cdd4dee3914c54d01c8c
+│   │   │   └── 59bd12635d0b91761a543d21ce94616562dfef
+│   │   ├── 62
+│   │   │   ├── 57379eddcb282b4262923c02efbfb04cfe2817
+│   │   │   ├── 6587b11fd8f6d8b9e7fb3b549a1562ae268a3d
+│   │   │   ├── 8b2ccdf6b183689c6e0cadfb582a5ed8fce138
+│   │   │   ├── b34e141351879d19aa2d9768e452780822bb61
+│   │   │   ├── d3b3382ff7630724fce06ef5bbe9420e495e52
+│   │   │   └── fadbba2dceba717c373f0f6c7fefb38fc0d5c7
+│   │   ├── 63
+│   │   │   ├── 1c082aca532377acfdb16f5aa3d35bd52c6cf5
+│   │   │   ├── 7c76a2d5f5f43296705c28702cfff326efabfb
+│   │   │   ├── 9b194e8c1805132a4f033bb9511dce837358a8
+│   │   │   └── a07c3627fd555fea49abb7f7419911dd1fdbfe
+│   │   ├── 64
+│   │   │   ├── 8b565c7829535bc5f26f86909f458d0cd0fe1b
+│   │   │   └── bb9380f97f0a850fd7f8478112fa098ff0edb8
+│   │   ├── 65
+│   │   │   ├── 0128817ad55e6b2e834b5e120ed70b604f2f86
+│   │   │   ├── 7c048f8c64433d07fc603bb4708995b064365c
+│   │   │   ├── 90086b1abae35de138ce6351381b605b3a3541
+│   │   │   └── b7c6026aa8d23bc9bd528fbc5c13c094963151
+│   │   ├── 67
+│   │   │   ├── b8f8684a5fe057efddf91fe8df87c62ffe048f
+│   │   │   └── d30a6a095aa2e9c73a53401a72c69d8d04a90a
+│   │   ├── 69
+│   │   │   ├── 161a24d878931d874b304a72c796b0a2309eca
+│   │   │   └── 984b99a1c1ab93d34efd13464a8903d3a28d9d
+│   │   ├── 6a
+│   │   │   ├── ee535b2655c58d031bde75fc0b6fa87113d7d1
+│   │   │   └── f30c4174e8a00a5933a72b3c888852284b4038
+│   │   ├── 6b
+│   │   │   ├── 3a3603e9faa22b11e0bcea1afdeef2a5775ae3
+│   │   │   ├── 8ca41f36ebf869818399a9584cdb15619bea78
+│   │   │   └── 96639b726a2fa959a6419b6f8b7e0dfcce33ae
+│   │   ├── 6c
+│   │   │   ├── 041402664866afb9131f077fb918d191d0e732
+│   │   │   ├── 2c298ecc1816a63de4d0927b1259c751f92562
+│   │   │   ├── bf559faac53f44f0c1f75ed908cde94c0ee712
+│   │   │   └── d15c88de675226c00ca4d0430171075e5559ff
+│   │   ├── 6e
+│   │   │   └── 836241a08c892eeccbba6b2e3ecb4be2b0c9fa
+│   │   ├── 6f
+│   │   │   └── 1d747015c01ebca9a0d49286e4fa7fe2b7b6d3
+│   │   ├── 70
+│   │   │   ├── 429b7878d169aed6229bee4f8ff593cb9ee0b4
+│   │   │   ├── d165e3389d423d127dd256163c94645511bbf5
+│   │   │   └── e7fd5be560b250d1d2b04d74a2ef95f4727d28
+│   │   ├── 71
+│   │   │   ├── 07cec93a979b9a5f64843235a16651d563ce2d
+│   │   │   └── bd1cda706653e0ee07b2431ce77329ba330b5b
+│   │   ├── 72
+│   │   │   ├── 1c812f789f70a94b9fbaa2414c15567d12e85f
+│   │   │   ├── 808c8f5ad7cc131da5716a0e3edcb799386b20
+│   │   │   ├── 876236c54d86b0edf736483480c518ce67f397
+│   │   │   └── f11f9179eaf0a1361f5894537a8b927f0f9f59
+│   │   ├── 73
+│   │   │   └── 894b9117977a3af0cabb6652e51df602321aff
+│   │   ├── 74
+│   │   │   ├── 20c19eb0891cbf1cb14466038c4b3cefc28c3c
+│   │   │   ├── 4a15a0726e9030a2bca527b7268b0a1b6c2b55
+│   │   │   ├── aa4d8985d96a07c4c9be96f006f3b58d884342
+│   │   │   └── d5c7101ed8c8c1a6f87e31debd9445df1f0e71
+│   │   ├── 75
+│   │   │   ├── 5d30cc8dcc1f923ea644f0b0f43c3190a4d633
+│   │   │   └── 8dd4f6070c7cb399334ae997ae9ff6523d3b55
+│   │   ├── 76
+│   │   │   ├── 0692418bf9960acfbaa8f8fa3c42f63e6c9365
+│   │   │   └── 070b9c0eaeeb5cf4486bcdeaa62d209f461393
+│   │   ├── 77
+│   │   │   ├── 3b8adae842be1a5e38ce4ae6f7de619d65adea
+│   │   │   ├── 666cc63ac1f92e899e684263cae81c74410153
+│   │   │   └── ada6e2506ae8f6dbfef170e6b79930da5aaf08
+│   │   ├── 78
+│   │   │   └── 3ec6aa5afe2f0a66087d01a112f543e1ed287e
+│   │   ├── 7c
+│   │   │   ├── 789cfa44ffb5c9503313570bdf20641a75f759
+│   │   │   └── 7d9c24ea4cac084b4494483a3f8fd8a4b7d31e
+│   │   ├── 7d
+│   │   │   └── 52b330936ff5a329319b7fdf4ef771a1b644bf
+│   │   ├── 7e
+│   │   │   ├── 821e45db31376729c73f3616fb24db2b655a95
+│   │   │   └── c629aa8a3cc1c0f34694fdae0b7979733b6983
+│   │   ├── 7f
+│   │   │   └── 00704b31036161b9d5f91d4c6717cab5b075ef
+│   │   ├── 80
+│   │   │   ├── 25301f1fa6b118e4a4e8ec36e6f50d026c9f2f
+│   │   │   ├── 291381ecd2c385a45b204af65c4bbc3710e7dd
+│   │   │   ├── 6b33cb01795b0b2358a9145eff8b87f313dfb5
+│   │   │   └── 718e71e36305a25032245cf19acb65848822b3
+│   │   ├── 81
+│   │   │   └── 26fa990deb0ee1afdd0d294bc651c7c5a40445
+│   │   ├── 83
+│   │   │   ├── 3a0c6d6f59b280d14b8c00c4c961b986ed4df8
+│   │   │   └── 605255aad80373b949f7567f75b31a8c78c429
+│   │   ├── 85
+│   │   │   └── 52196dca0d5f919507d2ac0fdb63149e11c647
+│   │   ├── 86
+│   │   │   ├── 61cc575314be324212545819682a1f816bebbf
+│   │   │   └── 80982a9760856c6ccccfe3aad88f69c96020fb
+│   │   ├── 87
+│   │   │   ├── 3c8908829e4889cf50f7ff341f83875f86126d
+│   │   │   └── bf26de683cb18c73bd23c2b4c57ef6a02545ec
+│   │   ├── 89
+│   │   │   └── 91a1b87b0e64fd19df0268766ecaba59882614
+│   │   ├── 8a
+│   │   │   ├── 29e24e520f190e317bf43a7ac292c3c641175e
+│   │   │   ├── 96c69a1942318413af68fd459122b56edd8d69
+│   │   │   ├── a3cd16abb1674c018ef8237a8467a9ef1c2e6e
+│   │   │   └── c3759847605f80e220833acc3f6f6be6b0f581
+│   │   ├── 8c
+│   │   │   └── 5864c42fa295c7620ac149b478e66b668affe6
+│   │   ├── 8d
+│   │   │   ├── 69463eb8852b82416f7d3ec6436abbe76523b6
+│   │   │   ├── 725172f2ec5584eeb41f781f1412ac86ef5db3
+│   │   │   ├── 85f40cba9feb93ac370f5136fc408db267aed3
+│   │   │   └── f1b73310e0c606251d1abff7e6033d1f6b273f
+│   │   ├── 8e
+│   │   │   └── ae6f7d5823f74b028b77a5809a5d13c8b3c5d3
+│   │   ├── 8f
+│   │   │   ├── 10fdf59fc9e328aafa7651c97f5e5d66f24396
+│   │   │   ├── 41fab81ff0b616e30316e27e0624b88b893c90
+│   │   │   └── b358bf1d65c336619dfcd9f0372715a1f39c18
+│   │   ├── 90
+│   │   │   └── ba101df84ac6e807563f2158b9cac2c4717e2b
+│   │   ├── 91
+│   │   │   └── 16fa95d0a752665e0f1d59857a32abfc0c6bce
+│   │   ├── 92
+│   │   │   ├── 0b18640ebe57a8dd2f106dba36559f7849ecd7
+│   │   │   ├── da3f8b22cf5aab480b06cdb4e380a156152b5a
+│   │   │   └── fad4b5c0b766702548d26ab2be2832e19ad4da
+│   │   ├── 93
+│   │   │   └── 69e94d36d1321bcacdcc7664b0d65f90302f4f
+│   │   ├── 94
+│   │   │   ├── abe9090843a6ec7c969b47262e67ceec146a30
+│   │   │   ├── c1229e8932a1c8a5cf4f1da5a6f85f918ab75b
+│   │   │   └── ffd5f14e77075e0f97e395a3e29cb666d85616
+│   │   ├── 95
+│   │   │   ├── 2278f5f7ec7697405ef3390242071889c6adba
+│   │   │   └── c3f95929136a0a33cf05e0f6676fb89fd66c23
+│   │   ├── 98
+│   │   │   ├── 06dc11b9ae23e67e8b25debc1682f1a642de2d
+│   │   │   └── 3b82391f499b67a9046c15d0dd8744650ad925
+│   │   ├── 99
+│   │   │   ├── 3dd07810d0bf8cc1ab75dd38880380ab4674c8
+│   │   │   ├── 7797f27066273ad4a43697d104ba350163bd1f
+│   │   │   └── a0a8b1ac3f170444313f2599345593bd7ef6a2
+│   │   ├── 9a
+│   │   │   └── e91afda9bbd83a0edccac48e35ec4b0a48e02e
+│   │   ├── 9b
+│   │   │   ├── 1205967432e9ee8a58f63b15236c3d5b5690aa
+│   │   │   └── ccbbddb44a46c58afdedff3752d491b3fc5b25
+│   │   ├── 9c
+│   │   │   ├── 074dae5283fb4a5371c2492cd376043117f071
+│   │   │   ├── 0774881524abbcb07b73eed373f32b9eafc546
+│   │   │   └── a6f847a5ad6b385304c7b9060a74fe0a441727
+│   │   ├── 9d
+│   │   │   └── 24294a7f502d0ba4e0a724b10e9c9ca44a73c7
+│   │   ├── 9e
+│   │   │   ├── 26f488e87beafdbcceed2d700652086b2e8518
+│   │   │   └── bb584f77091f5666db4194ecd4f707396cbbca
+│   │   ├── a0
+│   │   │   ├── 57a320dcd595f3f0e0d250c3af4a5653596914
+│   │   │   └── ce869d6d370bec39e0c8d57d77880fa7406cf6
+│   │   ├── a1
+│   │   │   ├── 2ed38c967c22e232c72ab70a658e77412655ee
+│   │   │   └── b274e2c2400a4d7f4a9e786897637d8d1a298a
+│   │   ├── a2
+│   │   │   ├── 515c01d9a45f1119df748333f26c2fb002e77a
+│   │   │   └── 9c5a922c53cb1d5b8218a9dd8dc595a3e01ce3
+│   │   ├── a4
+│   │   │   ├── 0314dea16290d73daf13870d9081d41538b793
+│   │   │   ├── 5c6575e469914582f8223ac54793afc2f26575
+│   │   │   └── dd30e9bd762578b119c4401d082ea4fa430613
+│   │   ├── a5
+│   │   │   ├── 080ad1eb807afefe0f98139cc6844bd3fd022f
+│   │   │   ├── 776197b716e9aab2447c1d2ea9f1d9c44b0d18
+│   │   │   └── 92f256ea623ea749ca646fdb0183a69bcfa596
+│   │   ├── a6
+│   │   │   └── d30d26080bcae50b46e717e94ceea4e0017bc6
+│   │   ├── a7
+│   │   │   └── 7eb0273f9837dd19b5084d418a53b9f32082c2
+│   │   ├── a8
+│   │   │   ├── 58a410e4faa62ce324d814e4b816fff83a6fb3
+│   │   │   └── 7a566173d3ec01668bcd25fff56cbe44f72f09
+│   │   ├── a9
+│   │   │   ├── 1750aff55430cac1f7ce7296516bfaf16a66ec
+│   │   │   └── 5ebdc0f460a82bbb2b7b1319344df9e31d5689
+│   │   ├── aa
+│   │   │   ├── 05714be56821f3c38f98adb60bb9a34c19fa74
+│   │   │   ├── 5c813e4bff1bdc8f747c308fd27bbc04455b1e
+│   │   │   └── be75f0a95cf58c41fb376b7cdfea71f93abf55
+│   │   ├── ab
+│   │   │   ├── 2f6d10689ee5d7a2563d85fc5e0468dee83797
+│   │   │   ├── 426d3504b1f4d0fc4adbdfcbf057061fa1be52
+│   │   │   └── ede98aa11b163e580a26b545980ace31e61ccf
+│   │   ├── ac
+│   │   │   ├── 02e9de2fce4e02b4e20bae8af99fdb8a446bc5
+│   │   │   └── 379f6727b0d01282d410b10ccabdb45d459bd8
+│   │   ├── ad
+│   │   │   ├── 6fab7d2a62998fc21ef14ecfde6541e56536b5
+│   │   │   └── e1011e5abe73de384b65ab9e2affe8283cf36c
+│   │   ├── ae
+│   │   │   └── e156c79fb0f3f3048555f7102db71901789412
+│   │   ├── b0
+│   │   │   ├── 300bda790f7db5499cfc7d350c391238a7fb05
+│   │   │   ├── 346c4ecfac3165fd418275062eadd83faada5d
+│   │   │   ├── 6ecb38abfa071d68ac149d0f4c4c0d6e81703d
+│   │   │   └── 7dc76ff21128244172d2e415cc899555d8b49d
+│   │   ├── b1
+│   │   │   ├── 176b7ae7d136146fe6162e87b3197b2155455d
+│   │   │   ├── 4ccb8c95ab618a7f88c9871335e5c3ada0d3d6
+│   │   │   └── 79f178018f2efe240942d04e32b7b7e015930f
+│   │   ├── b2
+│   │   │   ├── 1346a51213db2840495a49272059bcf0ed3bdb
+│   │   │   └── 1c6c6340194fdf35f7e5660deb42479c8dbff9
+│   │   ├── b3
+│   │   │   ├── 91ae883515ddf156507a567866abb489bd771e
+│   │   │   └── fd965a3b1adcad4e32667b31c21312fa791926
+│   │   ├── b4
+│   │   │   ├── 27bdd8292ca830c9653b0aded9e3d40a57436d
+│   │   │   ├── 467b000985fed67a430181f5d4b73e106526c5
+│   │   │   └── 8bdfaf17a34ffe1350155e880d75362cb9cb81
+│   │   ├── b5
+│   │   │   └── 9e3d615b7124bc6a610223086494b4cacb6a4d
+│   │   ├── b6
+│   │   │   ├── 5888c66bcba2e8cf852d5cec38fbb5b3e0127b
+│   │   │   └── bef87796217427bb2ce824ded73fe3c5c3f2ad
+│   │   ├── b7
+│   │   │   ├── 560ec216b2d1b6f77855525fe966c741833428
+│   │   │   └── e49bd0547156e72ac5f5a37196f0ca0e0126ce
+│   │   ├── b8
+│   │   │   ├── d8d898eeeda95dee4c9a2608b5739ac88acec7
+│   │   │   └── d993813832d1ce807bff419fd2ffcc3351d134
+│   │   ├── b9
+│   │   │   ├── 049258df096573b6b8fffd2834c05acfd192cf
+│   │   │   └── 5a448da62dedec2ffce042de0b934980e17298
+│   │   ├── ba
+│   │   │   └── 2ee4dc22148ed53f2aeba32c5965654d4a5a2f
+│   │   ├── bb
+│   │   │   ├── 23deacc340000aec58b80d38d122c6355ce437
+│   │   │   ├── 2a8695653cd2839e3e52266c124c5dba1ca995
+│   │   │   ├── ce7c572bd9f06e786415d0304e4665d63e05c1
+│   │   │   └── fd8aaaea453f092cba4f2165d7e1785f1aaf2e
+│   │   ├── bc
+│   │   │   ├── 166abc68ccb332318fb09ae8bc3ccc7d2d7f7a
+│   │   │   ├── ac54c07bdbdaddbd2c238a750f280c213872a2
+│   │   │   ├── d81f7a6d11914d9173c2452869209130f1f6cc
+│   │   │   └── f3921e7dd36cd3132e769824af01a3f330f0a6
+│   │   ├── bd
+│   │   │   ├── 7f27568243b906c3d7592b4d5625aea6c63ec1
+│   │   │   └── f07ead2810a3c43e278a0bbbbc4bc5ed28bd8c
+│   │   ├── be
+│   │   │   ├── 3f132696ed883b6ac7c1fb614c87e110fd30a4
+│   │   │   └── ecb076b1293799fd3e76269b26b804d7740bda
+│   │   ├── bf
+│   │   │   ├── 47c4fc4a167274989678f5bbaaa99e0b394e36
+│   │   │   ├── 640f9f72ca6a9fc87a0300f8f3cf2a10a09428
+│   │   │   ├── b5b0b9ad2a8228da1084445255213b15d9530e
+│   │   │   └── c81fffb13df9163c13d76e1e63dc708e49f1a6
+│   │   ├── c0
+│   │   │   ├── 3d6685ede3331088f670196c28cfe7a3396627
+│   │   │   ├── 51fa9e492399d2aa3b537bca965dd864ad425e
+│   │   │   └── 95b2a6907beaeb30f653e95a2cfb8f82f17a34
+│   │   ├── c3
+│   │   │   ├── 2889c47a4582e7aed1384f0cc133a0540b40d2
+│   │   │   ├── 3dc4217269d2eb23b0964c4c42a2ca852f70bf
+│   │   │   ├── 9a7b8d3c4a001d13c09702105d307c32233372
+│   │   │   ├── 9e01a6ae9ae5242f04566ffa2cda96b328ca18
+│   │   │   └── b08c5fa961912493749f7ff0a87a57029929ac
+│   │   ├── c4
+│   │   │   ├── 7459bb6efa4d75946130a544790685c013aec0
+│   │   │   ├── 899d2a51b72a3eef6b567e8ac2c7ff36cec08a
+│   │   │   └── 9bcfcef532ad1e408dc140566fd04bf239de00
+│   │   ├── c5
+│   │   │   └── 63f611a182cdb74c4b5491ab44ba82d95d282f
+│   │   ├── c6
+│   │   │   ├── 6b83dd27b3cf5f532726727153300b8827f672
+│   │   │   └── ef469082fcde7ccd00e968f2feee038e9bbb64
+│   │   ├── c7
+│   │   │   └── 491cf609d715cf917da5661342fdfb02cae518
+│   │   ├── c8
+│   │   │   └── 178debbcd93ce91e02f7a6f001c2c203dadfab
+│   │   ├── c9
+│   │   │   ├── 6c6c849a3ed3a53f5e0ef07cb33a2ca28c30fa
+│   │   │   ├── c6e262065464c445c0c20c33fbc44ac1b368e5
+│   │   │   ├── da0fca12cb97007a9a5ccf9b28a7727fbb7a04
+│   │   │   ├── e13a427b3643d9bf62273ecff6b4d50688a901
+│   │   │   └── e8f6c44e2539a79b4c5b05ab14bae477a0ee5d
+│   │   ├── ca
+│   │   │   └── e6f7ae90968f3f98a171c5d5a84964d2d97781
+│   │   ├── cc
+│   │   │   └── f0753c0e2db39e853a9e6e2726390ece187ba4
+│   │   ├── cd
+│   │   │   └── 10a4e08cc9ca2173fc74acfdf3f70c69d00ece
+│   │   ├── ce
+│   │   │   └── b28f871312f6fe61a1d8bffac2a2199f47abe0
+│   │   ├── cf
+│   │   │   └── 9e1c29dfd34b00f8b807758c09d418eb0583c2
+│   │   ├── d0
+│   │   │   ├── 7a06a9d27aaf6d67234c227c22d61d5a23203b
+│   │   │   ├── a21135f5b63faf7f73a98ea49188e316127979
+│   │   │   └── ddb8728e1d5ef72dddc1537f66aa32251a83c8
+│   │   ├── d1
+│   │   │   └── 072bbec62959524a87953d3f41b7c272ecbe37
+│   │   ├── d2
+│   │   │   ├── 447fd82f3d9e9732fce249d56ee28d4714a44e
+│   │   │   ├── 72fe4838d02797ae646395ddcf1f540ccf20b7
+│   │   │   ├── c84044905ed984fe7b3ab19040d3763abc277b
+│   │   │   └── ecb33e6fa0710026a437079b118d4651ccf881
+│   │   ├── d3
+│   │   │   ├── ca85d687fd8371f265c3deb9c6b126811ce044
+│   │   │   └── f7524ee3bd2c34fe3935c95dd9edf1de84d598
+│   │   ├── d4
+│   │   │   ├── 275c38b373b6fc77a0abdf7cb9ec0310c068b1
+│   │   │   ├── 32bfb3080cbd39714b12af75566d6da7808fad
+│   │   │   └── 71277d6083bc8b120ccbc2bae2e4432d162d14
+│   │   ├── d5
+│   │   │   └── b20bee36ddf736aad14009e318227e18a3e647
+│   │   ├── d6
+│   │   │   └── 57b2735bad5263c14a850fc04b9ecd7c356ac2
+│   │   ├── d7
+│   │   │   ├── 6a1e050fd3df76c37c541be3d9d434477191cf
+│   │   │   ├── 6b0ba04db11dd3c343cfaa4791cb3eb1c13847
+│   │   │   └── c30c3fbd0c488cc71a6691d51b90e6526363ef
+│   │   ├── d8
+│   │   │   ├── 34da13d2233edf8bc8d15dcd35e1306a2cf80d
+│   │   │   └── ac054597c924e3010f629caeac1c748b7211cd
+│   │   ├── d9
+│   │   │   ├── 2b1d3b177aad0451488195cd6c544fd0e1f66a
+│   │   │   └── 6755fdaf8bb2214971e0db9c1fd3077d7c419d
+│   │   ├── da
+│   │   │   ├── 95120037f8d7c52ad1f166a7682ea55ca47a01
+│   │   │   └── b586c0d273a422a7d1adae234c31797b32a38b
+│   │   ├── db
+│   │   │   ├── 19ecae168919730c60c7f263fe64496c6d8070
+│   │   │   └── e1aaad79cd1f835c8fbb304d255e19a3b39512
+│   │   ├── dd
+│   │   │   └── 92757238a27855c7c5a40f09162e76bdc74481
+│   │   ├── de
+│   │   │   ├── 14ea8ba01553bc74a3762f5c592445f4b47b5e
+│   │   │   ├── 4b034e55b1043bad1fef92b94f2ace758d869b
+│   │   │   ├── 8c84b935ed5c3db23e304015d45b638a3d2db3
+│   │   │   ├── db06c5c2cf0cdb523e0b10210b0b5ef2a8f811
+│   │   │   ├── de9cb086632af154e6a1b63e5fab99766c650a
+│   │   │   └── f11b78235d120ab69284ebb5f05067523533f6
+│   │   ├── df
+│   │   │   ├── 333a50387fed5f227e05c86247375ed29ed731
+│   │   │   ├── 8af1714df95a712a2d3aa5c72f788a9a12dda5
+│   │   │   └── 8ff32e65c2a82b9bb3e7c7482b93926b5abe78
+│   │   ├── e0
+│   │   │   └── f45f1cadc8ac05c6c967d63f4441e14e733b17
+│   │   ├── e1
+│   │   │   ├── 46a47b0e59d89ce661a394a5dba3a5bbcc2362
+│   │   │   └── 572afc39a261a0d89fcba9b73cda048279f6f9
+│   │   ├── e2
+│   │   │   ├── c364964a1c85df48dc48979bfe4147c8e7796d
+│   │   │   └── fc5b556ded501369ce9e7e4b887cdd3915c607
+│   │   ├── e3
+│   │   │   ├── 1c3177d3e7f4245ca8b3e194a610388a217525
+│   │   │   ├── 7bd9c06e3a9d208627d9042112e9c54f1e4bcf
+│   │   │   └── dd8dc988a641e68d5cbb5c1287c1f7f8188a3c
+│   │   ├── e4
+│   │   │   └── f227c4def9a59e37fbf664345353a01002fd10
+│   │   ├── e5
+│   │   │   └── 9e7ecb308a7648cd23aa6342a9ad98a61d0009
+│   │   ├── e6
+│   │   │   ├── 9c5e39a30ce8d112e012cac36289e77691a9b7
+│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   ├── e8
+│   │   │   └── 6ecee082f777f64b2b1861f6ad0afcd93b3465
+│   │   ├── e9
+│   │   │   ├── 116a5eef917a8da259d5beefc1a56bfe21b90d
+│   │   │   └── e815891f70903e723cfd0205f6edd6395773e3
+│   │   ├── ea
+│   │   │   ├── 02cced47413600791a8e27591c60e3eebdd92c
+│   │   │   ├── 578d4e242fe6f042a300178a261e1e4a959556
+│   │   │   ├── eb27ce37bee7bf595cd1a0e54ca4d1cf4b80ee
+│   │   │   └── ef2a3da716f945116f49b1d166e5264f9d9755
+│   │   ├── eb
+│   │   │   └── 19f698afc3376c9559e2cc4d7c2f7f6a9948fa
+│   │   ├── ec
+│   │   │   ├── 740f4852f3973fa72ed0c7f7cf59273b8dba41
+│   │   │   ├── a4a1a2842830f06bd5f6235bf01d07bdd313d2
+│   │   │   └── c303463edb50ebde41b7164465e764bedc1b2d
+│   │   ├── ed
+│   │   │   ├── 0d4e01c22c7464b4901006b6a3fe9204e76912
+│   │   │   └── ceac662b02ea07af20011b8b44fdc3cb97518a
+│   │   ├── ee
+│   │   │   ├── 1bd08dfe1a7523daa629f04a663afeffd85d8b
+│   │   │   └── fa250fbceae43b19f01ef1a5d3565ff87649b7
+│   │   ├── ef
+│   │   │   └── 55a1945a177834acf1aceb2f10a701c188f702
+│   │   ├── f0
+│   │   │   ├── 2603fa2522a40060bd3f1b5d65052c77530de6
+│   │   │   ├── c716d85ff10c3c38b80e1dfc74574a3f394c59
+│   │   │   └── df5388e39c089911bc3a92a1c22e4c40e68fa3
+│   │   ├── f1
+│   │   │   ├── 31b99e5fa6390fa64098dbe16829ac661a3bb5
+│   │   │   ├── 916ec7d1bb993b7909cd57cef0446d922982ff
+│   │   │   └── a0a92e21d279fa2df57e44c04a747b62c32b74
+│   │   ├── f3
+│   │   │   ├── 18251b13123a5a4ab15abedf08386fa32b855d
+│   │   │   ├── 199ae533e6f85006a2d76145b7d9a1521b5df3
+│   │   │   ├── 694acfa55c071a926cac9fe7ad72e7762ec3db
+│   │   │   └── dcbb9397634fa4f6b1f9e3462953b51159b30d
+│   │   ├── f4
+│   │   │   └── 3157d70c63ff21b4385dc36cb73f5b14eb6b01
+│   │   ├── f5
+│   │   │   └── 0c83fb37849e96c0dc41c9fca60834afb1213a
+│   │   ├── f6
+│   │   │   └── 63d39f0faa76c5b9bd504c51252eef74cca5de
+│   │   ├── f7
+│   │   │   ├── 33ad12ed0172b241325a4fe2ae4a4896277698
+│   │   │   └── ed2262d1bedf8cb264d52e5d8ab2598c132b35
+│   │   ├── f8
+│   │   │   ├── bdac2eb2f16975fd95865e7b91ab64ecaf2f9b
+│   │   │   └── cdc73cb2be06824f521837366ec95b73d55ef8
+│   │   ├── f9
+│   │   │   └── 4bec22756c48039ad405859f0d0e542033c1b2
+│   │   ├── fa
+│   │   │   ├── 16386f4f9da76509996b9c15ed0593c238313c
+│   │   │   ├── 77ebfc258ac10ebdaa17a3dde4dfc75b8e8b2b
+│   │   │   ├── c62e032d10c5a47382f8171a5f576caf253c58
+│   │   │   └── eea606145667f54d220a0c17ffe8d22db07146
+│   │   ├── fb
+│   │   │   └── 243588e651b61b024b0d1ccc901f8248a52b4d
+│   │   ├── fc
+│   │   │   ├── 164a8d530f24058106c7af5ac17a72e68e8b4e
+│   │   │   ├── a6e9355f314677f2890f5679fd79dd67a7a5a2
+│   │   │   ├── d1ee5cc033a6878f7f3ff327922024be5a56f5
+│   │   │   └── f6822f0cec5e3c6362456730e0018a123be825
+│   │   ├── fd
+│   │   │   └── b7176c429a73d5335e127b27d530b8aaa07c7d
+│   │   ├── fe
+│   │   │   ├── 4ca1718b639ebfbf35f460d8d33eec581b0919
+│   │   │   └── 530100d7715cdc19a6f9db33a971665835f3c4
+│   │   ├── ff
+│   │   │   ├── 030421d3e096503d12d62155fcb624b115ad23
+│   │   │   └── 502ceaf8e136e30e8a0433eb42ea9cde842aa5
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-54361dce44e5c06f2d80fd2b24c3ca18d6daf57b.idx
+│   │       └── pack-54361dce44e5c06f2d80fd2b24c3ca18d6daf57b.pack
+│   └── refs
+│       ├── heads
+│       │   ├── gh-pages
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       ├── gh-pages
+│       │       └── main
+│       └── tags
+├── .gitignore
+├── .ipynb_checkpoints
+│   └── insta-map-checkpoint.ipynb
+├── README.md
+├── _build
+│   ├── .doctrees
+│   │   ├── README.doctree
+│   │   ├── docs
+│   │   │   ├── data_entry.doctree
+│   │   │   ├── historical_nursery.doctree
+│   │   │   ├── potting_media_recipes.doctree
+│   │   │   ├── seed-sowing.doctree
+│   │   │   ├── seed_dormancy_and_treatments.doctree
+│   │   │   ├── test_image.doctree
+│   │   │   └── transplanting.doctree
+│   │   └── index.doctree
+│   └── html
+│       └── _sphinx_design_static
+│           ├── design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css
+│           └── design-tabs.js
+├── _config.yml
+├── _toc.yml
+├── data
+│   ├── 2017-2023_all-prop.csv
+│   └── ubc_temperature91_02cl.csv
+├── docs
+│   ├── data_entry.md
+│   ├── historical_nursery.md
+│   ├── potting_media_recipes.md
+│   ├── seed-sowing.md
+│   ├── seed_dormancy_and_treatments.md
+│   ├── test_image.md
+│   └── transplanting.md
+├── images
+│   ├── historical_nursery
+│   │   └── 2000-03-21_nursery-overhead.png
+│   ├── logo.png
+│   └── test.jpg
+├── index.md
+├── insta-map.ipynb
+├── notebooks
+│   ├── .ipynb_checkpoints
+│   │   ├── notebooks-checkpoint.ipynb
+│   │   ├── project_cold_with_graphics-checkpoint.ipynb
+│   │   └── seed_pot_RQ_count-checkpoint.ipynb
+│   ├── project_cold_with_graphics.ipynb
+│   └── seed_pot_RQ_count.ipynb
+├── references.bib
+└── requirements.txt
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Project mapper with directory excluder. </span>
+
+<span class="c1"># Exclude these directories from the map</span>
+<span class="n">exclude_dirs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;.ipynb_checkpoints&#39;</span><span class="p">,</span> <span class="s1">&#39;_build&#39;</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">generate_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">))</span>
+    <span class="n">filtered_contents</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contents</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">exclude_dirs</span><span class="p">]</span>
+    
+    <span class="n">pointers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;├── &#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filtered_contents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;└── &#39;</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">pointer</span><span class="p">,</span> <span class="n">path</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">pointers</span><span class="p">,</span> <span class="n">filtered_contents</span><span class="p">):</span>
+        <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">prefix</span> <span class="o">+</span> <span class="n">pointer</span> <span class="o">+</span> <span class="n">path</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+            <span class="n">new_prefix</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;│   &#39;</span> <span class="k">if</span> <span class="n">pointer</span> <span class="o">==</span> <span class="s1">&#39;├── &#39;</span> <span class="k">else</span> <span class="s1">&#39;    &#39;</span><span class="p">)</span>
+            <span class="n">generate_tree</span><span class="p">(</span><span class="n">full_path</span><span class="p">,</span> <span class="n">new_prefix</span><span class="p">)</span>
+
+<span class="c1"># Set the directory path</span>
+<span class="n">dir_path</span> <span class="o">=</span> <span class="s1">&#39;./&#39;</span>  <span class="c1"># Current directory</span>
+
+<span class="c1"># Generate tree</span>
+<span class="n">generate_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>├── .gitignore
+├── README.md
+├── _config.yml
+├── _toc.yml
+├── data
+│   ├── 2017-2023_all-prop.csv
+│   └── ubc_temperature91_02cl.csv
+├── docs
+│   ├── data_entry.md
+│   ├── historical_nursery.md
+│   ├── potting_media_recipes.md
+│   ├── seed-sowing.md
+│   ├── seed_dormancy_and_treatments.md
+│   ├── test_image.md
+│   └── transplanting.md
+├── images
+│   ├── historical_nursery
+│   │   └── 2000-03-21_nursery-overhead.png
+│   ├── logo.png
+│   └── test.jpg
+├── index.md
+├── insta-map.ipynb
+├── notebooks
+│   ├── project_cold_with_graphics.ipynb
+│   └── seed_pot_RQ_count.ipynb
+├── references.bib
+└── requirements.txt
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># Exclude these directories from the map</span>
+<span class="n">exclude_dirs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;.ipynb_checkpoints&#39;</span><span class="p">,</span> <span class="s1">&#39;_build&#39;</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">generate_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">))</span>
+    <span class="n">filtered_contents</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contents</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">exclude_dirs</span><span class="p">]</span>
+    
+    <span class="n">pointers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;├── &#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filtered_contents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;└── &#39;</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">pointer</span><span class="p">,</span> <span class="n">path</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">pointers</span><span class="p">,</span> <span class="n">filtered_contents</span><span class="p">):</span>
+        <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">prefix</span> <span class="o">+</span> <span class="n">pointer</span> <span class="o">+</span> <span class="n">path</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+            <span class="n">new_prefix</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;│   &#39;</span> <span class="k">if</span> <span class="n">pointer</span> <span class="o">==</span> <span class="s1">&#39;├── &#39;</span> <span class="k">else</span> <span class="s1">&#39;    &#39;</span><span class="p">)</span>
+            <span class="n">generate_tree</span><span class="p">(</span><span class="n">full_path</span><span class="p">,</span> <span class="n">new_prefix</span><span class="p">)</span>
+
+<span class="c1"># Set the directory path to your project folder</span>
+<span class="n">top_directory</span> <span class="o">=</span> <span class="s1">&#39;nursery-manual&#39;</span>  <span class="c1"># The name of your top directory</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_directory</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span>  <span class="c1"># Print the top directory name</span>
+
+<span class="c1"># Run the function for the current directory</span>
+<span class="n">generate_tree</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nursery-manual/
+├── .gitignore
+├── README.md
+├── _config.yml
+├── _toc.yml
+├── data
+│   ├── 2017-2023_all-prop.csv
+│   └── ubc_temperature91_02cl.csv
+├── docs
+│   ├── data_entry.md
+│   ├── historical_nursery.md
+│   ├── potting_media_recipes.md
+│   ├── seed-sowing.md
+│   ├── seed_dormancy_and_treatments.md
+│   ├── test_image.md
+│   └── transplanting.md
+├── images
+│   ├── historical_nursery
+│   │   └── 2000-03-21_nursery-overhead.png
+│   ├── logo.png
+│   └── test.jpg
+├── index.md
+├── insta-map.ipynb
+├── notebooks
+│   ├── project_cold_with_graphics.ipynb
+│   └── seed_pot_RQ_count.ipynb
+├── references.bib
+└── requirements.txt
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Auto mapper with auto grouping.</span>
+<span class="c1">#Grouping based on Git &amp; Jupyter Book project </span>
+
+<span class="c1"># Predefined categories with file extensions and folder names</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Configuration Files&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.yml&#39;</span><span class="p">,</span> <span class="s1">&#39;.gitignore&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Data Files&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.csv&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Documentation&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.md&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Images&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">,</span> <span class="s1">&#39;.gif&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Notebooks&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.ipynb&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;References and Requirements&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;.bib&#39;</span><span class="p">,</span> <span class="s1">&#39;.txt&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="c1"># Function to determine the category based on the file extension or folder name</span>
+<span class="k">def</span> <span class="nf">categorize_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">extensions</span> <span class="ow">in</span> <span class="n">categories</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">ext</span><span class="p">)</span> <span class="k">for</span> <span class="n">ext</span> <span class="ow">in</span> <span class="n">extensions</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">category</span>
+    <span class="k">return</span> <span class="s1">&#39;Other&#39;</span>
+
+<span class="k">def</span> <span class="nf">generate_grouped_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="n">category_groups</span> <span class="o">=</span> <span class="p">{</span><span class="n">category</span><span class="p">:</span> <span class="p">[]</span> <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">}</span>  <span class="c1"># Group files by categories</span>
+    <span class="n">category_groups</span><span class="p">[</span><span class="s1">&#39;Other&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Catch-all for unclassified files and folders</span>
+    
+    <span class="n">contents</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contents</span><span class="p">:</span>
+        <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+            <span class="n">category</span> <span class="o">=</span> <span class="n">categorize_file</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="n">category_groups</span><span class="p">[</span><span class="n">category</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">exclude_dirs</span><span class="p">:</span>  <span class="c1"># Exclude certain directories</span>
+                <span class="n">category_groups</span><span class="p">[</span><span class="s1">&#39;Other&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    
+    <span class="c1">#</span>
+    <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">category_groups</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">files</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">├── </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path</span><span class="p">):</span>
+                    <span class="n">new_prefix</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="s1">&#39;│   &#39;</span>
+                    <span class="n">generate_grouped_tree</span><span class="p">(</span><span class="n">full_path</span><span class="p">,</span> <span class="n">new_prefix</span><span class="p">)</span>
+
+<span class="c1"># Set directory path and exclude unwanted directories</span>
+<span class="n">dir_path</span> <span class="o">=</span> <span class="s1">&#39;./&#39;</span>  <span class="c1"># Current directory</span>
+<span class="n">exclude_dirs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;.ipynb_checkpoints&#39;</span><span class="p">,</span> <span class="s1">&#39;_build&#39;</span><span class="p">}</span>
+
+<span class="c1"># Print the top directory</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nursery-manual/&#39;</span><span class="p">)</span>
+<span class="n">generate_grouped_tree</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nursery-manual/
+├── .gitignore
+├── _config.yml
+├── _toc.yml
+├── README.md
+├── index.md
+├── insta-map.ipynb
+├── references.bib
+├── requirements.txt
+├── data
+│   ├── 2017-2023_all-prop.csv
+│   ├── ubc_temperature91_02cl.csv
+├── docs
+│   ├── data_entry.md
+│   ├── historical_nursery.md
+│   ├── potting_media_recipes.md
+│   ├── seed-sowing.md
+│   ├── seed_dormancy_and_treatments.md
+│   ├── test_image.md
+│   ├── transplanting.md
+├── images
+│   ├── logo.png
+│   ├── test.jpg
+│   ├── historical_nursery
+│   │   ├── 2000-03-21_nursery-overhead.png
+├── notebooks
+│   ├── project_cold_with_graphics.ipynb
+│   ├── seed_pot_RQ_count.ipynb
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Kubeck
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

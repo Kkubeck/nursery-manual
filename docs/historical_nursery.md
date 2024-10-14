@@ -20,8 +20,8 @@ Here is the nursery in the year 2000:
   });
 
   var bounds = [[0,0], [1000,1000]];
-  var image = L.imageOverlay('../images/historical_nursery/2004-03-21.png', bounds).addTo(map2000);
-  map2000.fitBounds(bounds);
+var image = L.imageOverlay('../images/historical_nursery/2004-03-21.png', bounds).addTo(map2000);
+
 
   // Add markers
   var marker = L.marker([500, 500]).addTo(map2000);

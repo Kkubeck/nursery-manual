@@ -2,6 +2,10 @@
 
 This repository contains the source files for the **Nursery Manual** Jupyter Book, which is hosted online via GitHub Pages. The manual documents propagation, growing, and inventory management at the UBC Botanical Garden nursery.
 
+## License
+
+The content of this repository is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
 ## View the Book
 
 You can view the Jupyter Book online here: [[UBCBG Nursery Manual](https://kkubeck.github.io/nursery-manual/)]
@@ -17,6 +21,7 @@ nursery-manual/
 ├── _toc.yml
 ├── README.md
 ├── index.md
+├── LICENSE.txt
 ├── references.bib
 ├── requirements.txt
 ├── data
@@ -32,9 +37,9 @@ nursery-manual/
 │   ├── transplanting.md
 ├── images
 │   ├── logo.png
+│   ├── test.jpg
 │   ├── historical_nursery
-│   │   ├── 2004-03-21.PNG
-│   ├── test.JPG
+│   │   ├── 2000-03-21_nursery-overhead.png
 ├── notebooks
     ├── project_cold_with_graphics.ipynb
     ├── seed_pot_RQ_count.ipynb

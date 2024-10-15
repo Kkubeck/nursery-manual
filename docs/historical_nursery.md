@@ -3,29 +3,141 @@
 In this section, we explore the development of the nursery over the years.
 
 ````{tab-set}
-```{tab-item} 2000
-Here is the nursery in the year 2000:
+```{tab-item} 2004
+Here is the nursery in the year **2004**:
 
-```{raw} html
-<div id="mapid-2000" style="width: 600px; height: 400px;"></div>
+![Nursery in 2004](../images/historical_nursery/2004-overhead.jpg)
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+*Caption or annotation for the year 2004.*
+```
 
-<script>
-  var map2000 = L.map('mapid-2000', {
-    crs: L.CRS.Simple,
-    minZoom: -1,
-    maxZoom: 4,
-  });
+```{tab-item} 2005
+Here is the nursery in the year **2005**:
 
-  var bounds = [[0,0], [1000,1000]];
-var image = L.imageOverlay('../images/historical_nursery/2004-03-21.png', bounds).addTo(map2000);
+![Nursery in 2005](../images/historical_nursery/2005-overhead.jpg)
 
+*Caption or annotation for the year 2005.*
+```
 
-  // Add markers
-  var marker = L.marker([500, 500]).addTo(map2000);
-  marker.bindPopup("<b>Planting Area</b><br>Established in 2004.");
-</script>
+```{tab-item} 2008
+Here is the nursery in the year **2008**:
+
+![Nursery in 2008](../images/historical_nursery/2008-overhead.jpg)
+
+*Caption or annotation for the year 2008.*
+```
+
+```{tab-item} 2009
+Here is the nursery in the year **2009**:
+
+![Nursery in 2009](../images/historical_nursery/2009-overhead.jpg)
+
+*Caption or annotation for the year 2009.*
+```
+
+```{tab-item} 2011
+Here is the nursery in the year **2011**:
+
+![Nursery in 2011](../images/historical_nursery/2011-overhead.jpg)
+
+*Caption or annotation for the year 2011.*
+```
+
+```{tab-item} 2013
+Here is the nursery in the year **2013**:
+
+![Nursery in 2013](../images/historical_nursery/2013-overhead.jpg)
+
+*Caption or annotation for the year 2013.*
+```
+
+```{tab-item} 2014
+Here is the nursery in the year **2014**:
+
+![Nursery in 2014](../images/historical_nursery/2014-overhead.jpg)
+
+*Caption or annotation for the year 2014.*
+```
+
+```{tab-item} 2015
+Here is the nursery in the year **2015**:
+
+![Nursery in 2015](../images/historical_nursery/2015-overhead.jpg)
+
+*Caption or annotation for the year 2015.*
+```
+
+```{tab-item} 2016
+Here is the nursery in the year **2016**:
+
+![Nursery in 2016](../images/historical_nursery/2016-overhead.jpg)
+
+*Caption or annotation for the year 2016.*
+```
+
+```{tab-item} 2017
+Here is the nursery in the year **2017**:
+
+![Nursery in 2017](../images/historical_nursery/2017-overhead.jpg)
+
+*Caption or annotation for the year 2017.*
+```
+
+```{tab-item} 2018
+Here is the nursery in the year **2018**:
+
+![Nursery in 2018](../images/historical_nursery/2018-overhead.jpg)
+
+*Caption or annotation for the year 2018.*
+```
+
+```{tab-item} 2019
+Here is the nursery in the year **2019**:
+
+![Nursery in 2019](../images/historical_nursery/2019-overhead.jpg)
+
+*Caption or annotation for the year 2019.*
+```
+
+```{tab-item} 2020
+Here is the nursery in the year **2020**:
+
+![Nursery in 2020](../images/historical_nursery/2020-overhead.jpg)
+
+*Caption or annotation for the year 2020.*
+```
+
+```{tab-item} 2021
+Here is the nursery in the year **2021**:
+
+![Nursery in 2021](../images/historical_nursery/2021-overhead.jpg)
+
+*Caption or annotation for the year 2021.*
+```
+
+```{tab-item} 2022
+Here is the nursery in the year **2022**:
+
+![Nursery in 2022](../images/historical_nursery/2022-overhead.jpg)
+
+*Caption or annotation for the year 2022.*
+```
+
+```{tab-item} 2023
+Here is the nursery in the year **2023**:
+
+![Nursery in 2023](../images/historical_nursery/2023-overhead.jpg)
+
+*Caption or annotation for the year 2023.*
+```
+
+```{tab-item} 2024
+Here is the nursery in the year **2024**:
+
+![Nursery in 2024](../images/historical_nursery/2024-overhead.jpg)
+
+*Caption or annotation for the year 2024.*
+```
+
 
 

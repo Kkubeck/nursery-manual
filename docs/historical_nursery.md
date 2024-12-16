@@ -6,9 +6,17 @@ In this section, we explore the development of the nursery over the years.
 ```{tab-item} 2004
 Here is the nursery in the year **2004**:
 
-![Nursery in 2004](../images/historical_nursery/2004-overhead.jpg)
+```{figure} ../images/historical_nursery/2004-overhead.jpg
+---
+name: fig-nursery-2004
+---
+**Nursery in 2004**
 
-*Caption or annotation for the year 2004.*
+In 2004, significant developments took place in the nursery.
+
+*Image © 2004 Maxar Technologies, © 2024 Google, modified by Kevin Kubeck.*
+
+*(Source: {cite}`googleearth2004`)*
 ```
 
 ```{tab-item} 2005

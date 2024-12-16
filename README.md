@@ -39,7 +39,23 @@ nursery-manual/
 │   ├── logo.png
 │   ├── test.jpg
 │   ├── historical_nursery
-│   │   ├── 2000-03-21_nursery-overhead.png
+│   │   ├── 2004-overhead.jpg
+│   │   ├── 2005-overhead.jpg
+│   │   ├── 2008-overhead.jpg
+│   │   ├── 2009-overhead.jpg
+│   │   ├── 2011-overhead.jpg
+│   │   ├── 2013-overhead.jpg
+│   │   ├── 2014-overhead.jpg
+│   │   ├── 2015-overhead.jpg
+│   │   ├── 2016-overhead.jpg
+│   │   ├── 2017-overhead.jpg
+│   │   ├── 2018-overhead.jpg
+│   │   ├── 2019-overhead.jpg
+│   │   ├── 2020-overhead.jpg
+│   │   ├── 2021-overhead.jpg
+│   │   ├── 2022-overhead.jpg
+│   │   ├── 2023-overhead.jpg
+│   │   ├── 2024-overhead.jpg
 ├── notebooks
     ├── project_cold_with_graphics.ipynb
     ├── seed_pot_RQ_count.ipynb

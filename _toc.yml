@@ -19,6 +19,8 @@ parts:
     chapters:
       - file: docs/data_entry
         title: Data Entry
+      - file: docs/space_capacity
+        title: Space Capacity
   - caption: Apps
     chapters:
       - file: notebooks/project_cold_with_graphics
@@ -29,7 +31,7 @@ parts:
     chapters:
       - file: docs/historical_nursery
         title: Historical Overview of the Nursery
-  - caption: Test section  
+  - caption: Test section
     chapters:
       - file: docs/test_image
         title: Testing part of the website

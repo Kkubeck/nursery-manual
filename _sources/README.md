@@ -21,7 +21,6 @@ nursery-manual/
 ├── _toc.yml
 ├── README.md
 ├── index.md
-├── insta-map.ipynb
 ├── LICENSE.txt
 ├── references.bib
 ├── requirements.txt

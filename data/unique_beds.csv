@@ -1,0 +1,497 @@
+UniqueBed,Component
+1E01',"Main Garden, not a number but a string, '1E01'"
+1E02',"Main Garden, not a number but a string, '1E02'"
+1A,Alpine
+1AAA,Alpine
+1AAF,Alpine
+1AAH,Alpine
+1AAM,Alpine
+1AAS,Alpine
+1ABF,Alpine
+1ADP,Alpine
+1ADW,Alpine
+1AEU,Alpine
+1AEW,Alpine
+1AFE,Alpine
+1AIH,Alpine
+1ANA,Alpine
+1APB,Alpine
+1ASA,Alpine
+1ATR,Alpine
+1B,North America
+1B01,North America
+1B02,North America
+1B03,North America
+1B04,North America
+1B05,North America
+1B06,North America
+1B07,North America
+1B08,North America
+1B09,North America
+1B10,North America
+1B11,North America
+1B12,North America
+1B13,North America
+1B14,North America
+1B15,North America
+1B16,North America
+1B17,North America
+1B18,North America
+1B19,North America
+1B20,North America
+1B21,North America
+1B22,North America
+1B23,North America
+1B24,North America
+1B25,North America
+1B26,North America
+1B27,North America
+1B28,North America
+1B29,North America
+1B30,North America
+1B31,North America
+1B32,North America
+1B33,North America
+1B34,North America
+1B35,North America
+1B36,North America
+1B37,North America
+1B38,North America
+1B39,North America
+1B40,North America
+1B41,North America
+1C,Contemporary
+1C01,Contemporary
+1C02,Contemporary
+1C03,Contemporary
+1C04,Contemporary
+1D,Main Garden
+1DP,Main Garden
+1DP1,Main Garden
+1DP2,Main Garden
+1E,Main Garden
+1F,Physic
+1F01,Physic
+1F02,Physic
+1F03,Physic
+1F04,Physic
+1F05,Physic
+1F06,Physic
+1F07,Physic
+1F08,Physic
+1F09,Physic
+1F10,Physic
+1F11,Physic
+1F12,Physic
+1F13,Physic
+1FPL,Physic
+1G,North America
+1G01,North America
+1G02,North America
+1G03,North America
+1G04,North America
+1G05,North America
+1J,North America
+1J01,North America
+1J02,North America
+1J03,North America
+1J04,North America
+1J05,North America
+1JCA,North America
+1K,Food
+1K01,Food
+1K02,Food
+1K03,Food
+1K04,Food
+1K05,Food
+1K06,Food
+1K07,Food
+1K08,Food
+1K09,Food
+1K10,Food
+1K11,Food
+1K12,Food
+1K13,Food
+1K14,Food
+1K15,Food
+1K16,Food
+1K17,Food
+1K18,Food
+1K19,Food
+1K20,Food
+1K21,Food
+1K22,Food
+1K23,Food
+1K24,Food
+1KCF,Food
+1M,Main Garden
+1M01,Main Garden
+1M02,Main Garden
+1M03,Main Garden
+1M04,Main Garden
+1M05,Main Garden
+1M06,Main Garden
+1M07,Main Garden
+1M08,Main Garden
+1M09,Main Garden
+1MIS,Main Garden
+1P,Winter
+1P01,Winter
+1P02,Winter
+1P03,Winter
+1P04,Winter
+1P05,Winter
+1P06,Winter
+1Q,Main Garden
+1Q05,Main Garden
+1R,Main Garden
+1R01,Main Garden
+1S,Main Garden
+1S01,Main Garden
+1S02,Main Garden
+1T01,Main Garden
+1X,Main Garden
+1X01,Main Garden
+1X02,Main Garden
+2A,Front Entrance
+2A01,Front Entrance
+2A02,Front Entrance
+2A03,Front Entrance
+2A04,Front Entrance
+2A05,Front Entrance
+2A06,Front Entrance
+2A07,Front Entrance
+2A08,Front Entrance
+2A09,Front Entrance
+2A10,Front Entrance
+2A11,Front Entrance
+2A12,Front Entrance
+2A13,Front Entrance
+2A14,Front Entrance
+2A15,Front Entrance
+2A16,Front Entrance
+2A17,Front Entrance
+2A18,Front Entrance
+2B,Front Entrance
+2C,Front Entrance
+2D,Front Entrance
+3A,Asian
+3AA1,Asian
+3AA2,Asian
+3AA3,Asian
+3AA4,Asian
+3AA5,Asian
+3AA6,Asian
+3AA7,Asian
+3AA8,Asian
+3AA9,Asian
+3AAA,Asian
+3AAB,Asian
+3AAC,Asian
+3AAD,Asian
+3AAE,Asian
+3AAF,Asian
+3AAG,Asian
+3AAH,Asian
+3AAJ,Asian
+3AAK,Asian
+3AAL,Asian
+3AB0,Asian
+3AB1,Asian
+3AB2,Asian
+3AB3,Asian
+3AB4,Asian
+3AB5,Asian
+3AB6,Asian
+3AB7,Asian
+3AB8,Asian
+3AB9,Asian
+3ABA,Asian
+3ABB,Asian
+3ABC,Asian
+3ABD,Asian
+3ABM,Asian
+3ABN,Asian
+3AC0,Asian
+3AC1,Asian
+3AC2,Asian
+3AC3,Asian
+3AC4,Asian
+3AC5,Asian
+3AC6,Asian
+3AC7,Asian
+3AC8,Asian
+3AC9,Asian
+3ACA,Asian
+3ACB,Asian
+3ACC,Asian
+3ACD,Asian
+3AD1,Asian
+3AD2,Asian
+3AD3,Asian
+3AD4,Asian
+3AD5,Asian
+3AD6,Asian
+3AD7,Asian
+3AD8,Asian
+3AD9,Asian
+3ADA,Asian
+3ADB,Asian
+3ADC,Asian
+3AE0,Asian
+3AE1,Asian
+3AE2,Asian
+3AE3,Asian
+3AE4,Asian
+3AE5,Asian
+3AE6,Asian
+3AE7,Asian
+3AE8,Asian
+3AE9,Asian
+3AEA,Asian
+3AEB,Asian
+3AEC,Asian
+3AF0,Asian
+3AF1,Asian
+3AF2,Asian
+3AF3,Asian
+3AF4,Asian
+3AF5,Asian
+3AF6,Asian
+3AF7,Asian
+3AF8,Asian
+3AF9,Asian
+3AFA,Asian
+3AFB,Asian
+3AG1,Asian
+3AG2,Asian
+3AG3,Asian
+3AG4,Asian
+3AG5,Asian
+3AG6,Asian
+3AG7,Asian
+3AG8,Asian
+3AG9,Asian
+3AGA,Asian
+3AGB,Asian
+3AH1,Asian
+3AH2,Asian
+3AH3,Asian
+3AH4,Asian
+3AH5,Asian
+3AH6,Asian
+3AH7,Asian
+3AH8,Asian
+3AH9,Asian
+3AHH,Asian
+3AJ1,Asian
+3AJ2,Asian
+3AJ3,Asian
+3AJ4,Asian
+3AJ7,Asian
+3AJ8,Asian
+3AK1,Asian
+3AK2,Asian
+3AK3,Asian
+3AK4,Asian
+3AK5,Asian
+3AK6,Asian
+3AK7,Asian
+3AK8,Asian
+3AL1,Asian
+3AL2,Asian
+3AL3,Asian
+3AL4,Asian
+3AL5,Asian
+3AL6,Asian
+3AL7,Asian
+3AM1,Asian
+3AM2,Asian
+3AM3,Asian
+3AM4,Asian
+3AM5,Asian
+3AM6,Asian
+3AM7,Asian
+3AM8,Asian
+3AM9,Asian
+3AN1,Asian
+3AN2,Asian
+3AN3,Asian
+3AN4,Asian
+3AN5,Asian
+3AN6,Asian
+3AN7,Asian
+3AN8,Asian
+3AP1,Asian
+3AP2,Asian
+3AP3,Asian
+3AP4,Asian
+3AP5,Asian
+3AP6,Asian
+3AQ1,Asian
+3AQ2,Asian
+3AQ3,Asian
+3AQ4,Asian
+3AR1,Asian
+3AR2,Asian
+3AR3,Asian
+3AR4,Asian
+3AR5,Asian
+3AR6,Asian
+3AS1,Asian
+3AS2,Asian
+3AS3,Asian
+3AS4,Asian
+3AS5,Asian
+3AS6,Asian
+3AS7,Asian
+3AS8,Asian
+3AS9,Asian
+3ASA,Asian
+3ASB,Asian
+3ASC,Asian
+3ASD,Asian
+3ASE,Asian
+3ASF,Asian
+3ASG,Asian
+3ASH,Asian
+3ASJ,Asian
+3ASK,Asian
+3ASL,Asian
+3ASM,Asian
+3ASN,Asian
+3ASP,Asian
+3ASQ,Asian
+3AT1,Asian
+3AT2,Asian
+3AT3,Asian
+3AT4,Asian
+3AT5,Asian
+3AU1,Asian
+3AU2,Asian
+3AU3,Asian
+3AW1,Asian
+3AW2,Asian
+3AW3,Asian
+3AW4,Asian
+3AW5,Asian
+3AW6,Asian
+3AW7,Asian
+3AW8,Asian
+3AW9,Asian
+3AWA,Asian
+3AWB,Asian
+3AWC,Asian
+3AWD,Asian
+3AWE,Asian
+3AWF,Asian
+3AWG,Asian
+3AWH,Asian
+3AWJ,Asian
+3AWK,Asian
+3AWL,Asian
+3AWM,Asian
+3AWN,Asian
+3AWP,Asian
+3AWQ,Asian
+3AWR,Asian
+3AWS,Asian
+3AWT,Asian
+3AWU,Asian
+3X,Asian
+4C01,North America
+4C02,North America
+4C03,North America
+4C04,North America
+4C05,North America
+4C06,North America
+4C07,North America
+4C08,North America
+4C09,North America
+4C10,North America
+4C11,North America
+4C12,North America
+5A,Nitobe
+5B,Nitobe
+5C,Nitobe
+6B,Main Garden
+6B01,Main Garden
+6B02,Main Garden
+6B03,Main Garden
+6B04,Main Garden
+6B05,Main Garden
+6H,Main Garden
+8,Nursery
+8H,Nursery
+8N01,Nursery
+8N02,Nursery
+8SB,Nursery
+8SBI,Nursery
+8SBO,Nursery
+9-2A,"Unknown, Front Entrance"
+9A,"Unknown, Front Entrance"
+9B,"Unknown, North America"
+9C,"Unknown, Asian"
+9D,"Unknown, Arbor"
+9F,"Unknown, Physic"
+9K,"Unknown, Physic"
+9M,"Unknown, Main Garden"
+9P,"Unknown, Winter"
+9Q,"Unknown, North America"
+9X,"Unknown, Main Garden"
+FN,Main Garden
+FN01,Main Garden
+FN02,Main Garden
+FS,Main Garden
+FS01,Main Garden
+FS02,Main Garden
+FS03,Main Garden
+FS04,Main Garden
+FS05,Main Garden
+FS06,Main Garden
+HBG,Herbarium
+HEXT,Herbarium
+HUBC,Herbarium
+LAA,Alpine
+LAA1,Alpine
+LAA2,Alpine
+LAA3,Alpine
+LAA4,Alpine
+LAF,Alpine
+LAF1,Alpine
+LAF2,Alpine
+LAM,Alpine
+LAS,Alpine
+LAS1,Alpine
+LAS2,Alpine
+LAS3,Alpine
+LAS4,Alpine
+LAS5,Alpine
+LAS6,Alpine
+LBF,Alpine
+LBF1,Alpine
+LBF2,Alpine
+LBF3,Alpine
+LCS,Alpine
+LCS1,Alpine
+LCS2,Alpine
+LCS3,Alpine
+LEU,Alpine
+LEU1,Alpine
+LEU2,Alpine
+LEU3,Alpine
+LFE,Alpine
+LIH,Alpine
+LNA,Alpine
+LNA1,Alpine
+LNA2,Alpine
+LNA3,Alpine
+LNA4,Alpine
+LNA5,Alpine
+LNA6,Alpine
+LSA,Alpine
+LSA1,Alpine
+LSA2,Alpine
+LTC,Alpine
+LTC1,Alpine
+LTC2,Alpine

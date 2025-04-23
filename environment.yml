@@ -1,0 +1,17 @@
+name: nursery-manual
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - ipywidgets
+  - pandas
+  - matplotlib
+  - numpy
+  - ipython
+  - ipykernel
+  - voila
+  - lifelines
+  - seaborn
+  - scipy
+
+

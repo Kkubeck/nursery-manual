@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Nursery Cultivation Space Capacity &#8212; Nursery Handbook</title>
+    <title>Kaplan–Meier Dashboard &#8212; Nursery Handbook</title>
   
   
   
@@ -57,12 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/space_capacity';</script>
-    <link rel="canonical" href="/nursery-manual/docs/space_capacity.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/KM-dashboard';</script>
+    <link rel="canonical" href="/nursery-manual/docs/KM-dashboard.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Project Cold with Graphics" href="../notebooks/project_cold_with_graphics.html" />
-    <link rel="prev" title="Nursery Data Entry Workflow" href="data_entry.html" />
+    <link rel="next" title="Historical Overview of the Nursery" href="historical_nursery.html" />
+    <link rel="prev" title="Seed Pot RQ Count" href="../notebooks/seed_pot_RQ_count.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -190,15 +190,15 @@
 <li class="toctree-l1"><a class="reference internal" href="transplanting.html">Transplanting</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Inventory</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="data_entry.html">Data Entry</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Space Capacity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="space_capacity.html">Space Capacity</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Apps</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/project_cold_with_graphics.html">Project Cold with Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/seed_pot_RQ_count.html">Seed Pot RQ Count</a></li>
-<li class="toctree-l1"><a class="reference internal" href="KM-dashboard.html">Kaplan-Meier Survival curves</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kaplan-Meier Survival curves</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">History</span></p>
 <ul class="nav bd-sidenav">
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="../_sources/docs/space_capacity.md" target="_blank"
+      <li><a href="../_sources/docs/KM-dashboard.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,9 +332,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -345,21 +343,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Nursery Cultivation Space Capacity</h1>
+    <h1>Kaplan–Meier Dashboard</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions">Assumptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benches">Benches</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-calculation">Example Calculation</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -369,49 +357,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="nursery-cultivation-space-capacity">
-<h1>Nursery Cultivation Space Capacity<a class="headerlink" href="#nursery-cultivation-space-capacity" title="Link to this heading">#</a></h1>
-<section id="assumptions">
-<h2>Assumptions<a class="headerlink" href="#assumptions" title="Link to this heading">#</a></h2>
-<p>At the nursery, plants are grown in containers, each with a predictable size and volume. During cultivation, these containers are placed in plant trays, which also occupy a predictable area. Each tray can hold a defined number of pots, and the nursery uses a standardized set of pots and trays for plant cultivation—one pot type per accession-item. This allows us to establish the following equivalencies:</p>
-<ul class="simple">
-<li><p><strong>Average tray size:</strong> ~17¼” x 17¼” (denoted as <em>x</em>)</p></li>
-</ul>
-<p><strong>Pot count per tray:</strong></p>
-<ul class="simple">
-<li><p>49 pots of 2¼” square pots</p></li>
-<li><p>36 pots of 2 3/8” x 3¾” Anderson bands</p></li>
-<li><p>25 pots of 3½” disposable sheet pots</p></li>
-<li><p>25 pots of 2 7/8” x 5½” Anderson bands</p></li>
-<li><p>25 pots of 3½” peat pots</p></li>
-<li><p>16 pots of 5 3/8” x 6” Anderson bands</p></li>
-<li><p>16 pots of 4” x 10” Anderson bands</p></li>
-<li><p>8 pots of 4” x 10” Anderson bands <em>(double-spaced for trees)</em></p></li>
-</ul>
-</section>
-<section id="benches">
-<h2>Benches<a class="headerlink" href="#benches" title="Link to this heading">#</a></h2>
-<p>Plant trays are placed on benches. Each bench provides a fixed linear area (in ft²). The outer edges of the benches are more accessible to workers, while the center is less accessible. Plants placed in less accessible areas are at higher risk for suboptimal cultivation practices (such as over/under watering) and may be harder to monitor for diseases and pests.</p>
-<p>For this reason, the nursery typically uses only the easily accessible edge space on the benches, even if the benches are wide enough to accommodate trays in the center.</p>
-<p>Since both trays and benches can be expressed in terms of linear area (m² or ft²), and knowing the average tray length (~17¼”), we can express bench length in units of tray length (x). This simplifies the measurement and calculation of cultivation space.</p>
-</section>
-<section id="example-calculation">
-<h2>Example Calculation<a class="headerlink" href="#example-calculation" title="Link to this heading">#</a></h2>
-<p><strong>Bench dimensions:</strong> 28’4” x 3’4”<br />
-Converted to inches: 340” x 40”</p>
-<ol class="arabic simple">
-<li><p><strong>Length in terms of trays:</strong><br />
-340” ÷ 17.25” ≈ 19.71 trays</p></li>
-<li><p><strong>Width in terms of trays:</strong><br />
-40” ÷ 17.25” ≈ 2.3 trays</p></li>
-</ol>
-<p>Since a tray cannot occupy a partial area smaller than 17¼”, we use whole numbers only. This means the bench can accommodate:</p>
-<ul class="simple">
-<li><p>19 trays along its length</p></li>
-<li><p>2 trays along its width</p></li>
-</ul>
-<p>Thus, the bench can hold a total of 19 x 2 = 38 trays in the defined cultivation space.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="kaplanmeier-dashboard">
+<h1>Kaplan–Meier Dashboard<a class="headerlink" href="#kaplanmeier-dashboard" title="Link to this heading">#</a></h1>
+<p>This interactive dashboard allows you to compare survival curves across provenance groups or life forms.</p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/Kkubeck/nursery-manual/main?urlpath=voila/render/notebooks/Kaplan-Meier_widget.ipynb">🚀 Launch Interactive Dashboard via Voilà</a></p>
+<p><img alt="Preview" src="../_images/km-preview.png" /></p>
+<hr class="docutils" />
+<p><em>Note: This will open in a new tab using Binder and Voilà. It may take ~30 seconds to launch the first time.</em></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -445,20 +397,20 @@ Converted to inches: 340” x 40”</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="data_entry.html"
+       href="../notebooks/seed_pot_RQ_count.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Nursery Data Entry Workflow</p>
+        <p class="prev-next-title">Seed Pot RQ Count</p>
       </div>
     </a>
     <a class="right-next"
-       href="../notebooks/project_cold_with_graphics.html"
+       href="historical_nursery.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Project Cold with Graphics</p>
+        <p class="prev-next-title">Historical Overview of the Nursery</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -468,23 +420,6 @@ Converted to inches: 340” x 40”</p>
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions">Assumptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benches">Benches</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-calculation">Example Calculation</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

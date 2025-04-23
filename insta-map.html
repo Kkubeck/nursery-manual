@@ -198,6 +198,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="notebooks/project_cold_with_graphics.html">Project Cold with Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/seed_pot_RQ_count.html">Seed Pot RQ Count</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/KM-dashboard.html">Kaplan-Meier Survival curves</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">History</span></p>
 <ul class="nav bd-sidenav">
@@ -486,9 +487,12 @@ document.write(`
 │   │   │   └── 05006559b75454c1f1e1de780f7270ad7aaab3
 │   │   ├── 02
 │   │   │   ├── 5da6a8f2be0dfec426671f9c50bc44a2c330ae
-│   │   │   └── 9ae18afb5360a8c238a052e8d3971761759d3d
+│   │   │   ├── 9ae18afb5360a8c238a052e8d3971761759d3d
+│   │   │   ├── d6dcbb29da343418c1c12a3a330467f9b35222
+│   │   │   └── f14e06d070a77017b3565a418d06c5a6f12848
 │   │   ├── 04
-│   │   │   └── 2d87cc13d38cbc101f1af045774292d6cae6b6
+│   │   │   ├── 2d87cc13d38cbc101f1af045774292d6cae6b6
+│   │   │   └── 7f306da366e4e1384fae9a3a10bb578d776eb4
 │   │   ├── 05
 │   │   │   ├── 3c1ae3ae0fdffc22eb1a4bb7facf7fdb95c6fc
 │   │   │   └── 6bd2f9aa7cfa94fb5b1a489e199e448cf0a435
@@ -523,12 +527,14 @@ document.write(`
 │   │   │   └── d4adcbab4c785f805826c00f53c1c820c7b617
 │   │   ├── 0f
 │   │   │   ├── 0fce5868481801f76b39f0e1bccef36d6ebd0c
-│   │   │   └── ccdb2144e74429c3260b9916722e0bbedacbd4
+│   │   │   ├── ccdb2144e74429c3260b9916722e0bbedacbd4
+│   │   │   └── df549c939e6849baa5b3cc80abc30966acfd21
 │   │   ├── 10
 │   │   │   ├── b048ac615ad35e52bf5badc045119006c87e2e
 │   │   │   ├── b5f3cc38ca35ed0fce8610d0cf45b65445d025
 │   │   │   └── dcdb4c9746831cf213ba9692eb00a2481028a6
 │   │   ├── 11
+│   │   │   ├── 32ec8c32409b7500a167e011c90414fac79e97
 │   │   │   ├── 34b2163d485f5027499d5bc75aac6010b34679
 │   │   │   ├── 8e898c99f66ebd8ecfc85509eeccc7ce03e390
 │   │   │   └── a0d8a61cac8fee19fefdbebd5509a964f86b1a
@@ -571,6 +577,7 @@ document.write(`
 │   │   ├── 1e
 │   │   │   └── 5523c1773c236277224611425d013b2e7088cd
 │   │   ├── 1f
+│   │   │   ├── a42fc66108b419de9dff5d436608f6825852b0
 │   │   │   ├── bb1f7c32d46f5dcb89a50e10d00878ed43f1a1
 │   │   │   ├── d73e1d909b8bb208fb970d08c42b2f090854c6
 │   │   │   └── eb98ecc27f2b940d0845a44b2135ff839d1918
@@ -588,6 +595,7 @@ document.write(`
 │   │   │   ├── aa6bcf5f216626c84d731ed730f47d5d86cd1d
 │   │   │   └── bb4550fdebf7531bdcedbc77a6618691166ac3
 │   │   ├── 24
+│   │   │   ├── 12147a5799f6d74898969d211ec4445d3e5f49
 │   │   │   └── 2e45d4f39f6e57d3946047dc490f679f006a62
 │   │   ├── 25
 │   │   │   ├── 8f9ac63a6a2852bef6fd84910819bb4b07c792
@@ -599,7 +607,8 @@ document.write(`
 │   │   │   ├── 29e45012b2c05b01acdab82a3a0e7a4cf7752e
 │   │   │   ├── 30de44bb912b33f82862a8284812d4d6bc446e
 │   │   │   ├── a14c35911723b64fe5944ba53438793b5d87a5
-│   │   │   └── bb1e8d4dcc0309e07acabcde278f81d10b70f5
+│   │   │   ├── bb1e8d4dcc0309e07acabcde278f81d10b70f5
+│   │   │   └── ed353a7c63147a096f0897b5e862d470daf533
 │   │   ├── 27
 │   │   │   ├── 36e8fcf6f9e923c2403307f0b366086d37b335
 │   │   │   ├── 388258d40361e33a184a12aa42a5095da9f17c
@@ -632,6 +641,7 @@ document.write(`
 │   │   │   ├── 1f4060c2e5822100f5041b145f0a0feff9e828
 │   │   │   ├── 519ef455b5eef0ed80ece0adbb24efd8a29014
 │   │   │   ├── 63eed427759448dc5687496ad8ea3793f92296
+│   │   │   ├── 9eddb6b9baf0f0ecfb355eb6d5d0b672df25c0
 │   │   │   ├── a7ff3e217ba6a8710731c335e515535bd76415
 │   │   │   └── bd7b34fcb945e379d8ed1f71781cd484f60a04
 │   │   ├── 2f
@@ -639,6 +649,7 @@ document.write(`
 │   │   │   └── 93966d74a6218fb463606b357a864dcefb5625
 │   │   ├── 30
 │   │   │   ├── 17cc5e9861560b8e3d7489da1b28003b795835
+│   │   │   ├── 1d92c5228d771802f9cd92f2a0b9bb05cd11bc
 │   │   │   ├── 3089d9f0357a3f109d334dd20ce780cf30f91e
 │   │   │   ├── 6a38e52d2a5813df1ef9f761c92a23ff7e4e3f
 │   │   │   └── c36f51c2782fbeb478e85f774850af7b9e425b
@@ -677,12 +688,14 @@ document.write(`
 │   │   │   └── df82849e3dce87b709c7d156de10bd037889d0
 │   │   ├── 3a
 │   │   │   ├── 08c1998752bdb41d0b0038ec1372d942834c04
+│   │   │   ├── 3cb23c7e790e97842e4ce8a0d21a243b33ddb5
 │   │   │   ├── 6012bfb37d44e0f5aa60b3926d886a561a9647
 │   │   │   ├── dd61280fe873fd8c9041e59b31518197135b91
 │   │   │   └── e8abce8f00e023586fc30960ac67498de0ce00
 │   │   ├── 3b
 │   │   │   ├── 09c12a9acdaca024a99fb7efc390457a02c6ef
-│   │   │   └── 277310f5d80c88ea33e0a0d651c04774e7ec8b
+│   │   │   ├── 277310f5d80c88ea33e0a0d651c04774e7ec8b
+│   │   │   └── 32be306f1de7410ea0478ddcfc8bf981498ada
 │   │   ├── 3c
 │   │   │   ├── 1e812c98faeb70b9ebf50a79b1c9be96ce81b8
 │   │   │   ├── 36ab1df7c589ad82614599b8c91f072a25d4a6
@@ -696,6 +709,7 @@ document.write(`
 │   │   │   ├── 01acbd9a30caf92b6996afbe2397dd0003fcb5
 │   │   │   ├── 129f267bb1f951c49bc3ee3639923e7cc635ed
 │   │   │   ├── 202115714554884877c10fafb96dab1777eed2
+│   │   │   ├── 2b3b805ce6e87bee2ce3e3479630933b5bfb9c
 │   │   │   └── 7ae81189698fe7a03eff58fae177b1b8b425f3
 │   │   ├── 3f
 │   │   │   ├── 626c633a56ecb50bec3295aa057162409f0420
@@ -839,10 +853,12 @@ document.write(`
 │   │   │   ├── 984b99a1c1ab93d34efd13464a8903d3a28d9d
 │   │   │   └── b7100c1a66a1e300d8f9b19b7489cc9907416b
 │   │   ├── 6a
+│   │   │   ├── e9ae26339fd5a19f6df409491911563caf3f5f
 │   │   │   ├── ee535b2655c58d031bde75fc0b6fa87113d7d1
 │   │   │   └── f30c4174e8a00a5933a72b3c888852284b4038
 │   │   ├── 6b
 │   │   │   ├── 3a3603e9faa22b11e0bcea1afdeef2a5775ae3
+│   │   │   ├── 7eb16cc024e930e6fc836e841417a6ea90d7be
 │   │   │   ├── 8ca41f36ebf869818399a9584cdb15619bea78
 │   │   │   └── 96639b726a2fa959a6419b6f8b7e0dfcce33ae
 │   │   ├── 6c
@@ -864,8 +880,10 @@ document.write(`
 │   │   │   └── bd1cda706653e0ee07b2431ce77329ba330b5b
 │   │   ├── 72
 │   │   │   ├── 1c812f789f70a94b9fbaa2414c15567d12e85f
+│   │   │   ├── 5d43a7680c3e1040117312b5a9a924a28dce82
 │   │   │   ├── 808c8f5ad7cc131da5716a0e3edcb799386b20
 │   │   │   ├── 876236c54d86b0edf736483480c518ce67f397
+│   │   │   ├── a3bd08d86325ae8f64f2e4813b276e26aab816
 │   │   │   └── f11f9179eaf0a1361f5894537a8b927f0f9f59
 │   │   ├── 73
 │   │   │   └── 894b9117977a3af0cabb6652e51df602321aff
@@ -886,11 +904,14 @@ document.write(`
 │   │   ├── 77
 │   │   │   ├── 3b8adae842be1a5e38ce4ae6f7de619d65adea
 │   │   │   ├── 666cc63ac1f92e899e684263cae81c74410153
-│   │   │   └── ada6e2506ae8f6dbfef170e6b79930da5aaf08
+│   │   │   ├── 8d157879f5c3ba8b241642bb2195a4020911ad
+│   │   │   ├── ada6e2506ae8f6dbfef170e6b79930da5aaf08
+│   │   │   └── edf08dd2385aacc24944ee1a52b65739e5ec11
 │   │   ├── 78
 │   │   │   └── 3ec6aa5afe2f0a66087d01a112f543e1ed287e
 │   │   ├── 79
-│   │   │   └── 653acd07c65937b681016df59adf8f2fe066f1
+│   │   │   ├── 653acd07c65937b681016df59adf8f2fe066f1
+│   │   │   └── bfcf6181393d22d43929cbc10de03a188e91f2
 │   │   ├── 7c
 │   │   │   ├── 789cfa44ffb5c9503313570bdf20641a75f759
 │   │   │   ├── 7d9c24ea4cac084b4494483a3f8fd8a4b7d31e
@@ -911,6 +932,7 @@ document.write(`
 │   │   │   ├── a43e2411ceb1b9873ab429d4552ecdc85334e8
 │   │   │   └── b9d1a0dd4874d8bf6484d69d20faec43d62ba1
 │   │   ├── 81
+│   │   │   ├── 25da2e785c73ac5d39d535d8e2948b9e814903
 │   │   │   ├── 26fa990deb0ee1afdd0d294bc651c7c5a40445
 │   │   │   └── 4d9ed7daf8f1368a1482960c25565b47a20c9d
 │   │   ├── 83
@@ -925,6 +947,8 @@ document.write(`
 │   │   ├── 87
 │   │   │   ├── 3c8908829e4889cf50f7ff341f83875f86126d
 │   │   │   └── bf26de683cb18c73bd23c2b4c57ef6a02545ec
+│   │   ├── 88
+│   │   │   └── ecb70e841ebaf5b6046983d3305ceea2b26080
 │   │   ├── 89
 │   │   │   └── 91a1b87b0e64fd19df0268766ecaba59882614
 │   │   ├── 8a
@@ -935,7 +959,8 @@ document.write(`
 │   │   │   ├── a3cd16abb1674c018ef8237a8467a9ef1c2e6e
 │   │   │   └── c3759847605f80e220833acc3f6f6be6b0f581
 │   │   ├── 8c
-│   │   │   └── 5864c42fa295c7620ac149b478e66b668affe6
+│   │   │   ├── 5864c42fa295c7620ac149b478e66b668affe6
+│   │   │   └── bf0eb4573c950628c96733a0fdb5384d8af977
 │   │   ├── 8d
 │   │   │   ├── 69463eb8852b82416f7d3ec6436abbe76523b6
 │   │   │   ├── 725172f2ec5584eeb41f781f1412ac86ef5db3
@@ -958,6 +983,9 @@ document.write(`
 │   │   │   └── fad4b5c0b766702548d26ab2be2832e19ad4da
 │   │   ├── 93
 │   │   │   ├── 0f1ef628459bd2592d12bcd2c0a1f717cff5e1
+│   │   │   ├── 19d97447f8c0815e46846136dd83cc56a5f7af
+│   │   │   ├── 50c3f776777b817a51bf0d4075fc3cd4939fb0
+│   │   │   ├── 5cff42b69a34533db86056e2e70be3ead773b9
 │   │   │   ├── 69e94d36d1321bcacdcc7664b0d65f90302f4f
 │   │   │   └── 6d0cf2e415438802cfdc142416f491034db6c9
 │   │   ├── 94
@@ -974,6 +1002,7 @@ document.write(`
 │   │   │   ├── 9a0527de5bb911414a2921b906bb5a81cab66e
 │   │   │   └── a3d29f057a48fe97910382819a5f9356fc0200
 │   │   ├── 99
+│   │   │   ├── 2e8c3ebd51bd667a3a10c7570ea2990f200cb7
 │   │   │   ├── 3dd07810d0bf8cc1ab75dd38880380ab4674c8
 │   │   │   ├── 7797f27066273ad4a43697d104ba350163bd1f
 │   │   │   └── a0a8b1ac3f170444313f2599345593bd7ef6a2
@@ -992,10 +1021,12 @@ document.write(`
 │   │   │   ├── 26f488e87beafdbcceed2d700652086b2e8518
 │   │   │   └── bb584f77091f5666db4194ecd4f707396cbbca
 │   │   ├── a0
+│   │   │   ├── 28a0abdb3ad1975b973780be1deb4cfebec520
 │   │   │   ├── 57a320dcd595f3f0e0d250c3af4a5653596914
 │   │   │   └── ce869d6d370bec39e0c8d57d77880fa7406cf6
 │   │   ├── a1
 │   │   │   ├── 2ed38c967c22e232c72ab70a658e77412655ee
+│   │   │   ├── 30db2094d840bf4c57f03a9e072d42b9a163b3
 │   │   │   ├── b274e2c2400a4d7f4a9e786897637d8d1a298a
 │   │   │   ├── c2ef0d6490ebb9a60dc10808a0507e9393c4d2
 │   │   │   └── c6d4f10430288f12585467d2bf1fbc65cab564
@@ -1003,6 +1034,7 @@ document.write(`
 │   │   │   ├── 0eb6dcfdeb1b780f9b39883ce62a779a166bcf
 │   │   │   ├── 515c01d9a45f1119df748333f26c2fb002e77a
 │   │   │   ├── 64ca6d9b8fadf78bd58ce060a6e4a89724641a
+│   │   │   ├── 66946affbfec65ccd0632ce813b6fdd1a93a05
 │   │   │   └── 9c5a922c53cb1d5b8218a9dd8dc595a3e01ce3
 │   │   ├── a4
 │   │   │   ├── 0314dea16290d73daf13870d9081d41538b793
@@ -1026,6 +1058,7 @@ document.write(`
 │   │   │   └── 5ebdc0f460a82bbb2b7b1319344df9e31d5689
 │   │   ├── aa
 │   │   │   ├── 05714be56821f3c38f98adb60bb9a34c19fa74
+│   │   │   ├── 1d0e2c3759347a70c34724be84672a64696c8f
 │   │   │   ├── 56069552c4b29afdfc02a6a3b1fea10d84752c
 │   │   │   ├── 5c813e4bff1bdc8f747c308fd27bbc04455b1e
 │   │   │   ├── 79da48fa793e72799f38b71975ccf8ed858b08
@@ -1055,6 +1088,7 @@ document.write(`
 │   │   │   ├── 252f38d8e1ac6902b73e2c802c9a04fbd0561f
 │   │   │   ├── 39bd26f443fdb282e03d72a6639d47c1953de3
 │   │   │   ├── 4ccb8c95ab618a7f88c9871335e5c3ada0d3d6
+│   │   │   ├── 6ea89dd956dc22f6fe23dc359ed865e69cde43
 │   │   │   └── 79f178018f2efe240942d04e32b7b7e015930f
 │   │   ├── b2
 │   │   │   ├── 1346a51213db2840495a49272059bcf0ed3bdb
@@ -1104,6 +1138,7 @@ document.write(`
 │   │   ├── be
 │   │   │   ├── 3f132696ed883b6ac7c1fb614c87e110fd30a4
 │   │   │   ├── 968c3491b403f36ab33ebaafa502d416124105
+│   │   │   ├── d06a7e49c9925069181c1856071ed196055ea3
 │   │   │   └── ecb076b1293799fd3e76269b26b804d7740bda
 │   │   ├── bf
 │   │   │   ├── 47c4fc4a167274989678f5bbaaa99e0b394e36
@@ -1113,7 +1148,8 @@ document.write(`
 │   │   ├── c0
 │   │   │   ├── 3d6685ede3331088f670196c28cfe7a3396627
 │   │   │   ├── 51fa9e492399d2aa3b537bca965dd864ad425e
-│   │   │   └── 95b2a6907beaeb30f653e95a2cfb8f82f17a34
+│   │   │   ├── 95b2a6907beaeb30f653e95a2cfb8f82f17a34
+│   │   │   └── fb93f87ac3f8ff244fecbf7d14485679aea202
 │   │   ├── c1
 │   │   │   └── d84cdcd8784848a43b25b362cca17ba269c167
 │   │   ├── c2
@@ -1130,7 +1166,8 @@ document.write(`
 │   │   │   ├── 899d2a51b72a3eef6b567e8ac2c7ff36cec08a
 │   │   │   └── 9bcfcef532ad1e408dc140566fd04bf239de00
 │   │   ├── c5
-│   │   │   └── 63f611a182cdb74c4b5491ab44ba82d95d282f
+│   │   │   ├── 63f611a182cdb74c4b5491ab44ba82d95d282f
+│   │   │   └── c63f151c21e6857d5d776d10652731df59265d
 │   │   ├── c6
 │   │   │   ├── 6b83dd27b3cf5f532726727153300b8827f672
 │   │   │   └── ef469082fcde7ccd00e968f2feee038e9bbb64
@@ -1140,20 +1177,25 @@ document.write(`
 │   │   │   └── 178debbcd93ce91e02f7a6f001c2c203dadfab
 │   │   ├── c9
 │   │   │   ├── 6c6c849a3ed3a53f5e0ef07cb33a2ca28c30fa
+│   │   │   ├── 74d0807ce65849b5c5bca381391d5a0cd8ee8a
 │   │   │   ├── c6e262065464c445c0c20c33fbc44ac1b368e5
 │   │   │   ├── da0fca12cb97007a9a5ccf9b28a7727fbb7a04
 │   │   │   ├── e13a427b3643d9bf62273ecff6b4d50688a901
 │   │   │   └── e8f6c44e2539a79b4c5b05ab14bae477a0ee5d
 │   │   ├── ca
+│   │   │   ├── 715244d3dfd746ab358f51d3fea314704fe3d9
 │   │   │   └── e6f7ae90968f3f98a171c5d5a84964d2d97781
 │   │   ├── cc
+│   │   │   ├── 8c5659fd1ada8745c4715c8cc02b9586f01d99
 │   │   │   ├── d3ba5d183b2c18d0ff60e7a175d9935b547eec
 │   │   │   └── f0753c0e2db39e853a9e6e2726390ece187ba4
 │   │   ├── cd
+│   │   │   ├── 0e34aaae108a0f4ba15dd97366c307404e289e
 │   │   │   └── 10a4e08cc9ca2173fc74acfdf3f70c69d00ece
 │   │   ├── ce
 │   │   │   └── b28f871312f6fe61a1d8bffac2a2199f47abe0
 │   │   ├── cf
+│   │   │   ├── 43ae3276ad44b092c4af9368e422c9add9b5ea
 │   │   │   ├── 8f93b0e81348284bf2bf18f2872eb3da79113c
 │   │   │   └── 9e1c29dfd34b00f8b807758c09d418eb0583c2
 │   │   ├── d0
@@ -1167,6 +1209,7 @@ document.write(`
 │   │   ├── d2
 │   │   │   ├── 447fd82f3d9e9732fce249d56ee28d4714a44e
 │   │   │   ├── 72fe4838d02797ae646395ddcf1f540ccf20b7
+│   │   │   ├── 8c1f6e24825296adfa82368553b5b15e7dff96
 │   │   │   ├── c84044905ed984fe7b3ab19040d3763abc277b
 │   │   │   └── ecb33e6fa0710026a437079b118d4651ccf881
 │   │   ├── d3
@@ -1176,10 +1219,12 @@ document.write(`
 │   │   │   ├── 275c38b373b6fc77a0abdf7cb9ec0310c068b1
 │   │   │   ├── 32bfb3080cbd39714b12af75566d6da7808fad
 │   │   │   ├── 71277d6083bc8b120ccbc2bae2e4432d162d14
-│   │   │   └── 954b2d337884623f09fe59896786b74c4cdde5
+│   │   │   ├── 954b2d337884623f09fe59896786b74c4cdde5
+│   │   │   └── b90d89ea23ad8e6e56853bf8b941b30220065d
 │   │   ├── d5
 │   │   │   └── b20bee36ddf736aad14009e318227e18a3e647
 │   │   ├── d6
+│   │   │   ├── 383753e62e3cb98433d0db4dc06277b1503765
 │   │   │   └── 57b2735bad5263c14a850fc04b9ecd7c356ac2
 │   │   ├── d7
 │   │   │   ├── 6a1e050fd3df76c37c541be3d9d434477191cf
@@ -1187,6 +1232,7 @@ document.write(`
 │   │   │   └── c30c3fbd0c488cc71a6691d51b90e6526363ef
 │   │   ├── d8
 │   │   │   ├── 34da13d2233edf8bc8d15dcd35e1306a2cf80d
+│   │   │   ├── 9f5c750656c3dd914c33d54e4070e27ab2d7ef
 │   │   │   └── ac054597c924e3010f629caeac1c748b7211cd
 │   │   ├── d9
 │   │   │   ├── 2b1d3b177aad0451488195cd6c544fd0e1f66a
@@ -1212,6 +1258,7 @@ document.write(`
 │   │   │   ├── de9cb086632af154e6a1b63e5fab99766c650a
 │   │   │   └── f11b78235d120ab69284ebb5f05067523533f6
 │   │   ├── df
+│   │   │   ├── 248adce4e7a909aa027db01f779c91f120c977
 │   │   │   ├── 333a50387fed5f227e05c86247375ed29ed731
 │   │   │   ├── 544c12b4df08fcf24f7d3e24994182b9bb126c
 │   │   │   ├── 8af1714df95a712a2d3aa5c72f788a9a12dda5
@@ -1232,10 +1279,13 @@ document.write(`
 │   │   ├── e4
 │   │   │   └── f227c4def9a59e37fbf664345353a01002fd10
 │   │   ├── e5
-│   │   │   └── 9e7ecb308a7648cd23aa6342a9ad98a61d0009
+│   │   │   ├── 9e7ecb308a7648cd23aa6342a9ad98a61d0009
+│   │   │   ├── bf6fe0ff9e646db50dc1a53bb98babd5925c23
+│   │   │   └── d2b96276b131bac936df1b052955ca9922ab34
 │   │   ├── e6
 │   │   │   ├── 9c5e39a30ce8d112e012cac36289e77691a9b7
-│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   │   ├── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   │   └── fd30d5381203e21013a24c1b505f722d28f3b9
 │   │   ├── e8
 │   │   │   ├── 6ecee082f777f64b2b1861f6ad0afcd93b3465
 │   │   │   ├── 7a4fdef37548d17b64f0c390658344abb59df4
@@ -1258,6 +1308,7 @@ document.write(`
 │   │   │   └── c303463edb50ebde41b7164465e764bedc1b2d
 │   │   ├── ed
 │   │   │   ├── 0d4e01c22c7464b4901006b6a3fe9204e76912
+│   │   │   ├── 5834b3217488c28cadcc69fafd880cdf071c8d
 │   │   │   └── ceac662b02ea07af20011b8b44fdc3cb97518a
 │   │   ├── ee
 │   │   │   ├── 1a9f654a9ecac6a99b09117b9a3f763e373bfa
@@ -1280,7 +1331,8 @@ document.write(`
 │   │   │   ├── 694acfa55c071a926cac9fe7ad72e7762ec3db
 │   │   │   └── dcbb9397634fa4f6b1f9e3462953b51159b30d
 │   │   ├── f4
-│   │   │   └── 3157d70c63ff21b4385dc36cb73f5b14eb6b01
+│   │   │   ├── 3157d70c63ff21b4385dc36cb73f5b14eb6b01
+│   │   │   └── e2ba3a86609ee1ac04d0f4df864c289c4a1993
 │   │   ├── f5
 │   │   │   └── 0c83fb37849e96c0dc41c9fca60834afb1213a
 │   │   ├── f6
@@ -1293,7 +1345,8 @@ document.write(`
 │   │   │   ├── bdac2eb2f16975fd95865e7b91ab64ecaf2f9b
 │   │   │   └── cdc73cb2be06824f521837366ec95b73d55ef8
 │   │   ├── f9
-│   │   │   └── 4bec22756c48039ad405859f0d0e542033c1b2
+│   │   │   ├── 4bec22756c48039ad405859f0d0e542033c1b2
+│   │   │   └── 7a842ebb25361ed9f3769d6215a436ab3f14f3
 │   │   ├── fa
 │   │   │   ├── 16386f4f9da76509996b9c15ed0593c238313c
 │   │   │   ├── 77ebfc258ac10ebdaa17a3dde4dfc75b8e8b2b
@@ -1301,8 +1354,10 @@ document.write(`
 │   │   │   ├── c62e032d10c5a47382f8171a5f576caf253c58
 │   │   │   └── eea606145667f54d220a0c17ffe8d22db07146
 │   │   ├── fb
-│   │   │   └── 243588e651b61b024b0d1ccc901f8248a52b4d
+│   │   │   ├── 243588e651b61b024b0d1ccc901f8248a52b4d
+│   │   │   └── 3df85d553c98187b579864c06fb93d45036d94
 │   │   ├── fc
+│   │   │   ├── 070b6c6ca122ab7601f5d35bfde8dcfd275c74
 │   │   │   ├── 164a8d530f24058106c7af5ac17a72e68e8b4e
 │   │   │   ├── a6e9355f314677f2890f5679fd79dd67a7a5a2
 │   │   │   ├── d1ee5cc033a6878f7f3ff327922024be5a56f5
@@ -1337,6 +1392,7 @@ document.write(`
 │   ├── .doctrees
 │   │   ├── README.doctree
 │   │   ├── docs
+│   │   │   ├── KM-dashboard.doctree
 │   │   │   ├── data_entry.doctree
 │   │   │   ├── historical_nursery.doctree
 │   │   │   ├── potting_media_recipes.doctree
@@ -1353,9 +1409,13 @@ document.write(`
 ├── _config.yml
 ├── _toc.yml
 ├── data
-│   ├── 2017-2023_all-prop.csv
-│   └── ubc_temperature91_02cl.csv
+│   ├── Accession_1970to2025.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
+│   ├── ubc_temperature91_02cl.csv
+│   └── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
@@ -1364,6 +1424,7 @@ document.write(`
 │   ├── space_capacity.md
 │   ├── test_image.md
 │   └── transplanting.md
+├── environment.yml
 ├── images
 │   ├── historical_nursery
 │   │   ├── 2004-overhead.jpg
@@ -1383,6 +1444,7 @@ document.write(`
 │   │   ├── 2022-overhead.jpg
 │   │   ├── 2023-overhead.jpg
 │   │   └── 2024-overhead.jpg
+│   ├── km-preview.png
 │   ├── logo.png
 │   └── test.jpg
 ├── index.md
@@ -1390,14 +1452,16 @@ document.write(`
 ├── notebooks
 │   ├── .ipynb_checkpoints
 │   │   ├── Code-hide-checkpoint.ipynb
+│   │   ├── Kaplan-Meier_widget-checkpoint.ipynb
 │   │   ├── notebooks-checkpoint.ipynb
 │   │   ├── project_cold_with_graphics-checkpoint.ipynb
-│   │   └── seed_pot_RQ_count-checkpoint.ipynb
-│   ├── Code-hide.ipynb
+│   │   ├── seed_pot_RQ_count-checkpoint.ipynb
+│   │   └── test_widget-checkpoint.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
-│   └── seed_pot_RQ_count.ipynb
-├── references.bib
-└── requirements.txt
+│   ├── seed_pot_RQ_count.ipynb
+│   └── test_widget.ipynb
+└── references.bib
 </pre></div>
 </div>
 </div>
@@ -1438,9 +1502,13 @@ document.write(`
 ├── _config.yml
 ├── _toc.yml
 ├── data
-│   ├── 2017-2023_all-prop.csv
-│   └── ubc_temperature91_02cl.csv
+│   ├── Accession_1970to2025.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
+│   ├── ubc_temperature91_02cl.csv
+│   └── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
@@ -1449,6 +1517,7 @@ document.write(`
 │   ├── space_capacity.md
 │   ├── test_image.md
 │   └── transplanting.md
+├── environment.yml
 ├── images
 │   ├── historical_nursery
 │   │   ├── 2004-overhead.jpg
@@ -1468,16 +1537,17 @@ document.write(`
 │   │   ├── 2022-overhead.jpg
 │   │   ├── 2023-overhead.jpg
 │   │   └── 2024-overhead.jpg
+│   ├── km-preview.png
 │   ├── logo.png
 │   └── test.jpg
 ├── index.md
 ├── insta-map.ipynb
 ├── notebooks
-│   ├── Code-hide.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
-│   └── seed_pot_RQ_count.ipynb
-├── references.bib
-└── requirements.txt
+│   ├── seed_pot_RQ_count.ipynb
+│   └── test_widget.ipynb
+└── references.bib
 </pre></div>
 </div>
 </div>
@@ -1520,9 +1590,13 @@ document.write(`
 ├── _config.yml
 ├── _toc.yml
 ├── data
-│   ├── 2017-2023_all-prop.csv
-│   └── ubc_temperature91_02cl.csv
+│   ├── Accession_1970to2025.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
+│   ├── ubc_temperature91_02cl.csv
+│   └── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
@@ -1531,6 +1605,7 @@ document.write(`
 │   ├── space_capacity.md
 │   ├── test_image.md
 │   └── transplanting.md
+├── environment.yml
 ├── images
 │   ├── historical_nursery
 │   │   ├── 2004-overhead.jpg
@@ -1550,16 +1625,17 @@ document.write(`
 │   │   ├── 2022-overhead.jpg
 │   │   ├── 2023-overhead.jpg
 │   │   └── 2024-overhead.jpg
+│   ├── km-preview.png
 │   ├── logo.png
 │   └── test.jpg
 ├── index.md
 ├── insta-map.ipynb
 ├── notebooks
-│   ├── Code-hide.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
-│   └── seed_pot_RQ_count.ipynb
-├── references.bib
-└── requirements.txt
+│   ├── seed_pot_RQ_count.ipynb
+│   └── test_widget.ipynb
+└── references.bib
 </pre></div>
 </div>
 </div>
@@ -1625,16 +1701,20 @@ document.write(`
 ├── .gitignore
 ├── _config.yml
 ├── _toc.yml
+├── environment.yml
 ├── README.md
 ├── index.md
 ├── insta-map.ipynb
 ├── LICENSE.txt
 ├── references.bib
-├── requirements.txt
 ├── data
-│   ├── 2017-2023_all-prop.csv
+│   ├── Accession_1970to2025.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
+│   ├── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
@@ -1644,6 +1724,7 @@ document.write(`
 │   ├── test_image.md
 │   ├── transplanting.md
 ├── images
+│   ├── km-preview.png
 │   ├── logo.png
 │   ├── test.jpg
 │   ├── historical_nursery
@@ -1665,9 +1746,10 @@ document.write(`
 │   │   ├── 2023-overhead.jpg
 │   │   ├── 2024-overhead.jpg
 ├── notebooks
-│   ├── Code-hide.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
 │   ├── seed_pot_RQ_count.ipynb
+│   ├── test_widget.ipynb
 </pre></div>
 </div>
 </div>

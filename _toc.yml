@@ -25,8 +25,12 @@ parts:
     chapters:
       - file: notebooks/project_cold_with_graphics
         title: Project Cold with Graphics
+      - file: notebooks/notebooks/test_widget
+        title: test_widget
       - file: notebooks/seed_pot_RQ_count
         title: Seed Pot RQ Count
+      - file: docs/KM-dashboard
+        title: Kaplan-Meier Survival curves
   - caption: History
     chapters:
       - file: docs/historical_nursery

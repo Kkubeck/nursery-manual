@@ -1,29 +1,21 @@
-# Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 title: Nursery Handbook
 author: Kevin Kubeck
 logo: images/logo.png
 
 html:
   baseurl: /nursery-manual
+  use_jupyter_widgets: true  # ipywidgets output
 
-
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: force  # or 'auto' if you don't want to re-run every time
 
-# Define the name of the latex output file for PDF builds
+bibtex_bibfiles:
+  - references.bib
+
 latex:
   latex_documents:
     targetname: book.tex
 
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
-
-# Enable Thebe for interactive widgets
 launch_buttons:
   thebe: true
   binderhub_url: "https://mybinder.org"
@@ -32,7 +24,6 @@ thebe_config:
   repository_url: "https://github.com/Kkubeck/nursery-manual"
   repository_branch: "main"
 
-
-# Ensure interactive outputs are enabled
 interactive:
   interactive_output: true
+

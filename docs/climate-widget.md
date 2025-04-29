@@ -8,4 +8,5 @@ This tool allows you to explore UBCBG garden accessions and their future climate
 ![Preview](../images/CAT-preview.png)
 
 ---
+
 *Note: This will open in a new tab using Binder and Voilà. It may take ~30 seconds to launch the first time.*

@@ -1,7 +1,9 @@
-# Table of contents 
+
+# Table of Contents
 
 format: jb-book
 root: index
+
 parts:
   - caption: Propagation
     chapters:
@@ -9,33 +11,35 @@ parts:
         title: Seed Sowing
       - file: docs/seed_dormancy_and_treatments
         title: Seed Dormancy and Treatment
+
   - caption: Growing
     chapters:
       - file: docs/potting_media_recipes
         title: Planting Media
       - file: docs/transplanting
         title: Transplanting
+
   - caption: Inventory
     chapters:
       - file: docs/data_entry
         title: Data Entry
       - file: docs/space_capacity
         title: Space Capacity
+
   - caption: Apps
     chapters:
-      - file: notebooks/project_cold_with_graphics
-        title: Project Cold with Graphics
-      - file: notebooks/seed_pot_RQ_count
-        title: Seed Pot RQ Count
-      - file: docs/KM-dashboard
-        title: Kaplan-Meier Survival Curves
-      - file: docs/CAT-color-coded-widget
+      - file: docs/km-dashboard
+        title: Kaplan–Meier Survival Curves
+      - file: docs/climate-widget
         title: Climate Suitability Widget
+      # Add more apps here later
+
   - caption: History
     chapters:
       - file: docs/historical_nursery
         title: Historical Overview of the Nursery
-  - caption: Test section
+
+  - caption: Test Section
     chapters:
       - file: docs/test_image
-        title: Testing part of the website
+        title: Testing Part of the Website

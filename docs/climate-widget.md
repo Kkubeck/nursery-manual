@@ -1,4 +1,4 @@
-## Climate Suitability Dashboard
+## Climate Suitability Widget
 
 This tool allows you to explore UBCBG garden accessions and their future climate ratings under several modeled scenarios.
 

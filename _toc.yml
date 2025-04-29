@@ -31,6 +31,8 @@ parts:
         title: Seed Pot RQ Count
       - file: docs/KM-dashboard
         title: Kaplan-Meier Survival curves
+      - file: docs/CAT-color-coded-widget
+        title: Climate Rating Widget
   - caption: History
     chapters:
       - file: docs/historical_nursery

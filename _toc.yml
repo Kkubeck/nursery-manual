@@ -28,7 +28,7 @@ parts:
 
   - caption: Apps
     chapters:
-      - file: docs/km-dashboard
+      - file: docs/KM-dashboard
         title: Kaplan–Meier Survival Curves
       - file: docs/climate-widget
         title: Climate Suitability Widget

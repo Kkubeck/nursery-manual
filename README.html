@@ -196,17 +196,12 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Apps</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="notebooks/project_cold_with_graphics.html">Project Cold with Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/seed_pot_RQ_count.html">Seed Pot RQ Count</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs/KM-dashboard.html">Kaplan-Meier Survival curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/KM-dashboard.html">Kaplan–Meier Survival Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/climate-widget.html">Climate Suitability Widget</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">History</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="docs/historical_nursery.html">Historical Overview of the Nursery</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Test section</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="docs/test_image.html">Testing part of the website</a></li>
 </ul>
 
     </div>
@@ -384,27 +379,35 @@ document.write(`
 <section id="project-structure">
 <h2>Project Structure<a class="headerlink" href="#project-structure" title="Link to this heading">#</a></h2>
 <p>The repository is organized as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>nursery-manual/
-├── .gitignore
+<div class="highlight-nursery-manual/ notranslate"><div class="highlight"><pre><span></span>├── .gitignore
 ├── _config.yml
 ├── _toc.yml
+├── environment.yml
 ├── README.md
 ├── index.md
+├── insta-map.ipynb
 ├── LICENSE.txt
 ├── references.bib
-├── requirements.txt
 ├── data
-│   ├── 2017-2023_all-prop.csv
+│   ├── Accession_1970to2025.csv
+│   ├── CAT-current-UBCBG.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
+│   ├── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
+│   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
-│   ├── test_image.md
+│   ├── space_capacity.md
 │   ├── transplanting.md
 ├── images
+│   ├── CAT-preview.png
+│   ├── km-preview.png
 │   ├── logo.png
 │   ├── test.jpg
 │   ├── historical_nursery
@@ -426,14 +429,16 @@ document.write(`
 │   │   ├── 2023-overhead.jpg
 │   │   ├── 2024-overhead.jpg
 ├── notebooks
-    ├── project_cold_with_graphics.ipynb
-    ├── seed_pot_RQ_count.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
+│   ├── climate-rating-widget.ipynb
+│   ├── project_cold_with_graphics.ipynb
+│   ├── seed_pot_RQ_count.ipynb
 </pre></div>
 </div>
 </section>
 <section id="building-the-jupyter-book">
 <h2>Building the Jupyter Book<a class="headerlink" href="#building-the-jupyter-book" title="Link to this heading">#</a></h2>
-<p>To build the book locally, ensure you have the required dependencies installed from the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file. Then run:</p>
+<p>To build the book locally, ensure you have the required dependencies installed from the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. Then run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
 </pre></div>
 </div>

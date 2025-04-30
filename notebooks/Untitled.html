@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Seed Pot RQ Count &#8212; Nursery Handbook</title>
+    <title>&lt;no title&gt; &#8212; Nursery Handbook</title>
   
   
   
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/seed_pot_RQ_count';</script>
-    <link rel="canonical" href="/nursery-manual/notebooks/seed_pot_RQ_count.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/Untitled';</script>
+    <link rel="canonical" href="/nursery-manual/notebooks/Untitled.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -256,7 +256,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebooks/seed_pot_RQ_count.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebooks/Untitled.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +305,7 @@
       
       
       
-      <li><a href="../_sources/notebooks/seed_pot_RQ_count.ipynb" target="_blank"
+      <li><a href="../_sources/notebooks/Untitled.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +376,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -387,11 +389,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Seed Pot RQ Count</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -401,29 +411,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="seed-pot-rq-count">
-<h1>Seed Pot RQ Count<a class="headerlink" href="#seed-pot-rq-count" title="Link to this heading">#</a></h1>
-<div class="cell docutils container">
+  <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">re</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the CSV file with ISO-8859-1 encoding</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/2017-2023_all-prop.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ISO-8859-1&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Climate Suitability Widget for UBCBG</span>
+
+<span class="c1"># --- Imports ---</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">clear_output</span>
+
+<span class="c1"># --- Data Loading ---</span>
+<span class="c1"># Load CAT climate rating file</span>
+<span class="n">climate_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/all_ubc_CAT_format.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Check and clean columns if needed</span>
+<span class="n">climate_df</span> <span class="o">=</span> <span class="n">climate_df</span><span class="p">[[</span><span class="s1">&#39;Taxon&#39;</span><span class="p">,</span> <span class="s1">&#39;Longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;climate_rating&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># --- Widget Setup ---</span>
+<span class="n">rating_selector</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">climate_df</span><span class="p">[</span><span class="s1">&#39;climate_rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">()),</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Rating:&#39;</span><span class="p">,</span>
+    <span class="n">value</span><span class="o">=</span><span class="s1">&#39;Suitable&#39;</span><span class="p">,</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="c1"># --- Plotting Function ---</span>
+<span class="k">def</span> <span class="nf">plot_climate_map</span><span class="p">(</span><span class="n">rating</span><span class="p">):</span>
+    <span class="n">filtered</span> <span class="o">=</span> <span class="n">climate_df</span><span class="p">[</span><span class="n">climate_df</span><span class="p">[</span><span class="s1">&#39;climate_rating&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">rating</span><span class="p">]</span>
+
+    <span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">filtered</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">longitude</span><span class="o">=</span><span class="s1">&#39;Longitude:Q&#39;</span><span class="p">,</span>
+        <span class="n">latitude</span><span class="o">=</span><span class="s1">&#39;Latitude:Q&#39;</span><span class="p">,</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Taxon&#39;</span><span class="p">,</span> <span class="s1">&#39;climate_rating&#39;</span><span class="p">]</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">project</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;identity&#39;</span><span class="p">,</span>
+        <span class="n">reflectY</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Climate Suitability: </span><span class="si">{</span><span class="n">rating</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">chart</span>
+
+<span class="c1"># --- Update Function ---</span>
+<span class="k">def</span> <span class="nf">update_plot</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">chart</span> <span class="o">=</span> <span class="n">plot_climate_map</span><span class="p">(</span><span class="n">rating_selector</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">chart</span><span class="p">)</span>
+
+<span class="c1"># --- Observe and Display ---</span>
+<span class="n">rating_selector</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_plot</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">rating_selector</span><span class="p">,</span> <span class="n">output</span><span class="p">]))</span>
+
+<span class="c1"># Initial display</span>
+<span class="n">update_plot</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># load the CSV file with ISO-8859-1 encoding</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/2017-2023_all-prop.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ISO-8859-1&#39;</span><span class="p">)</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">11</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">clear_output</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># --- Data Loading ---</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># Load CAT climate rating file</span>
+<span class="ne">---&gt; </span><span class="mi">11</span> <span class="n">climate_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/all_ubc_CAT_format.csv&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># Check and clean columns if needed</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="n">climate_df</span> <span class="o">=</span> <span class="n">climate_df</span><span class="p">[[</span><span class="s1">&#39;Taxon&#39;</span><span class="p">,</span> <span class="s1">&#39;Longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;Latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;climate_rating&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
 <span class="nn">File ~\miniconda3\Lib\site-packages\pandas\io\parsers\readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
@@ -480,62 +539,11 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
 <span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
 
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../data/2017-2023_all-prop.csv&#39;
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data/all_ubc_CAT_format.csv&#39;
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a regex pattern to match &#39;*number* RQ&#39; and common misspellings like &#39;12 RQ,&#39;</span>
-<span class="n">rq_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\d+)\s*RQ\W*&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
-
-<span class="c1"># Apply the pattern to the &#39;ItemComment&#39; column to find all matches</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ItemComment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">rq_pattern</span><span class="p">)</span>
-
-<span class="c1"># Ensure that NaN values in &#39;RQ_Matches&#39; are treated as empty lists</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="k">else</span> <span class="p">[])</span>
-
-<span class="c1"># Remove the rows without &#39;RQ&#39; pattern from the dataframe</span>
-<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span>
-
-<span class="c1"># When creating df_cleaned from another DataFrame (df in this case), use .copy()</span>
-<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-
-
-<span class="c1"># Extract the numbers from the &#39;RQ&#39; pattern, cast to integers, and sum</span>
-<span class="n">total_rq</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">explode</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-<span class="n">total_rq</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>35893
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Assuming &#39;ItemAccNoFull&#39; is the unique identifier for each accession item</span>
-<span class="c1"># Group by &#39;ItemAccNoFull&#39; and take the first RQ match per group</span>
-<span class="n">df_cleaned_grouped</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ItemAccNoFull&#39;</span><span class="p">)[</span><span class="s1">&#39;RQ_Matches&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">first</span><span class="p">()</span><span class="o">.</span><span class="n">explode</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-
-<span class="c1"># Sum the unique RQ values for each accession item</span>
-<span class="n">total_unique_rq</span> <span class="o">=</span> <span class="n">df_cleaned_grouped</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-<span class="n">total_unique_rq</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>14297
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -573,6 +581,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

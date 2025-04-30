@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\nbclient\client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KUB\miniconda3\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\KUB\miniconda3\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import nbformat
+from pathlib import Path
+
+# Settings
+input_path = Path("Kaplan-Meier-widget.ipynb")  # change to your notebook
+output_path = input_path.with_name(f"{input_path.stem}_tagged.ipynb")
+
+# Optional: only tag cells containing this keyword (set to "" to tag all code cells)
+keyword_filter = "widgets"  # set to "" to tag all cells
+
+# Load notebook
+nb = nbformat.read(input_path, as_version=4)
+
+# Apply tag
+for i, cell in enumerate(nb.cells):
+    if cell.cell_type == "code":
+        if keyword_filter in "".join(cell.source):  # or just: if True, to tag all
+            tags = cell.metadata.get("tags", [])
+            if "hide-input" not in tags:
+                tags.append("hide-input")
+                cell.metadata["tags"] = tags
+                print(f"Tagged cell {i} with 'hide-input'.")
+
+# Save notebook
+nbformat.write(nb, output_path)
+print(f" Saved tagged notebook to: {output_path}")
+
+------------------
+
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mAttributeError[0m                            Traceback (most recent call last)
+File [1;32m~\miniconda3\Lib\site-packages\nbformat\__init__.py:169[0m, in [0;36mread[1;34m(fp, as_version, capture_validation_error, **kwargs)[0m
+[0;32m    168[0m [38;5;28;01mtry[39;00m:
+[1;32m--> 169[0m     buf [38;5;241m=[39m [43mfp[49m[38;5;241;43m.[39;49m[43mread[49m()
+[0;32m    170[0m [38;5;28;01mexcept[39;00m [38;5;167;01mAttributeError[39;00m:
+
+[1;31mAttributeError[0m: 'WindowsPath' object has no attribute 'read'
+
+During handling of the above exception, another exception occurred:
+
+[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [1;32mIn[1], line 12[0m
+[0;32m      9[0m keyword_filter [38;5;241m=[39m [38;5;124m"[39m[38;5;124mwidgets[39m[38;5;124m"[39m  [38;5;66;03m# set to "" to tag all cells[39;00m
+[0;32m     11[0m [38;5;66;03m# Load notebook[39;00m
+[1;32m---> 12[0m nb [38;5;241m=[39m [43mnbformat[49m[38;5;241;43m.[39;49m[43mread[49m[43m([49m[43minput_path[49m[43m,[49m[43m [49m[43mas_version[49m[38;5;241;43m=[39;49m[38;5;241;43m4[39;49m[43m)[49m
+[0;32m     14[0m [38;5;66;03m# Apply tag[39;00m
+[0;32m     15[0m [38;5;28;01mfor[39;00m i, cell [38;5;129;01min[39;00m [38;5;28menumerate[39m(nb[38;5;241m.[39mcells):
+
+File [1;32m~\miniconda3\Lib\site-packages\nbformat\__init__.py:171[0m, in [0;36mread[1;34m(fp, as_version, capture_validation_error, **kwargs)[0m
+[0;32m    169[0m     buf [38;5;241m=[39m fp[38;5;241m.[39mread()
+[0;32m    170[0m [38;5;28;01mexcept[39;00m [38;5;167;01mAttributeError[39;00m:
+[1;32m--> 171[0m     [38;5;28;01mwith[39;00m [38;5;28;43mopen[39;49m[43m([49m[43mfp[49m[43m,[49m[43m [49m[43mencoding[49m[38;5;241;43m=[39;49m[38;5;124;43m"[39;49m[38;5;124;43mutf8[39;49m[38;5;124;43m"[39;49m[43m)[49m [38;5;28;01mas[39;00m f:  [38;5;66;03m# noqa: PTH123[39;00m
+[0;32m    172[0m         [38;5;28;01mreturn[39;00m reads(f[38;5;241m.[39mread(), as_version, capture_validation_error, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+[0;32m    174[0m [38;5;28;01mreturn[39;00m reads(buf, as_version, capture_validation_error, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+
+[1;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'Kaplan-Meier-widget.ipynb'
+

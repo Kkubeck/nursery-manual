@@ -14,28 +14,36 @@ You can view the Jupyter Book online here: [[UBCBG Nursery Manual](https://kkube
 
 The repository is organized as follows:
 
-```
-nursery-manual/
+```nursery-manual/
 ├── .gitignore
 ├── _config.yml
 ├── _toc.yml
+├── environment.yml
 ├── README.md
 ├── index.md
+├── insta-map.ipynb
 ├── LICENSE.txt
 ├── references.bib
-├── requirements.txt
 ├── data
-│   ├── 2017-2023_all-prop.csv
+│   ├── Accession_1970to2025.csv
+│   ├── CAT-current-UBCBG.csv
+│   ├── accession-items-history_1970to2025.csv
+│   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
+│   ├── unique_beds.csv
 ├── docs
+│   ├── KM-dashboard.md
+│   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
-│   ├── test_image.md
+│   ├── space_capacity.md
 │   ├── transplanting.md
 ├── images
+│   ├── CAT-preview.png
+│   ├── km-preview.png
 │   ├── logo.png
 │   ├── test.jpg
 │   ├── historical_nursery
@@ -57,13 +65,15 @@ nursery-manual/
 │   │   ├── 2023-overhead.jpg
 │   │   ├── 2024-overhead.jpg
 ├── notebooks
-    ├── project_cold_with_graphics.ipynb
-    ├── seed_pot_RQ_count.ipynb
+│   ├── Kaplan-Meier_widget.ipynb
+│   ├── climate-rating-widget.ipynb
+│   ├── project_cold_with_graphics.ipynb
+│   ├── seed_pot_RQ_count.ipynb
 ```
 
 ## Building the Jupyter Book
 
-To build the book locally, ensure you have the required dependencies installed from the `requirements.txt` file. Then run:
+To build the book locally, ensure you have the required dependencies installed from the `environment.yml` file. Then run:
 
 ```bash
 jupyter-book build .

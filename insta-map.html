@@ -198,6 +198,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="docs/KM-dashboard.html">Kaplan–Meier Survival Curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/climate-widget.html">Climate Suitability Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/nursery-seed-store-inventory.html">Nursery Seed Store Inventory</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">History</span></p>
 <ul class="nav bd-sidenav">
@@ -497,6 +498,7 @@ document.write(`
 │   │   │   └── 7f306da366e4e1384fae9a3a10bb578d776eb4
 │   │   ├── 05
 │   │   │   ├── 3c1ae3ae0fdffc22eb1a4bb7facf7fdb95c6fc
+│   │   │   ├── 596f8aac4a946a655cba01aa102fcca5e4b67f
 │   │   │   ├── 6bd2f9aa7cfa94fb5b1a489e199e448cf0a435
 │   │   │   └── ec83e458b3b854c51e88ed2615de68c4f2b3e1
 │   │   ├── 06
@@ -509,6 +511,7 @@ document.write(`
 │   │   │   ├── 330d0d801946d8779401c4cb289b5a31a08660
 │   │   │   └── ac95f88a5510e225bd3a202f8b6d25d270663d
 │   │   ├── 09
+│   │   │   ├── 1327af1fd0fe8035ee17bdf4276610bff7e79e
 │   │   │   ├── 4e1be1847eff03159a7f01d25c067f55adc107
 │   │   │   ├── 96f165e953b528cd1db6e9d920374c7ce253e5
 │   │   │   ├── a79323a447205a397bca7cfd5a7fb145026084
@@ -523,7 +526,8 @@ document.write(`
 │   │   │   ├── 6f467023624458826ac09610d77bf93c513155
 │   │   │   └── f3e80d50a32583b79efb5de692266e109bbb9e
 │   │   ├── 0c
-│   │   │   └── 36f4d75089466b322b4d8c6e727e205a59bcad
+│   │   │   ├── 36f4d75089466b322b4d8c6e727e205a59bcad
+│   │   │   └── b04b4b8e9b0f1d81f03c5432f975ccf5950f71
 │   │   ├── 0d
 │   │   │   ├── 2d191426879e7da3630cecef7ba5285833cbe8
 │   │   │   ├── 35a218c5ca371f7cf6fe47a1ee3ea76dfab84d
@@ -531,10 +535,12 @@ document.write(`
 │   │   ├── 0e
 │   │   │   ├── 0f2b1748ac755f05cc4040b3ac939c8cc13165
 │   │   │   ├── 3235d090c2a05c0e278d38520f0437847dc79f
+│   │   │   ├── 5a34ef41d2c38ee995e01eb81a00efdca93156
 │   │   │   ├── 6a9804d476ca8ef3182505ff4698b321e1475c
 │   │   │   └── d4adcbab4c785f805826c00f53c1c820c7b617
 │   │   ├── 0f
 │   │   │   ├── 0fce5868481801f76b39f0e1bccef36d6ebd0c
+│   │   │   ├── 5a68f9ac2c6e4ef814122dbc4d34a6bbf32709
 │   │   │   ├── ccdb2144e74429c3260b9916722e0bbedacbd4
 │   │   │   └── df549c939e6849baa5b3cc80abc30966acfd21
 │   │   ├── 10
@@ -551,6 +557,7 @@ document.write(`
 │   │   │   └── b1a7377cd8c07f03eb4259dc4ad0e0b6298ba3
 │   │   ├── 12
 │   │   │   ├── 097c6e792c397e33fcf6c7a8dfe317f8634130
+│   │   │   ├── ce647730d726b50f79b478d8ed7b2bade9871b
 │   │   │   └── e104526effd55f9b3096d2fdc2d1518d4b7c7c
 │   │   ├── 13
 │   │   │   ├── 2fe713ac0280829b19bd09602b17dfef17c170
@@ -565,6 +572,7 @@ document.write(`
 │   │   │   └── 541a6a375f93efed3f410c2f892174ba91aaa0
 │   │   ├── 16
 │   │   │   ├── 08c9053568edf211b3da171ae1bc33f1ef99bb
+│   │   │   ├── 1686a13c7f65e085950076290d8ff2635747d7
 │   │   │   ├── 6283f33256041b5a44a9079c90d6f2803a4b62
 │   │   │   └── ab78909cfbaba7fa199f47fdfc2934426ac699
 │   │   ├── 17
@@ -575,7 +583,8 @@ document.write(`
 │   │   │   ├── 9ee4ae224a51c58bc4712efd76f8d4f476947f
 │   │   │   └── e3434438f83da677703494a5374c0d063b21ef
 │   │   ├── 19
-│   │   │   └── 2a4d986aa666b777dd29128b91a4de4bd36d88
+│   │   │   ├── 2a4d986aa666b777dd29128b91a4de4bd36d88
+│   │   │   └── d32dcda4f3b3e61ee90b3480bd9efe624ed56c
 │   │   ├── 1a
 │   │   │   └── d5b7ae9308d29cef57604efdef44091672ff75
 │   │   ├── 1b
@@ -616,7 +625,8 @@ document.write(`
 │   │   ├── 23
 │   │   │   ├── 867e3e49390be3437b5125e04d3ac7ee98968b
 │   │   │   ├── aa6bcf5f216626c84d731ed730f47d5d86cd1d
-│   │   │   └── bb4550fdebf7531bdcedbc77a6618691166ac3
+│   │   │   ├── bb4550fdebf7531bdcedbc77a6618691166ac3
+│   │   │   └── d9b62f8f0861b5daa80448b1c5e376e03c4069
 │   │   ├── 24
 │   │   │   ├── 12147a5799f6d74898969d211ec4445d3e5f49
 │   │   │   └── 2e45d4f39f6e57d3946047dc490f679f006a62
@@ -642,8 +652,10 @@ document.write(`
 │   │   ├── 28
 │   │   │   ├── 04aad65e2241c4021a29828b11bb9d120e2b72
 │   │   │   ├── 1e47fcb1d3309dce3273f7e9b5a4e8494de132
+│   │   │   ├── 50cef4bd90bc34e5394dbd0b765651545c5982
 │   │   │   ├── 755c2c5bb51a068eb89231909e5df345fed382
-│   │   │   └── b17f367cd9e51c53fff8801c3fa01c7bbcb29f
+│   │   │   ├── b17f367cd9e51c53fff8801c3fa01c7bbcb29f
+│   │   │   └── f64be5caf154d84b2fd29099dc5ae044977166
 │   │   ├── 29
 │   │   │   ├── 86a4eee8667290f8a81cdfe57584b34fd59972
 │   │   │   ├── f1dc25524e890d6ad3cf0eff0138741117a1f6
@@ -718,6 +730,7 @@ document.write(`
 │   │   ├── 35
 │   │   │   ├── 4cf90959f5e4e5f19d796fa1dff3be62811741
 │   │   │   ├── c88db23d53f81549d196abe345f6af1925c0b8
+│   │   │   ├── d1983461e635063b1641dc1f952628adb59332
 │   │   │   └── eabd955fc6d26bf6902fc4e8372b1c76179b8d
 │   │   ├── 36
 │   │   │   ├── 7b8ed81b4e411bee6f81208dba76fbe37e0e15
@@ -729,7 +742,9 @@ document.write(`
 │   │   │   ├── 6c305dc41b2f7f116282e316b9b6955233adba
 │   │   │   └── e3fe89346dc6e927bc7754bf18940cb6876e34
 │   │   ├── 39
-│   │   │   └── df82849e3dce87b709c7d156de10bd037889d0
+│   │   │   ├── d914f873b296b256f9d4ea699c3583d5221d01
+│   │   │   ├── df82849e3dce87b709c7d156de10bd037889d0
+│   │   │   └── ffc3dea912d4fdde0b53b365629d3381dde928
 │   │   ├── 3a
 │   │   │   ├── 08c1998752bdb41d0b0038ec1372d942834c04
 │   │   │   ├── 3cb23c7e790e97842e4ce8a0d21a243b33ddb5
@@ -738,6 +753,7 @@ document.write(`
 │   │   │   └── e8abce8f00e023586fc30960ac67498de0ce00
 │   │   ├── 3b
 │   │   │   ├── 09c12a9acdaca024a99fb7efc390457a02c6ef
+│   │   │   ├── 1d1d550ce28a0e4b0c0de847571d9176a0a803
 │   │   │   ├── 277310f5d80c88ea33e0a0d651c04774e7ec8b
 │   │   │   ├── 32be306f1de7410ea0478ddcfc8bf981498ada
 │   │   │   ├── 4bc25b174bc368a47d0db2175f9d59eb4fa49f
@@ -766,6 +782,7 @@ document.write(`
 │   │   │   ├── 7ab07958af971dd5996563af0a0596e27ca8b2
 │   │   │   └── da5ce6f5f352da33af14de8f75a68e21596ca1
 │   │   ├── 41
+│   │   │   ├── 9df4e146d7a033e5e99794d3a0504b31a94a8b
 │   │   │   ├── a1dbb253ab1cf7c7d5c1e87750ba97cb0eb57a
 │   │   │   └── dc762af89dde39b6f5da64f8aa6ca97e767de2
 │   │   ├── 42
@@ -888,6 +905,7 @@ document.write(`
 │   │   ├── 5f
 │   │   │   ├── 534f8051f6a94d40e57e58242ef0113fae4fd1
 │   │   │   ├── 9788a0583f22c53ca889925c4a43098856023d
+│   │   │   ├── b08304e06c368078d2e5ddd46bd0db714551fc
 │   │   │   └── b2daadee5820c240c535ec92f6e1c419ba56df
 │   │   ├── 60
 │   │   │   ├── 2e5da144495fe9fb7d80ad6181e0dc88e2a6f1
@@ -910,6 +928,7 @@ document.write(`
 │   │   │   ├── 0acbdc27b0f9da9d4944d351c7b7a1f9442e1b
 │   │   │   ├── 1c082aca532377acfdb16f5aa3d35bd52c6cf5
 │   │   │   ├── 7c76a2d5f5f43296705c28702cfff326efabfb
+│   │   │   ├── 99b91f19e0939de21fe5975fe3bbe5c20b7a09
 │   │   │   ├── 9b194e8c1805132a4f033bb9511dce837358a8
 │   │   │   └── a07c3627fd555fea49abb7f7419911dd1fdbfe
 │   │   ├── 64
@@ -990,6 +1009,8 @@ document.write(`
 │   │   │   ├── 070b9c0eaeeb5cf4486bcdeaa62d209f461393
 │   │   │   ├── 0ad0b41a285dd577866766aae208d1cbc611c3
 │   │   │   ├── 4c555700d83c14d3546c84280e549a08b8093a
+│   │   │   ├── 55b156401923bb833415787185a731b4055f50
+│   │   │   ├── bf3142a8094a6821612d7c9bab9b4181970cb5
 │   │   │   └── d89a86184863d886bbceb4a3340790dceafbbc
 │   │   ├── 77
 │   │   │   ├── 3b8adae842be1a5e38ce4ae6f7de619d65adea
@@ -1000,7 +1021,8 @@ document.write(`
 │   │   │   ├── ada6e2506ae8f6dbfef170e6b79930da5aaf08
 │   │   │   └── edf08dd2385aacc24944ee1a52b65739e5ec11
 │   │   ├── 78
-│   │   │   └── 3ec6aa5afe2f0a66087d01a112f543e1ed287e
+│   │   │   ├── 3ec6aa5afe2f0a66087d01a112f543e1ed287e
+│   │   │   └── f2a342a05de5a1ae1be78b7004ec7ca654179c
 │   │   ├── 79
 │   │   │   ├── 0e30f1c3eacdc8758ab1d72874b195b8ff2ea4
 │   │   │   ├── 653acd07c65937b681016df59adf8f2fe066f1
@@ -1012,6 +1034,7 @@ document.write(`
 │   │   │   └── 6f7a2c7d579c57e8947d3b66998f2daee1bee7
 │   │   ├── 7c
 │   │   │   ├── 654ca8f223b6ca4b73ea83028229907bb33fbb
+│   │   │   ├── 70e85ef483197b936e43767582418c2ddd12ea
 │   │   │   ├── 789cfa44ffb5c9503313570bdf20641a75f759
 │   │   │   ├── 7d9c24ea4cac084b4494483a3f8fd8a4b7d31e
 │   │   │   └── b8ddb43aac286768017ca839391d99e534a1f6
@@ -1025,6 +1048,7 @@ document.write(`
 │   │   │   └── c629aa8a3cc1c0f34694fdae0b7979733b6983
 │   │   ├── 7f
 │   │   │   ├── 00704b31036161b9d5f91d4c6717cab5b075ef
+│   │   │   ├── 0b77dc0a56f3e055c2e69adf6254fcabe8aa18
 │   │   │   └── 9ba3b7b06e9cc2bd5006e6452bb920e59f365c
 │   │   ├── 80
 │   │   │   ├── 16b9505e82087d33f773a69d5f6aea18f38788
@@ -1033,11 +1057,14 @@ document.write(`
 │   │   │   ├── 6b33cb01795b0b2358a9145eff8b87f313dfb5
 │   │   │   ├── 718e71e36305a25032245cf19acb65848822b3
 │   │   │   ├── a43e2411ceb1b9873ab429d4552ecdc85334e8
-│   │   │   └── b9d1a0dd4874d8bf6484d69d20faec43d62ba1
+│   │   │   ├── b9d1a0dd4874d8bf6484d69d20faec43d62ba1
+│   │   │   └── c5dd8df70b9523f4d4e2808d0532ea5e990f71
 │   │   ├── 81
 │   │   │   ├── 25da2e785c73ac5d39d535d8e2948b9e814903
 │   │   │   ├── 26fa990deb0ee1afdd0d294bc651c7c5a40445
 │   │   │   └── 4d9ed7daf8f1368a1482960c25565b47a20c9d
+│   │   ├── 82
+│   │   │   └── ce124bc4c471a903c97fc2eeaa1660f8e0fade
 │   │   ├── 83
 │   │   │   ├── 0a10a71c78a0632ae610d91882028e6e1d603a
 │   │   │   ├── 3a0c6d6f59b280d14b8c00c4c961b986ed4df8
@@ -1072,6 +1099,7 @@ document.write(`
 │   │   │   ├── 5eaae386a1b96fc473b7286a335a1634ae1dd3
 │   │   │   └── bf0eb4573c950628c96733a0fdb5384d8af977
 │   │   ├── 8d
+│   │   │   ├── 0cce6ae68f956fc586cf9fa01a96e0f94f65f7
 │   │   │   ├── 4f3dd172602ddbe4b814bd6ceb3effacb89266
 │   │   │   ├── 69463eb8852b82416f7d3ec6436abbe76523b6
 │   │   │   ├── 725172f2ec5584eeb41f781f1412ac86ef5db3
@@ -1085,6 +1113,7 @@ document.write(`
 │   │   │   ├── 10fdf59fc9e328aafa7651c97f5e5d66f24396
 │   │   │   ├── 2d332ec98d1662273288d07516dbb1ef918e73
 │   │   │   ├── 41fab81ff0b616e30316e27e0624b88b893c90
+│   │   │   ├── 55d84c32ca5b60e6be4f14c013909101759e7c
 │   │   │   ├── b358bf1d65c336619dfcd9f0372715a1f39c18
 │   │   │   └── ce3dc5b71ed20175af2b8ff1f57cb9a9973679
 │   │   ├── 90
@@ -1095,6 +1124,7 @@ document.write(`
 │   │   │   └── 89fbe6e838d0689e8548a5e4aa4e88fef885dd
 │   │   ├── 92
 │   │   │   ├── 0b18640ebe57a8dd2f106dba36559f7849ecd7
+│   │   │   ├── d61ffad954d517000f8a6091d2ebbf2277cf75
 │   │   │   ├── da3f8b22cf5aab480b06cdb4e380a156152b5a
 │   │   │   └── fad4b5c0b766702548d26ab2be2832e19ad4da
 │   │   ├── 93
@@ -1111,12 +1141,14 @@ document.write(`
 │   │   ├── 95
 │   │   │   ├── 2278f5f7ec7697405ef3390242071889c6adba
 │   │   │   ├── c3f95929136a0a33cf05e0f6676fb89fd66c23
-│   │   │   └── ea987b023ffdc9cd0d6ffd763c6e546dbecce6
+│   │   │   ├── ea987b023ffdc9cd0d6ffd763c6e546dbecce6
+│   │   │   └── f9e9c2764b47e33dc888ea7c60ad389092221c
 │   │   ├── 98
 │   │   │   ├── 06dc11b9ae23e67e8b25debc1682f1a642de2d
 │   │   │   ├── 3b82391f499b67a9046c15d0dd8744650ad925
 │   │   │   ├── 9a0527de5bb911414a2921b906bb5a81cab66e
-│   │   │   └── a3d29f057a48fe97910382819a5f9356fc0200
+│   │   │   ├── a3d29f057a48fe97910382819a5f9356fc0200
+│   │   │   └── fb291ab0b6bbc8ecb8c7877be9442e561275fa
 │   │   ├── 99
 │   │   │   ├── 2e8c3ebd51bd667a3a10c7570ea2990f200cb7
 │   │   │   ├── 3114b6274652516d198c0ef80953240552aa41
@@ -1202,9 +1234,11 @@ document.write(`
 │   │   │   ├── 2f6d10689ee5d7a2563d85fc5e0468dee83797
 │   │   │   ├── 37954746d3c950e57bcf01c0a192f7e289e6d8
 │   │   │   ├── 426d3504b1f4d0fc4adbdfcbf057061fa1be52
+│   │   │   ├── 6d5bbb16623b28b96b5f670c6a8b2ec850faa9
 │   │   │   ├── 812a54ca3fc03a96aab5896539106dec29d7b4
 │   │   │   ├── a08e1ca6ff983d03bc68119ddb8b5c65186842
-│   │   │   └── ede98aa11b163e580a26b545980ace31e61ccf
+│   │   │   ├── ede98aa11b163e580a26b545980ace31e61ccf
+│   │   │   └── f75dda70d2bc8fe75f60bffcb5d6f064b3182c
 │   │   ├── ac
 │   │   │   ├── 02e9de2fce4e02b4e20bae8af99fdb8a446bc5
 │   │   │   ├── 379f6727b0d01282d410b10ccabdb45d459bd8
@@ -1230,7 +1264,8 @@ document.write(`
 │   │   │   ├── 39bd26f443fdb282e03d72a6639d47c1953de3
 │   │   │   ├── 4ccb8c95ab618a7f88c9871335e5c3ada0d3d6
 │   │   │   ├── 6ea89dd956dc22f6fe23dc359ed865e69cde43
-│   │   │   └── 79f178018f2efe240942d04e32b7b7e015930f
+│   │   │   ├── 79f178018f2efe240942d04e32b7b7e015930f
+│   │   │   └── aaa140291d6c788d405569dde0b586bfb22cde
 │   │   ├── b2
 │   │   │   ├── 1346a51213db2840495a49272059bcf0ed3bdb
 │   │   │   ├── 1c6c6340194fdf35f7e5660deb42479c8dbff9
@@ -1249,6 +1284,7 @@ document.write(`
 │   │   │   ├── 7e6d38eaa1aa2e07db3bd962b18a0388d81778
 │   │   │   └── 9e3d615b7124bc6a610223086494b4cacb6a4d
 │   │   ├── b6
+│   │   │   ├── 318d54e5067f7788b523dc2571701428dc7eea
 │   │   │   ├── 5888c66bcba2e8cf852d5cec38fbb5b3e0127b
 │   │   │   ├── bef87796217427bb2ce824ded73fe3c5c3f2ad
 │   │   │   ├── d642a9f8e5e825b1d600fa104c0cde4c818432
@@ -1264,6 +1300,7 @@ document.write(`
 │   │   │   └── fc952a42bff38705efdedde456cceec2853a49
 │   │   ├── b9
 │   │   │   ├── 049258df096573b6b8fffd2834c05acfd192cf
+│   │   │   ├── 1400d2b84a61ed5276e69b2c584243c65b36af
 │   │   │   └── 5a448da62dedec2ffce042de0b934980e17298
 │   │   ├── ba
 │   │   │   └── 2ee4dc22148ed53f2aeba32c5965654d4a5a2f
@@ -1303,10 +1340,12 @@ document.write(`
 │   │   │   ├── d194dc6be49c076518881f1f781f4d8eaf494d
 │   │   │   └── fb93f87ac3f8ff244fecbf7d14485679aea202
 │   │   ├── c1
+│   │   │   ├── 14003aa84bcc475dd31c75e4b0810a1925e387
 │   │   │   ├── 54d766a953e6eb07d8f810e20f9b90ed07dfa8
 │   │   │   └── d84cdcd8784848a43b25b362cca17ba269c167
 │   │   ├── c2
-│   │   │   └── 4b91662b822e61f1722031a7febe0ded6d8035
+│   │   │   ├── 4b91662b822e61f1722031a7febe0ded6d8035
+│   │   │   └── 81907a762a5f2177f207c8132211dac24afdd6
 │   │   ├── c3
 │   │   │   ├── 2889c47a4582e7aed1384f0cc133a0540b40d2
 │   │   │   ├── 3dc4217269d2eb23b0964c4c42a2ca852f70bf
@@ -1331,7 +1370,8 @@ document.write(`
 │   │   │   └── 745998143b1167356a26da11224de5c12893e3
 │   │   ├── c8
 │   │   │   ├── 178debbcd93ce91e02f7a6f001c2c203dadfab
-│   │   │   └── e3653455c73617e99e5c27f424c32b2654e79b
+│   │   │   ├── e3653455c73617e99e5c27f424c32b2654e79b
+│   │   │   └── e8e3d24a4c914e7b7349fdf163571f9f898dec
 │   │   ├── c9
 │   │   │   ├── 6c6c849a3ed3a53f5e0ef07cb33a2ca28c30fa
 │   │   │   ├── 74d0807ce65849b5c5bca381391d5a0cd8ee8a
@@ -1345,8 +1385,10 @@ document.write(`
 │   │   │   ├── e0fef6b35f3805e7cb8bc09c2437c114e91c80
 │   │   │   └── e6f7ae90968f3f98a171c5d5a84964d2d97781
 │   │   ├── cb
+│   │   │   ├── 9904b7402163068d8a09bc0aefe447b5570dc0
 │   │   │   └── dee8f45f516a41c068066e181263c392a44432
 │   │   ├── cc
+│   │   │   ├── 5e1d2f2b349b5cbc61401116a70581f230cb86
 │   │   │   ├── 8c5659fd1ada8745c4715c8cc02b9586f01d99
 │   │   │   ├── d3ba5d183b2c18d0ff60e7a175d9935b547eec
 │   │   │   └── f0753c0e2db39e853a9e6e2726390ece187ba4
@@ -1368,7 +1410,8 @@ document.write(`
 │   │   ├── d1
 │   │   │   ├── 072bbec62959524a87953d3f41b7c272ecbe37
 │   │   │   ├── 4d801bb943e267fd38515d70774f938bece4d6
-│   │   │   └── 7e87a98a2d67a0ab9a7be422c5a63f64b1fc89
+│   │   │   ├── 7e87a98a2d67a0ab9a7be422c5a63f64b1fc89
+│   │   │   └── d8953cefbc7098db246385764b3a244770b096
 │   │   ├── d2
 │   │   │   ├── 447fd82f3d9e9732fce249d56ee28d4714a44e
 │   │   │   ├── 72fe4838d02797ae646395ddcf1f540ccf20b7
@@ -1398,6 +1441,7 @@ document.write(`
 │   │   │   ├── 6b0ba04db11dd3c343cfaa4791cb3eb1c13847
 │   │   │   └── c30c3fbd0c488cc71a6691d51b90e6526363ef
 │   │   ├── d8
+│   │   │   ├── 22d7198f2909af3eee8e64a351d9f20003a8ef
 │   │   │   ├── 34da13d2233edf8bc8d15dcd35e1306a2cf80d
 │   │   │   ├── 85fd6f318357dbd0e0c2357b805bd1d7ace251
 │   │   │   ├── 9f5c750656c3dd914c33d54e4070e27ab2d7ef
@@ -1413,11 +1457,15 @@ document.write(`
 │   │   │   └── b586c0d273a422a7d1adae234c31797b32a38b
 │   │   ├── db
 │   │   │   ├── 19ecae168919730c60c7f263fe64496c6d8070
+│   │   │   ├── 4deceae473575ec9e8868b71a19fe16d4e9c4e
 │   │   │   └── e1aaad79cd1f835c8fbb304d255e19a3b39512
 │   │   ├── dc
-│   │   │   └── 3843b26c14f260ad33cd4f090e419a0168d746
+│   │   │   ├── 3843b26c14f260ad33cd4f090e419a0168d746
+│   │   │   └── 8e57cece26aef2219bde2789e73464f4a37c8c
 │   │   ├── dd
-│   │   │   └── 92757238a27855c7c5a40f09162e76bdc74481
+│   │   │   ├── 1ae8c312e094a75dee85bdc2c636a5143a9df3
+│   │   │   ├── 92757238a27855c7c5a40f09162e76bdc74481
+│   │   │   └── e0d33e9145e5512a4aa0a744be9894160ed607
 │   │   ├── de
 │   │   │   ├── 14ea8ba01553bc74a3762f5c592445f4b47b5e
 │   │   │   ├── 4b034e55b1043bad1fef92b94f2ace758d869b
@@ -1430,8 +1478,11 @@ document.write(`
 │   │   │   ├── 248adce4e7a909aa027db01f779c91f120c977
 │   │   │   ├── 333a50387fed5f227e05c86247375ed29ed731
 │   │   │   ├── 544c12b4df08fcf24f7d3e24994182b9bb126c
+│   │   │   ├── 5657476411720c96cb6b4ec014d6def8473ce8
+│   │   │   ├── 7dcbfa57059e512fbcedee9bccf33e0b9eb59b
 │   │   │   ├── 8af1714df95a712a2d3aa5c72f788a9a12dda5
-│   │   │   └── 8ff32e65c2a82b9bb3e7c7482b93926b5abe78
+│   │   │   ├── 8ff32e65c2a82b9bb3e7c7482b93926b5abe78
+│   │   │   └── a686813f6914a94bc7b20b0f9f225b194805df
 │   │   ├── e0
 │   │   │   ├── a9202c94bc9344910f4700e6d9eb1825b1c6c7
 │   │   │   ├── efdafd51eadadbdd0b204aad455d80660e0482
@@ -1453,6 +1504,8 @@ document.write(`
 │   │   │   └── f227c4def9a59e37fbf664345353a01002fd10
 │   │   ├── e5
 │   │   │   ├── 487ee20ebc3e6af68574e3b3932be285fd68eb
+│   │   │   ├── 51147d10a0ffa6b760d9c4d05e8da558aa7991
+│   │   │   ├── 6d896a1108cd1b2c1c3206d13931622e7aa2d1
 │   │   │   ├── 9e7ecb308a7648cd23aa6342a9ad98a61d0009
 │   │   │   ├── bf6fe0ff9e646db50dc1a53bb98babd5925c23
 │   │   │   └── d2b96276b131bac936df1b052955ca9922ab34
@@ -1460,7 +1513,10 @@ document.write(`
 │   │   │   ├── 9c5e39a30ce8d112e012cac36289e77691a9b7
 │   │   │   ├── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
 │   │   │   └── fd30d5381203e21013a24c1b505f722d28f3b9
+│   │   ├── e7
+│   │   │   └── 8c53d403ab4d3ca486460afe4eec2e57e33105
 │   │   ├── e8
+│   │   │   ├── 203fd85af5d9b10dd15265352eff3de2c122ce
 │   │   │   ├── 6ecee082f777f64b2b1861f6ad0afcd93b3465
 │   │   │   ├── 7a4fdef37548d17b64f0c390658344abb59df4
 │   │   │   ├── 807256a11fdf3501e895b303f603fed20217e8
@@ -1477,6 +1533,7 @@ document.write(`
 │   │   │   ├── 19f698afc3376c9559e2cc4d7c2f7f6a9948fa
 │   │   │   └── 799d78a791a18076c00d87ff998155b4be9c34
 │   │   ├── ec
+│   │   │   ├── 42d51171ed06d77d0bec2a955df53fa3f39e6f
 │   │   │   ├── 5287fe1ce49a8c4d5c64cd432b096f0757cfa6
 │   │   │   ├── 740f4852f3973fa72ed0c7f7cf59273b8dba41
 │   │   │   ├── a4a1a2842830f06bd5f6235bf01d07bdd313d2
@@ -1498,6 +1555,7 @@ document.write(`
 │   │   │   └── 8b114703cf5e748523414216ce68702075a5c9
 │   │   ├── f0
 │   │   │   ├── 2603fa2522a40060bd3f1b5d65052c77530de6
+│   │   │   ├── 6f5e8e09679456a6be1530c31376c248eb0d28
 │   │   │   ├── c716d85ff10c3c38b80e1dfc74574a3f394c59
 │   │   │   └── df5388e39c089911bc3a92a1c22e4c40e68fa3
 │   │   ├── f1
@@ -1511,13 +1569,15 @@ document.write(`
 │   │   │   ├── 18251b13123a5a4ab15abedf08386fa32b855d
 │   │   │   ├── 199ae533e6f85006a2d76145b7d9a1521b5df3
 │   │   │   ├── 694acfa55c071a926cac9fe7ad72e7762ec3db
-│   │   │   └── dcbb9397634fa4f6b1f9e3462953b51159b30d
+│   │   │   ├── dcbb9397634fa4f6b1f9e3462953b51159b30d
+│   │   │   └── f698ad7f07dbc06c5a022c21dbaf79f365fb98
 │   │   ├── f4
 │   │   │   ├── 3157d70c63ff21b4385dc36cb73f5b14eb6b01
 │   │   │   ├── 498a660719849ea17509ad2d895e36eaede6b7
 │   │   │   └── e2ba3a86609ee1ac04d0f4df864c289c4a1993
 │   │   ├── f5
-│   │   │   └── 0c83fb37849e96c0dc41c9fca60834afb1213a
+│   │   │   ├── 0c83fb37849e96c0dc41c9fca60834afb1213a
+│   │   │   └── 905a85f0b9abbd3904a7aed941ec718870590f
 │   │   ├── f6
 │   │   │   └── 63d39f0faa76c5b9bd504c51252eef74cca5de
 │   │   ├── f7
@@ -1532,7 +1592,9 @@ document.write(`
 │   │   │   └── cdc73cb2be06824f521837366ec95b73d55ef8
 │   │   ├── f9
 │   │   │   ├── 4bec22756c48039ad405859f0d0e542033c1b2
-│   │   │   └── 7a842ebb25361ed9f3769d6215a436ab3f14f3
+│   │   │   ├── 6b40e4b9ca8f022e3aee8c2e898b97fc54302e
+│   │   │   ├── 7a842ebb25361ed9f3769d6215a436ab3f14f3
+│   │   │   └── b4f5c443b1d6b61c23bd3db187663b355f09f6
 │   │   ├── fa
 │   │   │   ├── 16386f4f9da76509996b9c15ed0593c238313c
 │   │   │   ├── 77ebfc258ac10ebdaa17a3dde4dfc75b8e8b2b
@@ -1546,6 +1608,7 @@ document.write(`
 │   │   │   └── b3743fa81b96f5ce97e8ca5bfe87a438d8f61b
 │   │   ├── fc
 │   │   │   ├── 070b6c6ca122ab7601f5d35bfde8dcfd275c74
+│   │   │   ├── 0f390ec745cda652c2ab8f6da47ca5027d4519
 │   │   │   ├── 164a8d530f24058106c7af5ac17a72e68e8b4e
 │   │   │   ├── 605adf8027dddc2ec605f1276c075a3240ecf2
 │   │   │   ├── 64d51ed493cfda8f6dcc1c9ffebe7d1242e0c9
@@ -1588,6 +1651,7 @@ document.write(`
 │   │   │   ├── climate-widget.doctree
 │   │   │   ├── data_entry.doctree
 │   │   │   ├── historical_nursery.doctree
+│   │   │   ├── nursery-seed-store-inventory.doctree
 │   │   │   ├── potting_media_recipes.doctree
 │   │   │   ├── seed-sowing.doctree
 │   │   │   ├── seed_dormancy_and_treatments.doctree
@@ -1604,6 +1668,7 @@ document.write(`
 │   ├── Accession_1970to2025.csv
 │   ├── CAT-current-UBCBG.csv
 │   ├── accession-items-history_1970to2025.csv
+│   ├── accession-items-history_2017to2025.csv
 │   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
 │   └── unique_beds.csv
@@ -1612,6 +1677,7 @@ document.write(`
 │   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
+│   ├── nursery-seed-store-inventory.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
@@ -1640,6 +1706,7 @@ document.write(`
 │   │   └── 2024-overhead.jpg
 │   ├── km-preview.png
 │   ├── logo.png
+│   ├── seed-store-preview.png
 │   └── test.jpg
 ├── index.md
 ├── insta-map.ipynb
@@ -1652,19 +1719,20 @@ document.write(`
 │   │   ├── Kaplan-Meier_widget_clean_final-checkpoint.ipynb
 │   │   ├── Kaplan-Meier_widget_dynamic_fixed-checkpoint.ipynb
 │   │   ├── Kaplan-Meier_widget_resplit_clean-checkpoint.ipynb
-│   │   ├── Untitled-checkpoint.ipynb
 │   │   ├── Untitled1-checkpoint.ipynb
 │   │   ├── cleaned_metadata_tool-checkpoint.ipynb
 │   │   ├── climate-rating-widget-checkpoint.ipynb
 │   │   ├── climate-rating-widget_rebuilt-checkpoint.ipynb
 │   │   ├── notebooks-checkpoint.ipynb
+│   │   ├── nursery-seed-store-inventory_widget-checkpoint.ipynb
 │   │   ├── project_cold_with_graphics-checkpoint.ipynb
+│   │   ├── seed-store-inventory_widget-checkpoint.ipynb
 │   │   ├── seed_pot_RQ_count-checkpoint.ipynb
 │   │   └── test_widget-checkpoint.ipynb
 │   ├── Kaplan-Meier_widget.ipynb
-│   ├── Untitled.ipynb
 │   ├── cleaned_metadata_tool.ipynb
 │   ├── climate-rating-widget.ipynb
+│   ├── nursery-seed-store-inventory_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
 │   └── seed_pot_RQ_count.ipynb
 ├── postBuild
@@ -1712,6 +1780,7 @@ document.write(`
 │   ├── Accession_1970to2025.csv
 │   ├── CAT-current-UBCBG.csv
 │   ├── accession-items-history_1970to2025.csv
+│   ├── accession-items-history_2017to2025.csv
 │   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
 │   └── unique_beds.csv
@@ -1720,6 +1789,7 @@ document.write(`
 │   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
+│   ├── nursery-seed-store-inventory.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
@@ -1748,14 +1818,15 @@ document.write(`
 │   │   └── 2024-overhead.jpg
 │   ├── km-preview.png
 │   ├── logo.png
+│   ├── seed-store-preview.png
 │   └── test.jpg
 ├── index.md
 ├── insta-map.ipynb
 ├── notebooks
 │   ├── Kaplan-Meier_widget.ipynb
-│   ├── Untitled.ipynb
 │   ├── cleaned_metadata_tool.ipynb
 │   ├── climate-rating-widget.ipynb
+│   ├── nursery-seed-store-inventory_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
 │   └── seed_pot_RQ_count.ipynb
 ├── postBuild
@@ -1805,6 +1876,7 @@ document.write(`
 │   ├── Accession_1970to2025.csv
 │   ├── CAT-current-UBCBG.csv
 │   ├── accession-items-history_1970to2025.csv
+│   ├── accession-items-history_2017to2025.csv
 │   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
 │   └── unique_beds.csv
@@ -1813,6 +1885,7 @@ document.write(`
 │   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
+│   ├── nursery-seed-store-inventory.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
@@ -1841,14 +1914,15 @@ document.write(`
 │   │   └── 2024-overhead.jpg
 │   ├── km-preview.png
 │   ├── logo.png
+│   ├── seed-store-preview.png
 │   └── test.jpg
 ├── index.md
 ├── insta-map.ipynb
 ├── notebooks
 │   ├── Kaplan-Meier_widget.ipynb
-│   ├── Untitled.ipynb
 │   ├── cleaned_metadata_tool.ipynb
 │   ├── climate-rating-widget.ipynb
+│   ├── nursery-seed-store-inventory_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
 │   └── seed_pot_RQ_count.ipynb
 ├── postBuild
@@ -1928,6 +2002,7 @@ document.write(`
 │   ├── Accession_1970to2025.csv
 │   ├── CAT-current-UBCBG.csv
 │   ├── accession-items-history_1970to2025.csv
+│   ├── accession-items-history_2017to2025.csv
 │   ├── totem_weather_with_year.csv
 │   ├── ubc_temperature91_02cl.csv
 │   ├── unique_beds.csv
@@ -1936,6 +2011,7 @@ document.write(`
 │   ├── climate-widget.md
 │   ├── data_entry.md
 │   ├── historical_nursery.md
+│   ├── nursery-seed-store-inventory.md
 │   ├── potting_media_recipes.md
 │   ├── seed-sowing.md
 │   ├── seed_dormancy_and_treatments.md
@@ -1945,6 +2021,7 @@ document.write(`
 │   ├── CAT-preview.png
 │   ├── km-preview.png
 │   ├── logo.png
+│   ├── seed-store-preview.png
 │   ├── test.jpg
 │   ├── historical_nursery
 │   │   ├── 2004-overhead.jpg
@@ -1966,9 +2043,9 @@ document.write(`
 │   │   ├── 2024-overhead.jpg
 ├── notebooks
 │   ├── Kaplan-Meier_widget.ipynb
-│   ├── Untitled.ipynb
 │   ├── cleaned_metadata_tool.ipynb
 │   ├── climate-rating-widget.ipynb
+│   ├── nursery-seed-store-inventory_widget.ipynb
 │   ├── project_cold_with_graphics.ipynb
 │   ├── seed_pot_RQ_count.ipynb
 ├── postBuild

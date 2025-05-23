@@ -1,6 +1,5 @@
-# Seed Store Inventory
 
-# Seed Store Inventory
+# Nursery Seed Store Inventory
 
 This interactive widget lets you explore the current inventory of seeds in the Seed Store by accession number, taxon name, or purpose.
 

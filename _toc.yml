@@ -32,7 +32,7 @@ parts:
         title: Kaplan–Meier Survival Curves
       - file: docs/climate-widget
         title: Climate Suitability Widget
-      - file: docs/seed-store-inventory
+      - file: docs/nursery-seed-store-inventory
         title: Nursery Seed Store Inventory 
       # Add more apps here later
 
